@@ -1,8 +1,8 @@
 package com.example;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
-
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -13,11 +13,15 @@ public class Main {
 	static List<String> titulos = new ArrayList<>();
 	static List<String> tipos = new ArrayList<>();
 	static Document doc = conectar();
+	static List<String> elementos = new ArrayList<>();
 
 	public static void main(String[] args) {
 		getTitulos();
 		getTipos();
-
+		getValores();
+		for (String string : elementos) {
+			System.out.println(string);
+		}
 	}
 
 	public static Document conectar() {
@@ -101,5 +105,76 @@ public class Main {
 
 		}
 
+	}
+
+	public static void getValores(){
+
+		List<String> elementosTabelas = new ArrayList<>();
+
+		for (Element e : doc.select(".dou-paragraph")) {
+			
+			String text = e.text();
+
+			if(limparElementos(text)){
+				elementosTabelas.add(text);
+			}
+		}
+
+		Collections.reverse(elementosTabelas); 
+		
+		elementos = elementosTabelas;
+	}
+
+	public static boolean limparElementos(String elemento){
+		
+		if(elemento.length() == 1){
+			return false;
+		}
+
+		if(elemento.contains("II")){
+			return false;
+		}
+
+		if(elemento.contains("Art")){
+			return false;
+		}
+
+		if(elemento.contains("Diretoria")){
+			return false;
+		}
+
+		if(elemento.contains("nº")){
+			return false;
+		}
+
+		if(elemento.contains("#")){
+			return false;
+		}
+
+		if(elemento.contains("Número")){
+			return false;
+		}
+
+		if(elemento.contains("Coeficiente")){
+			return false;
+		}
+
+		if(elemento.contains("COEFICIENTE")){
+			return false;
+		}
+
+		if(elemento.contains("unidade")){
+			return false;
+		}
+
+		if(elemento.contains("Nota")){
+			return false;
+		}
+
+		if(elemento.contains("Brasil")){
+			return false;
+		}
+
+		return true;
 	}
 }
