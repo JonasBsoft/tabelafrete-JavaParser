@@ -8,7 +8,6 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-
 public class Main {
 	static String url = "https://www.in.gov.br/en/web/dou/-/resolucao-n-5.959-de-20-de-janeiro-de-2022-375504795";
 	static List<String> tipos = new ArrayList<>();
@@ -17,12 +16,16 @@ public class Main {
 	static List<Linha> linhas = new ArrayList<>();
 	static Linha linha = new Linha();
 	static List<String> titulos = new ArrayList<>();
+	static int eixo = 1;
+	static Linha linhaAtual = new Linha();
+	static boolean coeficienteisDeslocamento = false;
 
 	public static void main(String[] args) {
 		getTitulos();
 		getTipos();
 		getValores();
 		classificaCampo();
+
 	}
 
 	public static Document conectar() {
@@ -120,8 +123,6 @@ public class Main {
 			}
 		}
 
-		//Collections.reverse(elementosTabelas);
-
 		elementos = elementosTabelas;
 	}
 
@@ -178,43 +179,124 @@ public class Main {
 		return true;
 	}
 
-	public static void classificaCampo(){
+	public static void classificaCampo() {
 
-		String proximoValor = "0";
 		int i = 1;
 
 		for (String elemento : elementos) {
-			
-			if(elemento.length() == 0){
-				if(elementos.get(i).length() == 0){
 
-					if(elementos.get(i + 1).length() == 0){
+			if (elemento.length() == 0) {
+				if (elementos.get(i).length() == 0) {
+
+					if (elementos.get(i + 1).length() == 0) {
 						elemento = elementos.get(i + 2);
-					}else{
+					} else {
 						elemento = elementos.get(i + 1);
 					}
-				}else{
+				} else {
 					elemento = elementos.get(i);
 				}
+
 			}
-			if(elemento.contains("R$")){
+			if (elemento.contains("R$")) {
 				elemento = "UNIDADE: " + elemento;
 			}
-			if(elemento.contains("(CC")){
+			if (elemento.contains("(CC")) {
+				coeficienteisDeslocamento = !coeficienteisDeslocamento;
+
 				elemento = "COEFICIENTE: " + elemento;
 			}
-			if (elemento.matches("\\d.\\d\\d\\d\\d")){
-				elemento = "VALORES: " + elemento;
+
+			if (elemento.matches("\\d.\\d\\d\\d\\d")) {
+
+				elemento = adicionarValorEmLinha(elemento);
+
 			}
-			if(elemento.matches("\\d\\d.\\d\\d\\d\\d")){
-				elemento = "VALORES: " + elemento;
+			if (elemento.matches("\\d\\d.\\d\\d\\d\\d")) {
+				elemento = adicionarValorEmLinha(elemento);
+
 			}
-			if(elemento.matches("\\d\\d\\d.\\d\\d")){
-				elemento = "VALORES: " + elemento;
+			if (elemento.matches("\\d\\d.\\d\\d")) {
+				elemento = adicionarValorEmLinha(elemento);
+
 			}
-			
+			if (elemento.matches("\\d\\d\\d.\\d\\d")) {
+				elemento = adicionarValorEmLinha(elemento);
+
+			}
+			if (isTipo(elemento)) {
+				if (isTipo(elementos.get(i))) {
+					elemento = "VAZIO";
+				} else {
+					if (linhaAtual.getTipo().equals("")) {
+					} else {
+						adicionarLinhaEmTabela(linhaAtual);
+
+					}
+					linhaAtual = new Linha();
+					linhaAtual.setTipo(elemento);
+					elemento = "[TIPO] " + elemento;
+
+				}
+			}
 			System.out.println(elemento);
 			i++;
 		}
+
+	}
+
+	private static String adicionarValorEmLinha(String elemento) {
+		String eixo = String.valueOf(getEixo());
+
+		if (coeficienteisDeslocamento) {
+			linhaAtual.addEixos_deslocamento(eixo, elemento);
+
+		}
+		linhaAtual.addEixos_CargaeDescarga(eixo, elemento);
+		return "[" + eixo + "]VALORES: " + elemento;
+	}
+
+	private static void adicionarLinhaEmTabela(Linha linhaAtual) {
+		if (!linhaAtual.equals(null)) {
+
+			linhas.add(linhaAtual);
+		} // se nao for null:
+
+	}
+
+	private static boolean isTipo(String elemento) {
+		getTipos();
+		boolean retorno = false;
+
+		for (String tipo : tipos) {
+			if (tipo.contains(elemento)) {
+				retorno = true;
+			}
+
+		}
+		return retorno;
+	}
+
+	private static void removerTiposDuplicados() {
+
+	}
+
+	private static boolean coeficienteisDeslocamento(String coeficiente) {
+		return coeficiente == "Deslocamento (CCD)";
+
+	}
+
+	public static int getEixo() {
+		if (eixo == 7) {
+			eixo = 9;
+			return eixo;
+		}
+		if (eixo == 9) {
+			eixo = 2;
+			return eixo;
+		}
+		eixo = eixo + 1;
+
+		return eixo;
 	}
 }

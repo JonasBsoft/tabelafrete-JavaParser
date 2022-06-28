@@ -1,13 +1,10 @@
 package com.example;
 
-
 import java.util.HashMap;
-
-
 
 public class Linha {
     private String titulo;
-    private String tipo;
+    private String tipo = "";
     private String coeficiente_1 = "Deslocamento (CCD)";
     private String coeficiente_2 = "Carga e descarga (CC)";
     private String unidade_1 = "R$/km";
@@ -16,22 +13,12 @@ public class Linha {
     private HashMap<String, String> eixos_carga_descarga = new HashMap<>();
     static int EIXO = 7;
 
-    public void adicionarValor(String valor) {
+    public String getTitulo() {
+        return this.titulo;
+    }
 
-        // "9", "122,32"
-        // "2", "323232"
-     /*    if (EIXO != 2) {
-
-            if (EIXO == 9) {
-                EIXO = 7;
-            } else {
-                EIXO--;
-
-            }
-        } else {
-            EIXO = 9;
-        }*/
-
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
     public String getTipo() {
@@ -80,6 +67,14 @@ public class Linha {
 
     public void setEixos_deslocamento(HashMap<String, String> eixos_deslocamento) {
         this.eixos_deslocamento = eixos_deslocamento;
+    }
+
+    public void addEixos_deslocamento(String eixo, String valor) {
+        this.eixos_deslocamento.put(eixo, valor);
+    }
+
+    public void addEixos_CargaeDescarga(String eixo, String valor) {
+        this.eixos_carga_descarga.put(eixo, valor);
     }
 
     public HashMap<String, String> getEixos_carga_descarga() {
