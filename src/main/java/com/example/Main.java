@@ -60,6 +60,7 @@ public class Main {
 		for (Linha linha : linhas) {
 			linha.setTipo(linha.getTipo().replace(" ", "_"));
 			if (ultimoTitulo != linha.getTitulo()) {
+				System.out.println(ultimoTitulo + "!=" + linha.getTitulo());
 				ultimoTitulo = linha.getTitulo();
 				saida = saida + "\"" + linha.getTitulo() + "\":{";
 
@@ -68,7 +69,7 @@ public class Main {
 			do {
 				i = getEixo();
 
-				String eixoStr = String.valueOf(eixo);
+				String eixoStr = String.valueOf(i);
 
 				saida = saida + "\"eixos" + i + "\":{";
 				saida = saida + "\"custo_km\":";
@@ -82,7 +83,7 @@ public class Main {
 					saida = saida + "},";
 				}
 
-			} while (i <= 8);
+			} while (i < 9);
 
 			if (linha.getTipo().equals(tipos.get(tipos.size() - 1))) {
 				saida = saida + "}";
