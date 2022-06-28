@@ -25,8 +25,6 @@ public class Main {
 		getValores();
 		classificaCampo();
 
-<<<<<<< Updated upstream
-=======
 		exibirElementos();
 
 	}
@@ -45,7 +43,6 @@ public class Main {
 			System.out.print(linha.getEixos_carga_descarga().get("2"));
 			System.out.println("}, .... etc");
 		}
->>>>>>> Stashed changes
 	}
 
 	public static Document conectar() {
