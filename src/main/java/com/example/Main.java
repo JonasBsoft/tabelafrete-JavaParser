@@ -8,20 +8,21 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+
 public class Main {
 	static String url = "https://www.in.gov.br/en/web/dou/-/resolucao-n-5.959-de-20-de-janeiro-de-2022-375504795";
-	static List<String> titulos = new ArrayList<>();
 	static List<String> tipos = new ArrayList<>();
 	static Document doc = conectar();
 	static List<String> elementos = new ArrayList<>();
 	static List<Linha> linhas = new ArrayList<>();
+	static Linha linha = new Linha();
+	static List<String> titulos = new ArrayList<>();
 
 	public static void main(String[] args) {
 		getTitulos();
 		getTipos();
 		getValores();
-		preencherLinhas();
-
+		classificaCampo();
 	}
 
 	public static Document conectar() {
@@ -38,8 +39,7 @@ public class Main {
 		/**
 		 * atualiza os titulos da lista estatica de titulos
 		 */
-
-		Elements elementosTag = doc.getElementsContainingText("TABELA");
+		Elements elementosTag = Main.doc.getElementsContainingText("TABELA");
 
 		int i = 0;
 		titulos = new ArrayList<>();
@@ -120,7 +120,7 @@ public class Main {
 			}
 		}
 
-		Collections.reverse(elementosTabelas);
+		//Collections.reverse(elementosTabelas);
 
 		elementos = elementosTabelas;
 	}
@@ -178,22 +178,43 @@ public class Main {
 		return true;
 	}
 
-	public static void preencherLinhas() {
-		/**
-		 * iterar pelos elementos da lista 'Elementos' e inserir em objetos Linha seus
-		 * respectivos campos
-		 */
-		int i = 0;
+	public static void classificaCampo(){
 
-		for (String linha : elementos) {
-			System.out.println(i + "-" + linha);
-			i++;
-			if (linha.contains(",")) {
+		String proximoValor = "0";
+		int i = 1;
 
+		for (String elemento : elementos) {
+			
+			if(elemento.length() == 0){
+				if(elementos.get(i).length() == 0){
+
+					if(elementos.get(i + 1).length() == 0){
+						elemento = elementos.get(i + 2);
+					}else{
+						elemento = elementos.get(i + 1);
+					}
+				}else{
+					elemento = elementos.get(i);
+				}
 			}
-
+			if(elemento.contains("R$")){
+				elemento = "UNIDADE: " + elemento;
+			}
+			if(elemento.contains("(CC")){
+				elemento = "COEFICIENTE: " + elemento;
+			}
+			if (elemento.matches("\\d.\\d\\d\\d\\d")){
+				elemento = "VALORES: " + elemento;
+			}
+			if(elemento.matches("\\d\\d.\\d\\d\\d\\d")){
+				elemento = "VALORES: " + elemento;
+			}
+			if(elemento.matches("\\d\\d\\d.\\d\\d")){
+				elemento = "VALORES: " + elemento;
+			}
+			
+			System.out.println(elemento);
+			i++;
 		}
-
 	}
-
 }

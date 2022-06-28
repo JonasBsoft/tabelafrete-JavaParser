@@ -1,6 +1,9 @@
 package com.example;
 
+
 import java.util.HashMap;
+
+
 
 public class Linha {
     private String titulo;
@@ -17,8 +20,7 @@ public class Linha {
 
         // "9", "122,32"
         // "2", "323232"
-
-        if (EIXO != 2) {
+     /*    if (EIXO != 2) {
 
             if (EIXO == 9) {
                 EIXO = 7;
@@ -28,15 +30,8 @@ public class Linha {
             }
         } else {
             EIXO = 9;
-        }
-    }
+        }*/
 
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
     }
 
     public String getTipo() {
