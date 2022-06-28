@@ -7,6 +7,8 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import com.example.utils.LimpaElementos;
+
 public class Main {
 	static String url = "https://www.in.gov.br/en/web/dou/-/resolucao-n-5.959-de-20-de-janeiro-de-2022-375504795";
 	static List<String> tipos = new ArrayList<>();
@@ -37,8 +39,12 @@ public class Main {
 			System.out.println("{");
 			System.out.println(linha.getTitulo() + ":{");
 			System.out.println(linha.getTipo() + ":{");
-			System.out.println(linha.pegarValores(linha.getEixos_deslocamento()));
-			System.out.println("}");
+			System.out.println("eixos2:{");
+			System.out.println("custo_km:");
+			System.out.println(linha.getEixos_deslocamento().get("2") + ",");
+			System.out.println("carga_descarga:");
+			System.out.println(linha.getEixos_carga_descarga().get("2"));
+			System.out.println("}, .... etc");
 		}
 	}
 
