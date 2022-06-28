@@ -1,7 +1,6 @@
 package com.example;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -17,7 +16,6 @@ public class Main {
 	static List<Linha> linhas = new ArrayList<>();
 	static Linha linha = new Linha();
 	static List<String> titulos = new ArrayList<>();
-
 	public static void main(String[] args) {
 		getTitulos();
 		getTipos();
@@ -88,16 +86,11 @@ public class Main {
 			}
 
 			texto = texto + "!";
-			texto = texto.replace("(!", "");
-			texto = texto.replace("(CCD)", "");
-			texto = texto.replace("(CC)", "");
 			texto = texto.replaceAll("[0-9]", "");
-			texto = texto.replace("Carga e descarga", "");
-			texto = texto.replace("()!", "");
-			texto = texto.replace("!", "");
-			texto = texto.replace("     )", "");
-			texto = texto.replace("  ", "");
-			texto = texto.replace("Deslocamento", "");
+
+			for (String string :LimpaElementos.replaceTipos) {
+				texto = texto.replace(string, "");
+			}
 
 			if (!tipos.contains(texto) && texto.length() > 1) {
 				tipos.add(texto);
@@ -131,48 +124,10 @@ public class Main {
 			return false;
 		}
 
-		if (elemento.contains("II")) {
-			return false;
-		}
-
-		if (elemento.contains("Art")) {
-			return false;
-		}
-
-		if (elemento.contains("Diretoria")) {
-			return false;
-		}
-
-		if (elemento.contains("nº")) {
-			return false;
-		}
-
-		if (elemento.contains("#")) {
-			return false;
-		}
-
-		if (elemento.contains("Número")) {
-			return false;
-		}
-
-		if (elemento.contains("Coeficiente")) {
-			return false;
-		}
-
-		if (elemento.contains("COEFICIENTE")) {
-			return false;
-		}
-
-		if (elemento.contains("unidade")) {
-			return false;
-		}
-
-		if (elemento.contains("Nota")) {
-			return false;
-		}
-
-		if (elemento.contains("Brasil")) {
-			return false;
+		for (String string : LimpaElementos.palavrasParaRetirar) {
+			if(elemento.contains(string)){
+				return false;
+			}
 		}
 
 		return true;
