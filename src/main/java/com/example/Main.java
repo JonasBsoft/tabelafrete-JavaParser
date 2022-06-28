@@ -1,5 +1,8 @@
 package com.example;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import org.jsoup.Jsoup;
@@ -32,20 +35,68 @@ public class Main {
 
 	}
 
+	private static void escrever(String arquivo) {
+		try {
+
+			FileWriter arq = new FileWriter("C:\\Users\\Bsoft\\Desktop\\arquivo.json");
+			PrintWriter gravarArq = new PrintWriter(arq);
+
+			gravarArq.print(arquivo);
+
+			arq.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+
 	private static void exibirElementos() {
 		int i = 1;
-		System.out.println("Entrando no exibir");
+		eixo = 1;
+
+		String saida = "{";
+		System.out.println("Arquivo gerado");
+
+		String ultimoTitulo = "";
 		for (Linha linha : linhas) {
-			System.out.println("{");
-			System.out.println(linha.getTitulo() + ":{");
-			System.out.println(linha.getTipo() + ":{");
-			System.out.println("eixos2:{");
-			System.out.println("custo_km:");
-			System.out.println(linha.getEixos_deslocamento().get("2") + ",");
-			System.out.println("carga_descarga:");
-			System.out.println(linha.getEixos_carga_descarga().get("2"));
-			System.out.println("}, .... etc");
+			linha.setTipo(linha.getTipo().replace(" ", "_"));
+			if (ultimoTitulo != linha.getTitulo()) {
+				ultimoTitulo = linha.getTitulo();
+				saida = saida + "\"" + linha.getTitulo() + "\":{";
+
+			}
+			saida = saida + "\"" + linha.getTipo() + "\":{";
+			do {
+				i = getEixo();
+
+				String eixoStr = String.valueOf(eixo);
+
+				saida = saida + "\"eixos" + i + "\":{";
+				saida = saida + "\"custo_km\":";
+				saida = saida + linha.getEixos_deslocamento().get(eixoStr) + ",";
+				saida = saida + "\"carga_descarga\":";
+				saida = saida + linha.getEixos_carga_descarga().get(eixoStr);
+				if (i == 9) {
+
+					saida = saida + "}";
+				} else {
+					saida = saida + "},";
+				}
+
+			} while (i <= 8);
+
+			if (linha.getTipo().equals(tipos.get(tipos.size() - 1))) {
+				saida = saida + "}";
+			} else {
+				saida = saida + "},";
+			}
+			if (linha.getTitulo().equals(titulos.get(titulos.size() - 1))) {
+				saida = saida + "}";
+			} else {
+				saida = saida + "},";
+			}
 		}
+
+		escrever(saida);
 	}
 
 	public static Document conectar() {
@@ -58,7 +109,17 @@ public class Main {
 		return null;
 	}
 
-	public static void getTitulos() {
+	public static List<String> getTitulos() {
+		titulos = new ArrayList<>();
+		titulos.add("lotacao");
+		titulos.add("somenteAutomotor");
+		titulos.add("lotacaoAltoDesempenho");
+		titulos.add("somenteAutomotorAltoDesempenho");
+		return titulos;
+
+	}
+
+	public static void OLDgetTitulos() {
 		/**
 		 * atualiza os titulos da lista estatica de titulos
 		 */
@@ -206,6 +267,7 @@ public class Main {
 			}
 
 			if (isTipo(elemento)) {
+
 				linhaAtual.setTipo(elemento);
 				linhaAtual.setTitulo(titulos.get(indiceTitulo));
 				if (isTipo(elementos.get(i))) {
@@ -229,6 +291,7 @@ public class Main {
 
 	private static String adicionarValorEmLinha(String elemento) {
 		String eixo = String.valueOf(getEixo());
+		elemento = elemento.replace(",", ".");
 
 		if (coeficienteisDeslocamento) {
 			linhaAtual.addEixos_deslocamento(eixo, elemento);

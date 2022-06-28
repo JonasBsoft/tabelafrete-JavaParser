@@ -94,6 +94,7 @@ public class Linha {
     }
 
     public void setEixos_deslocamento(HashMap<String, String> eixos_deslocamento) {
+
         this.eixos_deslocamento = eixos_deslocamento;
     }
 
