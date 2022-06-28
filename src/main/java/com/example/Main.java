@@ -25,6 +25,27 @@ public class Main {
 		getValores();
 		classificaCampo();
 
+<<<<<<< Updated upstream
+=======
+		exibirElementos();
+
+	}
+
+	private static void exibirElementos() {
+		int i = 1;
+		System.out.println("Entrando no exibir");
+		for (Linha linha : linhas) {
+			System.out.println("{");
+			System.out.println(linha.getTitulo() + ":{");
+			System.out.println(linha.getTipo() + ":{");
+			System.out.println("eixos2:{");
+			System.out.print("custo_km:");
+			System.out.print(linha.getEixos_deslocamento().get("2") + ",\n");
+			System.out.print("carga_descarga:");
+			System.out.print(linha.getEixos_carga_descarga().get("2"));
+			System.out.println("}, .... etc");
+		}
+>>>>>>> Stashed changes
 	}
 
 	public static Document conectar() {
