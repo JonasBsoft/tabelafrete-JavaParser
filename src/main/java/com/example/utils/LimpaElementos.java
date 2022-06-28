@@ -1,10 +1,10 @@
-package com.example;
+package com.example.utils;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class LimpaElementos {
-    static List<String> palavrasParaRetirar = new ArrayList<String>(){
+    public static List<String> palavrasParaRetirar = new ArrayList<String>(){
         {
          add("II");
          add("Art");
@@ -20,7 +20,7 @@ public class LimpaElementos {
         }
     };
 
-    static List<String> replaceTipos = new ArrayList<String>(){
+    public static List<String> replaceTipos = new ArrayList<String>(){
         {
             add("Carga e descarga");
             add("()!");
