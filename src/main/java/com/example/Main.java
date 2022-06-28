@@ -15,6 +15,7 @@ public class Main {
 	static List<Linha> linhas = new ArrayList<>();
 	static Linha linha = new Linha();
 	static List<String> titulos = new ArrayList<>();
+	static int indiceTitulo = -1;
 	static int eixo = 1;
 	static Linha linhaAtual = new Linha();
 	static boolean coeficienteisDeslocamento = false;
@@ -25,6 +26,20 @@ public class Main {
 		getValores();
 		classificaCampo();
 
+		exibirElementos();
+
+	}
+
+	private static void exibirElementos() {
+		int i = 1;
+		System.out.println("Entrando no exibir");
+		for (Linha linha : linhas) {
+			System.out.println("{");
+			System.out.println(linha.getTitulo() + ":{");
+			System.out.println(linha.getTipo() + ":{");
+			System.out.println(linha.pegarValores(linha.getEixos_deslocamento()));
+			System.out.println("}");
+		}
 	}
 
 	public static Document conectar() {
@@ -154,13 +169,10 @@ public class Main {
 				}
 
 			}
-			if (elemento.contains("R$")) {
-				elemento = "UNIDADE: " + elemento;
-			}
+
 			if (elemento.contains("(CC")) {
 				coeficienteisDeslocamento = !coeficienteisDeslocamento;
 
-				elemento = "COEFICIENTE: " + elemento;
 			}
 
 			if (elemento.matches("\\d.\\d\\d\\d\\d")) {
@@ -180,22 +192,30 @@ public class Main {
 				elemento = adicionarValorEmLinha(elemento);
 
 			}
-			if (isTipo(elemento)) {
-				if (isTipo(elementos.get(i))) {
-					elemento = "VAZIO";
-				} else {
-					if (linhaAtual.getTipo().equals("")) {
-					} else {
-						adicionarLinhaEmTabela(linhaAtual);
+			if (elemento.contains("TABELA")) {
+				// é o titulo de uma tabela
 
-					}
+				indiceTitulo = indiceTitulo + 1;
+
+			}
+
+			if (isTipo(elemento)) {
+				linhaAtual.setTipo(elemento);
+				linhaAtual.setTitulo(titulos.get(indiceTitulo));
+				if (isTipo(elementos.get(i))) {
+					// entra aqui caso o proximo elemento tambem seja um tipo
+					// serve para resolver o problema de ter dois tipos em seguida
+					elemento = "VAZIO";
+
+				} else {
+					adicionarLinhaEmTabela(linhaAtual);
 					linhaAtual = new Linha();
-					linhaAtual.setTipo(elemento);
-					elemento = "[TIPO] " + elemento;
 
 				}
+
+				// System.out.println(linhaAtual.getTitulo());
+
 			}
-			System.out.println(elemento);
 			i++;
 		}
 
@@ -213,15 +233,14 @@ public class Main {
 	}
 
 	private static void adicionarLinhaEmTabela(Linha linhaAtual) {
-		if (!linhaAtual.equals(null)) {
 
-			linhas.add(linhaAtual);
-		} // se nao for null:
+		linhas.add(linhaAtual);
+		// se nao for null:
 
 	}
 
 	private static boolean isTipo(String elemento) {
-		getTipos();
+
 		boolean retorno = false;
 
 		for (String tipo : tipos) {
@@ -231,15 +250,6 @@ public class Main {
 
 		}
 		return retorno;
-	}
-
-	private static void removerTiposDuplicados() {
-
-	}
-
-	private static boolean coeficienteisDeslocamento(String coeficiente) {
-		return coeficiente == "Deslocamento (CCD)";
-
 	}
 
 	public static int getEixo() {

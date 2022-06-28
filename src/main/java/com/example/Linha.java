@@ -3,15 +3,14 @@ package com.example;
 import java.util.HashMap;
 
 public class Linha {
-    private String titulo;
-    private String tipo = "";
-    private String coeficiente_1 = "Deslocamento (CCD)";
-    private String coeficiente_2 = "Carga e descarga (CC)";
-    private String unidade_1 = "R$/km";
-    private String unidade_2 = "R$";
-    private HashMap<String, String> eixos_deslocamento = new HashMap<>();
-    private HashMap<String, String> eixos_carga_descarga = new HashMap<>();
-    static int EIXO = 7;
+    private String titulo; // OK
+    private String tipo = ""; // OK
+    private String coeficiente_1 = "Deslocamento (CCD)"; // OK
+    private String coeficiente_2 = "Carga e descarga (CC)"; // OK
+    private String unidade_1 = "R$/km"; // OK
+    private String unidade_2 = "R$"; // OK
+    private HashMap<String, String> eixos_deslocamento = new HashMap<>(); // OK
+    private HashMap<String, String> eixos_carga_descarga = new HashMap<>(); // OK
 
     public String getTitulo() {
         return this.titulo;
@@ -61,6 +60,35 @@ public class Linha {
         this.unidade_2 = unidade_2;
     }
 
+    private int pegarProximoEixo(int i) {
+        if (i == 7) {
+            i = 9;
+            return i;
+        }
+        if (i == 9) {
+            i = 2;
+            return i;
+        }
+        i = i + 1;
+
+        return i;
+
+    }
+
+    public String pegarValores(HashMap<String, String> precoPorEixo) {
+        int i = 1;
+        String valores = "";
+        while (i < 10) {
+            i = pegarProximoEixo(i);
+            valores = valores + ", " + precoPorEixo.get(String.valueOf(i));
+        }
+        return valores;
+    }
+
+    public String valoresEixoDeslocamento() {
+        return pegarValores(this.eixos_deslocamento);
+    }
+
     public HashMap<String, String> getEixos_deslocamento() {
         return this.eixos_deslocamento;
     }
@@ -77,12 +105,24 @@ public class Linha {
         this.eixos_carga_descarga.put(eixo, valor);
     }
 
-    public HashMap<String, String> getEixos_carga_descarga() {
-        return this.eixos_carga_descarga;
+    public String valoresCargaeDescarga() {
+        return pegarValores(this.eixos_carga_descarga);
     }
 
     public void setEixos_carga_descarga(HashMap<String, String> eixos_carga_descarga) {
         this.eixos_carga_descarga = eixos_carga_descarga;
+    }
+
+    public HashMap<String, String> getEixos_carga_descarga() {
+        return this.eixos_carga_descarga;
+    }
+
+    @Override
+    public String toString() {
+
+        return this.titulo + " " + this.tipo + " " + this.coeficiente_1 + " " + this.unidade_1 + " "
+                + valoresEixoDeslocamento() + " " + this.coeficiente_2 + " " + this.unidade_2 + " "
+                + this.valoresCargaeDescarga();
     }
 
 }
