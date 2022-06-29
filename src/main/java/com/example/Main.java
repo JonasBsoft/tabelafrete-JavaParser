@@ -10,7 +10,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 import com.example.utils.LimpaElementos;
@@ -45,28 +45,64 @@ public class Main {
 
 		List<Titulo> documento = gerarJSON();
 
+		JSONObject jsoneixo = new JSONObject();
+		JSONObject jsontipos = new JSONObject();
+		JSONObject jsontitulo = new JSONObject();
+		JSONArray jsonarquivo = new JSONArray();
+
 		for (Titulo titulo : documento) {
+
 
 			for (Tipo tipo : titulo.getTipos()) {
 
+
 				for (Eixos eixos : tipo.getEixos()) {
+
 
 					for (EixoValor eixoValor : eixos.getEixos()) {
 
 						System.out.println("{" + titulo.getNome() + ":");
 						System.out.println(tipo.getNome() + ":");
 						System.out.println("eixos" + eixoValor.getNumEixo() + ":");
-						System.out.println("Deslocamento: " + eixoValor.getDeslocamento());
-						System.out.println("Carga Descarga: " + eixoValor.getCargaDescarga());
+						// System.out.println("Deslocamento: " + eixoValor.getDeslocamento());
+						// System.out.println("Carga Descarga: " + eixoValor.getCargaDescarga());
+
+						JSONObject valorescargaDeslocamento = new JSONObject(); 
+						valorescargaDeslocamento.put("custo_km", eixoValor.getDeslocamento());
+						valorescargaDeslocamento.put("carga_descarga", eixoValor.getCargaDescarga() );
+
+						
+						jsoneixo.put("eixos" + eixoValor.getNumEixo(), valorescargaDeslocamento);
 
 					}
+	
 				}
+
+				jsontipos.put(tipo.getNome(), jsoneixo);
 			}
+			jsontitulo.put(titulo.getNome(), jsontipos);
 		}
 
-		// exibirElementos(); Essa é a funcao antiga que usava String para gerar o JSON
+		jsonarquivo.add(jsontitulo);
 
+		try (FileWriter file = new FileWriter("tabelafrete.json")) {
+			//We can write any JSONArray or JSONObject instance to the file
+			//System.out.println(employeeList);
+			file.write(jsonarquivo.toJSONString()); 
+			file.flush();
+	
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+			// exibirElementos(); Essa é a funcao antiga que usava String para gerar o JSON
+	
+	
+	 
+
+
+	
 	}
+
 
 	private static List<Titulo> gerarJSON() {
 
