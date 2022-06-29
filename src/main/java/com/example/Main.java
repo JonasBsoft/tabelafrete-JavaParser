@@ -40,7 +40,7 @@ public class Main {
 		popularEixos(); // popula lista de eixos
 		popularTipos(); // ||
 		getTitulos(); // separa os titulos do arquivo do site
-		// getTipos(); // separa os tipos do arquivo do site
+
 		getValores();
 		classificaCampo();
 		if (escreverArquivoJSON()) {
