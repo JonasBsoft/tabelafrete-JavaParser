@@ -13,11 +13,11 @@ import org.jsoup.nodes.Element;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import com.example.utils.LimpaElementos;
+import com.example.utils.ListasUtil;
 
 public class Main {
 	static String url = "https://www.in.gov.br/en/web/dou/-/resolucao-n-5.959-de-20-de-janeiro-de-2022-375504795";
-	static List<String> tipos = new ArrayList<>();
+	static List<String> tipos = ListasUtil.popularTipos;
 	static Document doc;
 	static List<String> elementos = new ArrayList<>();
 	static List<Linha> linhas = new ArrayList<>();
@@ -28,7 +28,7 @@ public class Main {
 	static int indiceEixo = 0;
 	static Linha linhaAtual = new Linha();
 	static boolean coeficienteisDeslocamento = false;
-	static List<String> listaEixos = new ArrayList<>();
+	static List<String> listaEixos = ListasUtil.popularEixos;
 
 	public static void main(String[] args) {
 		init();
@@ -37,8 +37,6 @@ public class Main {
 
 	private static void init() {
 		conectar(); // conecta ao site
-		popularEixos(); // popula lista de eixos
-		popularTipos(); // ||
 		getTitulos(); // separa os titulos do arquivo do site
 		getValores();
 		classificaCampo();
@@ -87,36 +85,7 @@ public class Main {
 
 	}
 
-	private static void popularTipos() {
-		tipos = new ArrayList<String>();
-
-		tipos.add("granelSolido");
-		tipos.add("granelLiquido");
-		tipos.add("frigorificada");
-		tipos.add("conteinerizada");
-		tipos.add("cargaGeral");
-		tipos.add("neogranel");
-		tipos.add("perigosaGranelSolido");
-		tipos.add("perigosaGranelLiquido");
-		tipos.add("perigosaCargaFrigorificada");
-		tipos.add("perigosaConteinerizada");
-		tipos.add("perigosaCargaGeral");
-		tipos.add("granelPressurizada");
-	}
-
-	private static void popularEixos() {
-		listaEixos = new ArrayList<String>();
-		listaEixos.add("2");
-		listaEixos.add("3");
-		listaEixos.add("4");
-		listaEixos.add("5");
-		listaEixos.add("6");
-		listaEixos.add("7");
-		listaEixos.add("9");
-	}
-
 	private static List<Titulo> gerarJSON() {
-		popularTipos();
 		eixo = 1;
 
 		List<Titulo> tabela = new ArrayList<>();
@@ -214,7 +183,7 @@ public class Main {
 			texto = texto + "!";
 			texto = texto.replaceAll("[0-9]", "");
 
-			for (String string : LimpaElementos.replaceTipos) {
+			for (String string : ListasUtil.replaceTipos) {
 				texto = texto.replace(string, "");
 			}
 
@@ -248,7 +217,7 @@ public class Main {
 			return false;
 		}
 
-		for (String string : LimpaElementos.palavrasParaRetirar) {
+		for (String string : ListasUtil.palavrasParaRetirar) {
 			if (elemento.contains(string)) {
 				return false;
 			}
@@ -282,7 +251,7 @@ public class Main {
 
 			}
 
-			for (String regex : LimpaElementos.regexs) {
+			for (String regex : ListasUtil.regexs) {
 				if (elemento.matches(regex)) {
 					adicionarValorEmLinha(elemento);
 				}
