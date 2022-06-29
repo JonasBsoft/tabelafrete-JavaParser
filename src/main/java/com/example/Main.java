@@ -2,17 +2,14 @@ package com.example;
 
 import java.io.FileWriter;
 import java.io.IOException;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
-
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-
 import com.example.utils.LimpaElementos;
 
 public class Main {
