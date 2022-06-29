@@ -36,7 +36,7 @@ public class Main {
 		conectar(); // conecta ao site
 		popularEixos(); // popula lista de eixos
 		getTitulos(); // separa os titulos do arquivo do site
-		getTipos(); // separa os tipos do arquivo do site
+		// getTipos(); // separa os tipos do arquivo do site
 		getValores();
 		classificaCampo();
 		if (escreverArquivoJSON()) {
@@ -170,56 +170,6 @@ public class Main {
 		titulos.add("lotacaoAltoDesempenho");
 		titulos.add("somenteAutomotorAltoDesempenho");
 		return titulos;
-
-	}
-
-	public static void getTipos() {
-		/**
-		 * atualiza os tipos da lista estatica de tipos
-		 */
-
-		for (Element e : doc.select("tr")) {
-			String text = e.text();
-
-			String texto = "";
-
-			for (int j = 0; j < text.length(); j++) {
-				// itera letra por letra de cada linha
-
-				if (text.contains("#") || text.contains("Páginas") || text.contains("Visitantes")) {
-					j = text.length(); // remove as linhas Paginas/Visitantes/#Tipo de carga
-				} else {
-
-					if (text.charAt(j) == ')') {
-
-						j = text.length() + 20;
-					} else {
-
-						texto = texto + text.charAt(j);
-
-					}
-
-				}
-			}
-			if (texto.length() > 0) {
-
-				if (!(texto.charAt(texto.length() - 1) == '(')) {
-					texto = texto + ")";
-				}
-			}
-
-			texto = texto + "!";
-			texto = texto.replaceAll("[0-9]", "");
-
-			for (String string : LimpaElementos.replaceTipos) {
-				texto = texto.replace(string, "");
-			}
-
-			if (!tipos.contains(texto) && texto.length() > 1) {
-				tipos.add(texto);
-			}
-
-		}
 
 	}
 
