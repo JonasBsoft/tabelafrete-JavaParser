@@ -30,6 +30,66 @@
                 "custo_km": "4.9987"
             }
         },
+        " Granel l�quido  ": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Perigosa (granel s�lido)": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
         "perigosaGranelSolido": {
             "eixos3": {
                 "carga_descarga": "139.79",
@@ -60,7 +120,7 @@
                 "custo_km": "4.9987"
             }
         },
-        "frigorificada": {
+        " Granel s�lido  ": {
             "eixos3": {
                 "carga_descarga": "139.79",
                 "custo_km": "3.3846"
@@ -90,7 +150,7 @@
                 "custo_km": "4.9987"
             }
         },
-        "granelSolido": {
+        " Perigosa (frigorificada ou aquecida)": {
             "eixos3": {
                 "carga_descarga": "139.79",
                 "custo_km": "3.3846"
@@ -180,7 +240,67 @@
                 "custo_km": "4.9987"
             }
         },
+        " Carga Granel Pressurizada  ": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
         "granelPressurizada": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Perigosa (conteinerizada)": {
             "eixos3": {
                 "carga_descarga": "139.79",
                 "custo_km": "3.3846"
@@ -240,6 +360,186 @@
                 "custo_km": "4.9987"
             }
         },
+        "perigosaCargaGeral": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Perigosa (granel l�quido)": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        "frigorificada": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        "granelSolido": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Frigorificada ou Aquecida  ": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Conteinerizada  ": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
         "perigosaGranelLiquido": {
             "eixos3": {
                 "carga_descarga": "139.79",
@@ -270,7 +570,7 @@
                 "custo_km": "4.9987"
             }
         },
-        "perigosaCargaGeral": {
+        " Neogranel  ": {
             "eixos3": {
                 "carga_descarga": "139.79",
                 "custo_km": "3.3846"
@@ -331,6 +631,66 @@
             }
         },
         "neogranel": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Carga Geral  ": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Perigosa (carga geral)": {
             "eixos3": {
                 "carga_descarga": "139.79",
                 "custo_km": "3.3846"
@@ -392,6 +752,66 @@
                 "custo_km": "4.9987"
             }
         },
+        " Granel l�quido  ": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Perigosa (granel s�lido)": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
         "perigosaGranelSolido": {
             "eixos3": {
                 "carga_descarga": "139.79",
@@ -422,7 +842,7 @@
                 "custo_km": "4.9987"
             }
         },
-        "frigorificada": {
+        " Granel s�lido  ": {
             "eixos3": {
                 "carga_descarga": "139.79",
                 "custo_km": "3.3846"
@@ -452,7 +872,7 @@
                 "custo_km": "4.9987"
             }
         },
-        "granelSolido": {
+        " Perigosa (frigorificada ou aquecida)": {
             "eixos3": {
                 "carga_descarga": "139.79",
                 "custo_km": "3.3846"
@@ -542,7 +962,67 @@
                 "custo_km": "4.9987"
             }
         },
+        " Carga Granel Pressurizada  ": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
         "granelPressurizada": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Perigosa (conteinerizada)": {
             "eixos3": {
                 "carga_descarga": "139.79",
                 "custo_km": "3.3846"
@@ -602,6 +1082,186 @@
                 "custo_km": "4.9987"
             }
         },
+        "perigosaCargaGeral": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Perigosa (granel l�quido)": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        "frigorificada": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        "granelSolido": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Frigorificada ou Aquecida  ": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Conteinerizada  ": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
         "perigosaGranelLiquido": {
             "eixos3": {
                 "carga_descarga": "139.79",
@@ -632,7 +1292,7 @@
                 "custo_km": "4.9987"
             }
         },
-        "perigosaCargaGeral": {
+        " Neogranel  ": {
             "eixos3": {
                 "carga_descarga": "139.79",
                 "custo_km": "3.3846"
@@ -693,6 +1353,66 @@
             }
         },
         "neogranel": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Carga Geral  ": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Perigosa (carga geral)": {
             "eixos3": {
                 "carga_descarga": "139.79",
                 "custo_km": "3.3846"
@@ -754,6 +1474,66 @@
                 "custo_km": "4.9987"
             }
         },
+        " Granel l�quido  ": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Perigosa (granel s�lido)": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
         "perigosaGranelSolido": {
             "eixos3": {
                 "carga_descarga": "139.79",
@@ -784,7 +1564,7 @@
                 "custo_km": "4.9987"
             }
         },
-        "frigorificada": {
+        " Granel s�lido  ": {
             "eixos3": {
                 "carga_descarga": "139.79",
                 "custo_km": "3.3846"
@@ -814,7 +1594,7 @@
                 "custo_km": "4.9987"
             }
         },
-        "granelSolido": {
+        " Perigosa (frigorificada ou aquecida)": {
             "eixos3": {
                 "carga_descarga": "139.79",
                 "custo_km": "3.3846"
@@ -904,7 +1684,67 @@
                 "custo_km": "4.9987"
             }
         },
+        " Carga Granel Pressurizada  ": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
         "granelPressurizada": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Perigosa (conteinerizada)": {
             "eixos3": {
                 "carga_descarga": "139.79",
                 "custo_km": "3.3846"
@@ -964,6 +1804,186 @@
                 "custo_km": "4.9987"
             }
         },
+        "perigosaCargaGeral": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Perigosa (granel l�quido)": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        "frigorificada": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        "granelSolido": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Frigorificada ou Aquecida  ": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Conteinerizada  ": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
         "perigosaGranelLiquido": {
             "eixos3": {
                 "carga_descarga": "139.79",
@@ -994,7 +2014,7 @@
                 "custo_km": "4.9987"
             }
         },
-        "perigosaCargaGeral": {
+        " Neogranel  ": {
             "eixos3": {
                 "carga_descarga": "139.79",
                 "custo_km": "3.3846"
@@ -1055,6 +2075,66 @@
             }
         },
         "neogranel": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Carga Geral  ": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Perigosa (carga geral)": {
             "eixos3": {
                 "carga_descarga": "139.79",
                 "custo_km": "3.3846"
@@ -1116,6 +2196,66 @@
                 "custo_km": "4.9987"
             }
         },
+        " Granel l�quido  ": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Perigosa (granel s�lido)": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
         "perigosaGranelSolido": {
             "eixos3": {
                 "carga_descarga": "139.79",
@@ -1146,7 +2286,7 @@
                 "custo_km": "4.9987"
             }
         },
-        "frigorificada": {
+        " Granel s�lido  ": {
             "eixos3": {
                 "carga_descarga": "139.79",
                 "custo_km": "3.3846"
@@ -1176,7 +2316,7 @@
                 "custo_km": "4.9987"
             }
         },
-        "granelSolido": {
+        " Perigosa (frigorificada ou aquecida)": {
             "eixos3": {
                 "carga_descarga": "139.79",
                 "custo_km": "3.3846"
@@ -1266,7 +2406,67 @@
                 "custo_km": "4.9987"
             }
         },
+        " Carga Granel Pressurizada  ": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
         "granelPressurizada": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Perigosa (conteinerizada)": {
             "eixos3": {
                 "carga_descarga": "139.79",
                 "custo_km": "3.3846"
@@ -1326,6 +2526,186 @@
                 "custo_km": "4.9987"
             }
         },
+        "perigosaCargaGeral": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Perigosa (granel l�quido)": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        "frigorificada": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        "granelSolido": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Frigorificada ou Aquecida  ": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Conteinerizada  ": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
         "perigosaGranelLiquido": {
             "eixos3": {
                 "carga_descarga": "139.79",
@@ -1356,7 +2736,7 @@
                 "custo_km": "4.9987"
             }
         },
-        "perigosaCargaGeral": {
+        " Neogranel  ": {
             "eixos3": {
                 "carga_descarga": "139.79",
                 "custo_km": "3.3846"
@@ -1417,6 +2797,66 @@
             }
         },
         "neogranel": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Carga Geral  ": {
+            "eixos3": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos2": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos5": {
+                "carga_descarga": "145.32",
+                "custo_km": "3.7499"
+            },
+            "eixos4": {
+                "carga_descarga": "139.79",
+                "custo_km": "3.3846"
+            },
+            "eixos7": {
+                "carga_descarga": "173.43",
+                "custo_km": "4.5265"
+            },
+            "eixos6": {
+                "carga_descarga": "153.54",
+                "custo_km": "4.2801"
+            },
+            "eixos9": {
+                "carga_descarga": "178.01",
+                "custo_km": "4.9987"
+            }
+        },
+        " Perigosa (carga geral)": {
             "eixos3": {
                 "carga_descarga": "139.79",
                 "custo_km": "3.3846"

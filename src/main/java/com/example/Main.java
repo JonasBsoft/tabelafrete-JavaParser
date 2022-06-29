@@ -2,14 +2,14 @@ package com.example;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
@@ -18,7 +18,7 @@ import com.example.utils.LimpaElementos;
 public class Main {
 	static String url = "https://www.in.gov.br/en/web/dou/-/resolucao-n-5.959-de-20-de-janeiro-de-2022-375504795";
 	static List<String> tipos = new ArrayList<>();
-	static Document doc = conectar();
+	static Document doc;
 	static List<String> elementos = new ArrayList<>();
 	static List<Linha> linhas = new ArrayList<>();
 	static Linha linha = new Linha();
@@ -31,22 +31,26 @@ public class Main {
 	static List<String> listaEixos = new ArrayList<>();
 
 	public static void main(String[] args) {
+		init();
 
-		listaEixos.add("2");
-		listaEixos.add("3");
-		listaEixos.add("4");
-		listaEixos.add("5");
-		listaEixos.add("6");
-		listaEixos.add("7");
-		listaEixos.add("9");
+	}
 
-		getTitulos(); // MUITO IMPORTANTE CHAMAR ESSA FUNCAO 1 VEZ POR EXECUCAO
-		getTipos();
+	private static void init() {
+		conectar(); // conecta ao site
+		popularEixos(); // popula lista de eixos
+		popularTipos(); // ||
+		getTitulos(); // separa os titulos do arquivo do site
+		getTipos(); // separa os tipos do arquivo do site
 		getValores();
 		classificaCampo();
+		if (escreverArquivoJSON()) {
+			System.out.println("Arquivo Gerado");
+		}
 
+	}
+
+	private static boolean escreverArquivoJSON() {
 		List<Titulo> documento = gerarJSON();
-
 		JSONObject jsoneixo = new JSONObject();
 		JSONObject jsontipos = new JSONObject();
 		JSONObject jsontitulo = new JSONObject();
@@ -61,40 +65,31 @@ public class Main {
 					for (EixoValor eixoValor : eixos.getEixos()) {
 
 						JSONObject valorescargaDeslocamento = new JSONObject();
+
 						valorescargaDeslocamento.put("carga_descarga", eixoValor.getCargaDescarga());
 						valorescargaDeslocamento.put("custo_km", eixoValor.getDeslocamento());
-
 						jsoneixo.put("eixos" + eixoValor.getNumEixo(), valorescargaDeslocamento);
-
 					}
-
 				}
-
 				jsontipos.put(tipo.getNome(), jsoneixo);
 			}
 			jsontitulo.put(titulo.getNome(), jsontipos);
 		}
-
 		jsonarquivo.add(jsontitulo);
 
 		try (FileWriter file = new FileWriter("tabelafrete.json")) {
-
 			file.write(jsonarquivo.toJSONString());
 			file.flush();
-
+			return true;
 		} catch (IOException e) {
 			e.printStackTrace();
+			return false;
 		}
-		// exibirElementos(); Essa é a funcao antiga que usava String para gerar o JSON
-		System.out.println("Arquivo Gerado");
+
 	}
 
-	private static List<Titulo> gerarJSON() {
-
-		List<String> tipos = new ArrayList<>();
-
-		// terminou a linha, vai estar em 9, basta resetar para 2 os eixos
-		eixo = 1;
+	private static void popularTipos() {
+		tipos = new ArrayList<String>();
 
 		tipos.add("granelSolido");
 		tipos.add("granelLiquido");
@@ -108,6 +103,22 @@ public class Main {
 		tipos.add("perigosaConteinerizada");
 		tipos.add("perigosaCargaGeral");
 		tipos.add("granelPressurizada");
+	}
+
+	private static void popularEixos() {
+		listaEixos = new ArrayList<String>();
+		listaEixos.add("2");
+		listaEixos.add("3");
+		listaEixos.add("4");
+		listaEixos.add("5");
+		listaEixos.add("6");
+		listaEixos.add("7");
+		listaEixos.add("9");
+	}
+
+	private static List<Titulo> gerarJSON() {
+
+		eixo = 1;
 
 		List<Titulo> tabela = new ArrayList<>();
 		for (String tituloStr : titulos) {
@@ -146,14 +157,14 @@ public class Main {
 		return tabela;
 	}
 
-	public static Document conectar() {
+	public static void conectar() {
 		try {
 
-			return Jsoup.connect(Main.url).get();
+			doc = Jsoup.connect(Main.url).get();
 		} catch (Exception e) {
 
 		}
-		return null;
+
 	}
 
 	public static List<String> getTitulos() {
@@ -164,23 +175,6 @@ public class Main {
 		titulos.add("somenteAutomotorAltoDesempenho");
 		return titulos;
 
-	}
-
-	public static void OLDgetTitulos() {
-		/**
-		 * atualiza os titulos da lista estatica de titulos
-		 */
-		Elements elementosTag = Main.doc.getElementsContainingText("TABELA");
-
-		int i = 0;
-		titulos = new ArrayList<>();
-		for (Element el : elementosTag)
-			if (el.text().contains("TABELA")) {
-				if (i >= 25) {
-					titulos.add(el.text());
-				}
-				i++;
-			}
 	}
 
 	public static void getTipos() {
@@ -328,8 +322,6 @@ public class Main {
 
 				}
 
-				// System.out.println(linhaAtual.getTitulo());
-
 			}
 			i++;
 		}
@@ -351,7 +343,6 @@ public class Main {
 	private static void adicionarLinhaEmTabela(Linha linhaAtual) {
 
 		linhas.add(linhaAtual);
-		// se nao for null:
 
 	}
 
