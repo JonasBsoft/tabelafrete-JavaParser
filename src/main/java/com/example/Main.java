@@ -38,6 +38,7 @@ public class Main {
 		listaEixos.add("6");
 		listaEixos.add("7");
 		listaEixos.add("9");
+
 		getTitulos(); // MUITO IMPORTANTE CHAMAR ESSA FUNCAO 1 VEZ POR EXECUCAO
 		getTipos();
 		getValores();
@@ -52,30 +53,20 @@ public class Main {
 
 		for (Titulo titulo : documento) {
 
-
 			for (Tipo tipo : titulo.getTipos()) {
-
 
 				for (Eixos eixos : tipo.getEixos()) {
 
-
 					for (EixoValor eixoValor : eixos.getEixos()) {
 
-						System.out.println("{" + titulo.getNome() + ":");
-						System.out.println(tipo.getNome() + ":");
-						System.out.println("eixos" + eixoValor.getNumEixo() + ":");
-						// System.out.println("Deslocamento: " + eixoValor.getDeslocamento());
-						// System.out.println("Carga Descarga: " + eixoValor.getCargaDescarga());
-
-						JSONObject valorescargaDeslocamento = new JSONObject(); 
+						JSONObject valorescargaDeslocamento = new JSONObject();
+						valorescargaDeslocamento.put("carga_descarga", eixoValor.getCargaDescarga());
 						valorescargaDeslocamento.put("custo_km", eixoValor.getDeslocamento());
-						valorescargaDeslocamento.put("carga_descarga", eixoValor.getCargaDescarga() );
 
-						
 						jsoneixo.put("eixos" + eixoValor.getNumEixo(), valorescargaDeslocamento);
 
 					}
-	
+
 				}
 
 				jsontipos.put(tipo.getNome(), jsoneixo);
@@ -86,29 +77,19 @@ public class Main {
 		jsonarquivo.add(jsontitulo);
 
 		try (FileWriter file = new FileWriter("tabelafrete.json")) {
-			//We can write any JSONArray or JSONObject instance to the file
-			//System.out.println(employeeList);
-			file.write(jsonarquivo.toJSONString()); 
+
+			file.write(jsonarquivo.toJSONString());
 			file.flush();
-	
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-			// exibirElementos(); Essa é a funcao antiga que usava String para gerar o JSON
-	
-	
-	 
-
-
-	
+		// exibirElementos(); Essa é a funcao antiga que usava String para gerar o JSON
+		System.out.println("Arquivo Gerado");
 	}
-
 
 	private static List<Titulo> gerarJSON() {
 
-		JSONObject jsonObject = new JSONObject();
-
-		FileWriter writeFile = null;
 		List<String> tipos = new ArrayList<>();
 
 		// terminou a linha, vai estar em 9, basta resetar para 2 os eixos
@@ -142,6 +123,7 @@ public class Main {
 
 					for (String eixoAtual : listaEixos) {
 						EixoValor valor = new EixoValor();
+
 						listaDeEixos.setNome("eixos" + eixoAtual);
 						valor.setNumEixo(eixoAtual);
 						valor.setCargaDescarga(carga_descarga.get(eixoAtual));
@@ -159,72 +141,8 @@ public class Main {
 			titulo.setNome(tituloStr);
 			tabela.add(titulo);
 		}
+
 		return tabela;
-	}
-
-	private static void escrever(String arquivo) {
-		try {
-
-			FileWriter arq = new FileWriter("C:\\Users\\Bsoft\\Desktop\\arquivo.json");
-			PrintWriter gravarArq = new PrintWriter(arq);
-
-			gravarArq.print(arquivo);
-
-			arq.close();
-		} catch (Exception e) {
-
-		}
-	}
-
-	private static void exibirElementos() {
-		int i = 1;
-		eixo = 1;
-
-		String saida = "{";
-		System.out.println("Arquivo gerado");
-
-		String ultimoTitulo = "";
-		for (Linha linha : linhas) {
-			linha.setTipo(linha.getTipo().replace(" ", "_"));
-			if (ultimoTitulo != linha.getTitulo()) {
-
-				ultimoTitulo = linha.getTitulo();
-				saida = saida + "\"" + linha.getTitulo() + "\":{";
-
-			}
-			saida = saida + "\"" + linha.getTipo() + "\":{";
-			do {
-				i = getEixo();
-
-				String eixoStr = String.valueOf(i);
-
-				saida = saida + "\"eixos" + i + "\":{";
-				saida = saida + "\"custo_km\":";
-				saida = saida + linha.getEixos_deslocamento().get(eixoStr) + ",";
-				saida = saida + "\"carga_descarga\":";
-				saida = saida + linha.getEixos_carga_descarga().get(eixoStr);
-				if (i == 9) {
-
-					saida = saida + "}";
-				} else {
-					saida = saida + "},";
-				}
-
-			} while (i < 9);
-
-			if (linha.getTipo().equals(tipos.get(tipos.size() - 1))) {
-				saida = saida + "}";
-			} else {
-				saida = saida + "},";
-			}
-			if (linha.getTitulo().equals(titulos.get(titulos.size() - 1))) {
-				saida = saida + "}";
-			} else {
-				saida = saida + "},";
-			}
-		}
-
-		escrever(saida);
 	}
 
 	public static Document conectar() {
