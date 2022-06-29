@@ -25,6 +25,7 @@ public class Main {
 	static List<String> titulos = new ArrayList<>();
 	static int indiceTitulo = -1;
 	static int eixo = 1;
+	static int indiceEixo = 0;
 	static Linha linhaAtual = new Linha();
 	static boolean coeficienteisDeslocamento = false;
 	static List<String> listaEixos = new ArrayList<>();
@@ -290,19 +291,19 @@ public class Main {
 
 			if (elemento.matches("\\d.\\d\\d\\d\\d")) {
 
-				elemento = adicionarValorEmLinha(elemento);
+				adicionarValorEmLinha(elemento);
 
 			}
 			if (elemento.matches("\\d\\d.\\d\\d\\d\\d")) {
-				elemento = adicionarValorEmLinha(elemento);
+				adicionarValorEmLinha(elemento);
 
 			}
 			if (elemento.matches("\\d\\d.\\d\\d")) {
-				elemento = adicionarValorEmLinha(elemento);
+				adicionarValorEmLinha(elemento);
 
 			}
 			if (elemento.matches("\\d\\d\\d.\\d\\d")) {
-				elemento = adicionarValorEmLinha(elemento);
+				adicionarValorEmLinha(elemento);
 
 			}
 			if (elemento.contains("TABELA")) {
@@ -335,7 +336,7 @@ public class Main {
 
 	}
 
-	private static String adicionarValorEmLinha(String elemento) {
+	private static void adicionarValorEmLinha(String elemento) {
 		String eixo = String.valueOf(getEixo());
 		elemento = elemento.replace(",", ".");
 
@@ -344,7 +345,7 @@ public class Main {
 
 		}
 		linhaAtual.addEixos_CargaeDescarga(eixo, elemento);
-		return "[" + eixo + "]VALORES: " + elemento;
+
 	}
 
 	private static void adicionarLinhaEmTabela(Linha linhaAtual) {
@@ -367,16 +368,23 @@ public class Main {
 		return retorno;
 	}
 
+	public static int getNextIndice() {
+
+		if (indiceEixo + 1 == 7) {
+			return indiceEixo = 0;
+
+		}
+		return indiceEixo + 1;
+
+	}
+
 	public static int getEixo() {
-		if (eixo == 7) {
-			eixo = 9;
-			return eixo;
-		}
-		if (eixo == 9) {
-			eixo = 2;
-			return eixo;
-		}
-		eixo = eixo + 1;
-		return eixo;
+
+		int retorno = Integer.parseInt(listaEixos.get(indiceEixo));
+
+		indiceEixo = getNextIndice();
+
+		return retorno;
+
 	}
 }
