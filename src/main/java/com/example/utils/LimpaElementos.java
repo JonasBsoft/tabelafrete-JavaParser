@@ -4,23 +4,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LimpaElementos {
-    public static List<String> palavrasParaRetirar = new ArrayList<String>(){
+    public static List<String> palavrasParaRetirar = new ArrayList<String>() {
         {
-         add("II");
-         add("Art");
-         add("Diretoria");
-         add("nº");
-         add("#");
-         add("Número");
-         add("Coeficiente");
-         add("COEFICIENTE");
-         add("unidade");
-         add("Nota");
-         add("Brasil");
+            add("II");
+            add("Art");
+            add("Diretoria");
+            add("nº");
+            add("#");
+            add("Número");
+            add("Coeficiente");
+            add("COEFICIENTE");
+            add("unidade");
+            add("Nota");
+            add("Brasil");
         }
     };
 
-    public static List<String> replaceTipos = new ArrayList<String>(){
+    public static List<String> replaceTipos = new ArrayList<String>() {
         {
             add("Carga e descarga");
             add("()!");
@@ -31,6 +31,15 @@ public class LimpaElementos {
             add("(!");
             add("(CCD)");
             add("(CC)");
+        }
+    };
+
+    public static List<String> regexs = new ArrayList<String>() {
+        {
+            add("\\d.\\d\\d\\d\\d");
+            add("\\d\\d.\\d\\d\\d\\d");
+            add("\\d\\d.\\d\\d");
+            add("\\d\\d\\d.\\d\\d");
         }
     };
 }

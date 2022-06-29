@@ -40,7 +40,6 @@ public class Main {
 		popularEixos(); // popula lista de eixos
 		popularTipos(); // ||
 		getTitulos(); // separa os titulos do arquivo do site
-		getTipos(); // separa os tipos do arquivo do site
 		getValores();
 		classificaCampo();
 		if (escreverArquivoJSON()) {
@@ -117,7 +116,7 @@ public class Main {
 	}
 
 	private static List<Titulo> gerarJSON() {
-
+		popularTipos();
 		eixo = 1;
 
 		List<Titulo> tabela = new ArrayList<>();
@@ -283,34 +282,19 @@ public class Main {
 
 			}
 
-			if (elemento.matches("\\d.\\d\\d\\d\\d")) {
-
-				adicionarValorEmLinha(elemento);
-
+			for (String regex : LimpaElementos.regexs) {
+				if (elemento.matches(regex)) {
+					adicionarValorEmLinha(elemento);
+				}
 			}
-			if (elemento.matches("\\d\\d.\\d\\d\\d\\d")) {
-				adicionarValorEmLinha(elemento);
 
-			}
-			if (elemento.matches("\\d\\d.\\d\\d")) {
-				adicionarValorEmLinha(elemento);
-
-			}
-			if (elemento.matches("\\d\\d\\d.\\d\\d")) {
-				adicionarValorEmLinha(elemento);
-
-			}
 			if (elemento.contains("TABELA")) {
 				// é o titulo de uma tabela
-
 				indiceTitulo = indiceTitulo + 1;
 
 			}
 
 			if (isTipo(elemento)) {
-
-				linhaAtual.setTipo(elemento);
-				linhaAtual.setTitulo(titulos.get(indiceTitulo));
 				if (isTipo(elementos.get(i))) {
 					// entra aqui caso o proximo elemento tambem seja um tipo
 					// serve para resolver o problema de ter dois tipos em seguida
