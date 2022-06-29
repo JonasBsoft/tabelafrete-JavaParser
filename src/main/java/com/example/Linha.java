@@ -3,62 +3,8 @@ package com.example;
 import java.util.HashMap;
 
 public class Linha {
-    private String titulo; // OK
-    private String tipo = ""; // OK
-    private String coeficiente_1 = "custo_km"; // OK
-    private String coeficiente_2 = "carga_descarga"; // OK
-    private String unidade_1 = "R$/km"; // OK
-    private String unidade_2 = "R$"; // OK
     private HashMap<String, String> eixos_deslocamento = new HashMap<>(); // OK
     private HashMap<String, String> eixos_carga_descarga = new HashMap<>(); // OK
-
-    public String getTitulo() {
-        return this.titulo;
-    }
-
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
-    public String getTipo() {
-        return this.tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
-    public String getCoeficiente_1() {
-        return this.coeficiente_1;
-    }
-
-    public void setCoeficiente_1(String coeficiente_1) {
-        this.coeficiente_1 = coeficiente_1;
-    }
-
-    public String getCoeficiente_2() {
-        return this.coeficiente_2;
-    }
-
-    public void setCoeficiente_2(String coeficiente_2) {
-        this.coeficiente_2 = coeficiente_2;
-    }
-
-    public String getUnidade_1() {
-        return this.unidade_1;
-    }
-
-    public void setUnidade_1(String unidade_1) {
-        this.unidade_1 = unidade_1;
-    }
-
-    public String getUnidade_2() {
-        return this.unidade_2;
-    }
-
-    public void setUnidade_2(String unidade_2) {
-        this.unidade_2 = unidade_2;
-    }
 
     private int pegarProximoEixo(int i) {
         if (i == 7) {
@@ -70,9 +16,7 @@ public class Linha {
             return i;
         }
         i = i + 1;
-
         return i;
-
     }
 
     public String pegarValores(HashMap<String, String> precoPorEixo) {
@@ -116,14 +60,6 @@ public class Linha {
 
     public HashMap<String, String> getEixos_carga_descarga() {
         return this.eixos_carga_descarga;
-    }
-
-    @Override
-    public String toString() {
-
-        return this.titulo + " " + this.tipo + " " + this.coeficiente_1 + " " + this.unidade_1 + " "
-                + valoresEixoDeslocamento() + " " + this.coeficiente_2 + " " + this.unidade_2 + " "
-                + this.valoresCargaeDescarga();
     }
 
 }

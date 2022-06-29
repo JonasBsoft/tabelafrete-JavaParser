@@ -2,19 +2,22 @@ package com.example;
 
 import java.io.FileWriter;
 import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import com.example.utils.LimpaElementos;
+
+import com.example.utils.ListasUtil;
 
 public class Main {
 	static String url = "https://www.in.gov.br/en/web/dou/-/resolucao-n-5.959-de-20-de-janeiro-de-2022-375504795";
-	static List<String> tipos = new ArrayList<>();
+	static List<String> tipos = ListasUtil.popularTipos;
 	static Document doc;
 	static List<String> elementos = new ArrayList<>();
 	static List<Linha> linhas = new ArrayList<>();
@@ -25,7 +28,7 @@ public class Main {
 	static int indiceEixo = 0;
 	static Linha linhaAtual = new Linha();
 	static boolean coeficienteisDeslocamento = false;
-	static List<String> listaEixos = new ArrayList<>();
+	static List<String> listaEixos = ListasUtil.popularEixos;
 
 	public static void main(String[] args) {
 		init();
@@ -34,14 +37,10 @@ public class Main {
 
 	private static void init() {
 		conectar(); // conecta ao site
-		popularEixos(); // popula lista de eixos
 		getTitulos(); // separa os titulos do arquivo do site
-		// getTipos(); // separa os tipos do arquivo do site
-		getValores();
-		classificaCampo();
-		if (escreverArquivoJSON()) {
-			System.out.println("Arquivo Gerado");
-		}
+		getValores(); // adquire os valores do site
+		classificaCampo(); // separa os dados adquiridos
+		escreverArquivoJSON(); // escreve o arquivo em si
 
 	}
 
@@ -76,44 +75,17 @@ public class Main {
 		try (FileWriter file = new FileWriter("tabelafrete.json")) {
 			file.write(jsonarquivo.toJSONString());
 			file.flush();
+			System.out.println("Arquivo Gerado");
 			return true;
 		} catch (IOException e) {
+			System.out.println("Erro ao gerar arquivo");
 			e.printStackTrace();
 			return false;
 		}
 
 	}
 
-	private static void popularTipos() {
-		tipos = new ArrayList<String>();
-
-		tipos.add("granelSolido");
-		tipos.add("granelLiquido");
-		tipos.add("frigorificada");
-		tipos.add("conteinerizada");
-		tipos.add("cargaGeral");
-		tipos.add("neogranel");
-		tipos.add("perigosaGranelSolido");
-		tipos.add("perigosaGranelLiquido");
-		tipos.add("perigosaCargaFrigorificada");
-		tipos.add("perigosaConteinerizada");
-		tipos.add("perigosaCargaGeral");
-		tipos.add("granelPressurizada");
-	}
-
-	private static void popularEixos() {
-		listaEixos = new ArrayList<String>();
-		listaEixos.add("2");
-		listaEixos.add("3");
-		listaEixos.add("4");
-		listaEixos.add("5");
-		listaEixos.add("6");
-		listaEixos.add("7");
-		listaEixos.add("9");
-	}
-
 	private static List<Titulo> gerarJSON() {
-		popularTipos();
 		eixo = 1;
 
 		List<Titulo> tabela = new ArrayList<>();
@@ -173,6 +145,56 @@ public class Main {
 
 	}
 
+	public static void getTipos() {
+		/**
+		 * atualiza os tipos da lista estatica de tipos
+		 */
+
+		for (Element e : doc.select("tr")) {
+			String text = e.text();
+
+			String texto = "";
+
+			for (int j = 0; j < text.length(); j++) {
+				// itera letra por letra de cada linha
+
+				if (text.contains("#") || text.contains("Páginas") || text.contains("Visitantes")) {
+					j = text.length(); // remove as linhas Paginas/Visitantes/#Tipo de carga
+				} else {
+
+					if (text.charAt(j) == ')') {
+
+						j = text.length() + 20;
+					} else {
+
+						texto = texto + text.charAt(j);
+
+					}
+
+				}
+			}
+			if (texto.length() > 0) {
+
+				if (!(texto.charAt(texto.length() - 1) == '(')) {
+					texto = texto + ")";
+				}
+			}
+
+			texto = texto + "!";
+			texto = texto.replaceAll("[0-9]", "");
+
+			for (String string : ListasUtil.replaceTipos) {
+				texto = texto.replace(string, "");
+			}
+
+			if (!tipos.contains(texto) && texto.length() > 1) {
+				tipos.add(texto);
+			}
+
+		}
+
+	}
+
 	public static void getValores() {
 
 		List<String> elementosTabelas = new ArrayList<>();
@@ -195,7 +217,7 @@ public class Main {
 			return false;
 		}
 
-		for (String string : LimpaElementos.palavrasParaRetirar) {
+		for (String string : ListasUtil.palavrasParaRetirar) {
 			if (elemento.contains(string)) {
 				return false;
 			}
@@ -229,34 +251,19 @@ public class Main {
 
 			}
 
-			if (elemento.matches("\\d.\\d\\d\\d\\d")) {
-
-				adicionarValorEmLinha(elemento);
-
+			for (String regex : ListasUtil.regexs) {
+				if (elemento.matches(regex)) {
+					adicionarValorEmLinha(elemento);
+				}
 			}
-			if (elemento.matches("\\d\\d.\\d\\d\\d\\d")) {
-				adicionarValorEmLinha(elemento);
 
-			}
-			if (elemento.matches("\\d\\d.\\d\\d")) {
-				adicionarValorEmLinha(elemento);
-
-			}
-			if (elemento.matches("\\d\\d\\d.\\d\\d")) {
-				adicionarValorEmLinha(elemento);
-
-			}
 			if (elemento.contains("TABELA")) {
 				// é o titulo de uma tabela
-
 				indiceTitulo = indiceTitulo + 1;
 
 			}
 
 			if (isTipo(elemento)) {
-
-				linhaAtual.setTipo(elemento);
-				linhaAtual.setTitulo(titulos.get(indiceTitulo));
 				if (isTipo(elementos.get(i))) {
 					// entra aqui caso o proximo elemento tambem seja um tipo
 					// serve para resolver o problema de ter dois tipos em seguida
