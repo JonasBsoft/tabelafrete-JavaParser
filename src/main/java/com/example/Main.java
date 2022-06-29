@@ -38,7 +38,6 @@ public class Main {
 	private static void init() {
 		conectar(); // conecta ao site
 		popularEixos(); // popula lista de eixos
-		popularTipos(); // ||
 		getTitulos(); // separa os titulos do arquivo do site
 		getTipos(); // separa os tipos do arquivo do site
 		getValores();
@@ -117,7 +116,7 @@ public class Main {
 	}
 
 	private static List<Titulo> gerarJSON() {
-
+		popularTipos();
 		eixo = 1;
 
 		List<Titulo> tabela = new ArrayList<>();
