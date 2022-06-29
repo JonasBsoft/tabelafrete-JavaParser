@@ -1,11 +1,17 @@
 package com.example;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+
+import org.json.simple.JSONObject;
 
 import com.example.utils.LimpaElementos;
 
@@ -21,31 +27,168 @@ public class Main {
 	static int eixo = 1;
 	static Linha linhaAtual = new Linha();
 	static boolean coeficienteisDeslocamento = false;
+	static List<String> listaEixos = new ArrayList<>();
 
 	public static void main(String[] args) {
-		getTitulos();
+
+		listaEixos.add("2");
+		listaEixos.add("3");
+		listaEixos.add("4");
+		listaEixos.add("5");
+		listaEixos.add("6");
+		listaEixos.add("7");
+		listaEixos.add("9");
+		getTitulos(); // MUITO IMPORTANTE CHAMAR ESSA FUNCAO 1 VEZ POR EXECUCAO
 		getTipos();
 		getValores();
 		classificaCampo();
 
-		exibirElementos();
+		List<Titulo> documento = gerarJSON();
 
+		for (Titulo titulo : documento) {
+
+			for (Tipo tipo : titulo.getTipos()) {
+
+				for (Eixos eixos : tipo.getEixos()) {
+
+					for (EixoValor eixoValor : eixos.getEixos()) {
+
+						System.out.println("{" + titulo.getNome() + ":");
+						System.out.println(tipo.getNome() + ":");
+						System.out.println("eixos" + eixoValor.getNumEixo() + ":");
+						System.out.println("Deslocamento: " + eixoValor.getDeslocamento());
+						System.out.println("Carga Descarga: " + eixoValor.getCargaDescarga());
+
+					}
+				}
+			}
+		}
+
+		// exibirElementos(); Essa é a funcao antiga que usava String para gerar o JSON
+
+	}
+
+	private static List<Titulo> gerarJSON() {
+
+		JSONObject jsonObject = new JSONObject();
+
+		FileWriter writeFile = null;
+		List<String> tipos = new ArrayList<>();
+
+		// terminou a linha, vai estar em 9, basta resetar para 2 os eixos
+		eixo = 1;
+
+		tipos.add("granelSolido");
+		tipos.add("granelLiquido");
+		tipos.add("frigorificada");
+		tipos.add("conteinerizada");
+		tipos.add("cargaGeral");
+		tipos.add("neogranel");
+		tipos.add("perigosaGranelSolido");
+		tipos.add("perigosaGranelLiquido");
+		tipos.add("perigosaCargaFrigorificada");
+		tipos.add("perigosaConteinerizada");
+		tipos.add("perigosaCargaGeral");
+		tipos.add("granelPressurizada");
+
+		List<Titulo> tabela = new ArrayList<>();
+		for (String tituloStr : titulos) {
+
+			Titulo titulo = new Titulo();
+			for (String nomeTipo : tipos) {
+				Tipo tipo = new Tipo();
+
+				for (Linha linha : linhas) {
+
+					HashMap<String, String> deslocamento = linha.getEixos_deslocamento();
+					HashMap<String, String> carga_descarga = linha.getEixos_carga_descarga();
+					Eixos listaDeEixos = new Eixos();
+
+					for (String eixoAtual : listaEixos) {
+						EixoValor valor = new EixoValor();
+						listaDeEixos.setNome("eixos" + eixoAtual);
+						valor.setNumEixo(eixoAtual);
+						valor.setCargaDescarga(carga_descarga.get(eixoAtual));
+						valor.setDeslocamento(deslocamento.get(eixoAtual));
+						listaDeEixos.add(valor);
+
+					}
+
+					tipo.setNome(nomeTipo);
+					tipo.addEixo(listaDeEixos);
+				}
+				titulo.addTipo(tipo);
+
+			}
+			titulo.setNome(tituloStr);
+			tabela.add(titulo);
+		}
+		return tabela;
+	}
+
+	private static void escrever(String arquivo) {
+		try {
+
+			FileWriter arq = new FileWriter("C:\\Users\\Bsoft\\Desktop\\arquivo.json");
+			PrintWriter gravarArq = new PrintWriter(arq);
+
+			gravarArq.print(arquivo);
+
+			arq.close();
+		} catch (Exception e) {
+
+		}
 	}
 
 	private static void exibirElementos() {
 		int i = 1;
-		System.out.println("Entrando no exibir");
+		eixo = 1;
+
+		String saida = "{";
+		System.out.println("Arquivo gerado");
+
+		String ultimoTitulo = "";
 		for (Linha linha : linhas) {
-			System.out.println("{");
-			System.out.println(linha.getTitulo() + ":{");
-			System.out.println(linha.getTipo() + ":{");
-			System.out.println("eixos2:{");
-			System.out.println("custo_km:");
-			System.out.println(linha.getEixos_deslocamento().get("2") + ",");
-			System.out.println("carga_descarga:");
-			System.out.println(linha.getEixos_carga_descarga().get("2"));
-			System.out.println("}, .... etc");
+			linha.setTipo(linha.getTipo().replace(" ", "_"));
+			if (ultimoTitulo != linha.getTitulo()) {
+
+				ultimoTitulo = linha.getTitulo();
+				saida = saida + "\"" + linha.getTitulo() + "\":{";
+
+			}
+			saida = saida + "\"" + linha.getTipo() + "\":{";
+			do {
+				i = getEixo();
+
+				String eixoStr = String.valueOf(i);
+
+				saida = saida + "\"eixos" + i + "\":{";
+				saida = saida + "\"custo_km\":";
+				saida = saida + linha.getEixos_deslocamento().get(eixoStr) + ",";
+				saida = saida + "\"carga_descarga\":";
+				saida = saida + linha.getEixos_carga_descarga().get(eixoStr);
+				if (i == 9) {
+
+					saida = saida + "}";
+				} else {
+					saida = saida + "},";
+				}
+
+			} while (i < 9);
+
+			if (linha.getTipo().equals(tipos.get(tipos.size() - 1))) {
+				saida = saida + "}";
+			} else {
+				saida = saida + "},";
+			}
+			if (linha.getTitulo().equals(titulos.get(titulos.size() - 1))) {
+				saida = saida + "}";
+			} else {
+				saida = saida + "},";
+			}
 		}
+
+		escrever(saida);
 	}
 
 	public static Document conectar() {
@@ -58,7 +201,17 @@ public class Main {
 		return null;
 	}
 
-	public static void getTitulos() {
+	public static List<String> getTitulos() {
+		titulos = new ArrayList<>();
+		titulos.add("lotacao");
+		titulos.add("somenteAutomotor");
+		titulos.add("lotacaoAltoDesempenho");
+		titulos.add("somenteAutomotorAltoDesempenho");
+		return titulos;
+
+	}
+
+	public static void OLDgetTitulos() {
 		/**
 		 * atualiza os titulos da lista estatica de titulos
 		 */
@@ -206,6 +359,7 @@ public class Main {
 			}
 
 			if (isTipo(elemento)) {
+
 				linhaAtual.setTipo(elemento);
 				linhaAtual.setTitulo(titulos.get(indiceTitulo));
 				if (isTipo(elementos.get(i))) {
@@ -229,6 +383,7 @@ public class Main {
 
 	private static String adicionarValorEmLinha(String elemento) {
 		String eixo = String.valueOf(getEixo());
+		elemento = elemento.replace(",", ".");
 
 		if (coeficienteisDeslocamento) {
 			linhaAtual.addEixos_deslocamento(eixo, elemento);
@@ -268,7 +423,6 @@ public class Main {
 			return eixo;
 		}
 		eixo = eixo + 1;
-
 		return eixo;
 	}
 }
