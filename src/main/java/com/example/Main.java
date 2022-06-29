@@ -38,11 +38,9 @@ public class Main {
 	private static void init() {
 		conectar(); // conecta ao site
 		getTitulos(); // separa os titulos do arquivo do site
-		getValores();
-		classificaCampo();
-		if (escreverArquivoJSON()) {
-			System.out.println("Arquivo Gerado");
-		}
+		getValores(); // adquire os valores do site
+		classificaCampo(); // separa os dados adquiridos
+		escreverArquivoJSON(); // escreve o arquivo em si
 
 	}
 
@@ -77,8 +75,10 @@ public class Main {
 		try (FileWriter file = new FileWriter("tabelafrete.json")) {
 			file.write(jsonarquivo.toJSONString());
 			file.flush();
+			System.out.println("Arquivo Gerado");
 			return true;
 		} catch (IOException e) {
+			System.out.println("Erro ao gerar arquivo");
 			e.printStackTrace();
 			return false;
 		}
