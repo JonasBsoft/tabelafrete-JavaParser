@@ -5,8 +5,8 @@ import java.util.HashMap;
 public class Linha {
     private String titulo; // OK
     private String tipo = ""; // OK
-    private String coeficiente_1 = "Deslocamento (CCD)"; // OK
-    private String coeficiente_2 = "Carga e descarga (CC)"; // OK
+    private String coeficiente_1 = "custo_km"; // OK
+    private String coeficiente_2 = "carga_descarga"; // OK
     private String unidade_1 = "R$/km"; // OK
     private String unidade_2 = "R$"; // OK
     private HashMap<String, String> eixos_deslocamento = new HashMap<>(); // OK

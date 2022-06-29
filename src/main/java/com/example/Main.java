@@ -4,11 +4,14 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+
+import org.json.simple.JSONObject;
 
 import com.example.utils.LimpaElementos;
 
@@ -24,15 +27,103 @@ public class Main {
 	static int eixo = 1;
 	static Linha linhaAtual = new Linha();
 	static boolean coeficienteisDeslocamento = false;
+	static List<String> listaEixos = new ArrayList<>();
 
 	public static void main(String[] args) {
-		getTitulos();
+
+		listaEixos.add("2");
+		listaEixos.add("3");
+		listaEixos.add("4");
+		listaEixos.add("5");
+		listaEixos.add("6");
+		listaEixos.add("7");
+		listaEixos.add("9");
+		getTitulos(); // MUITO IMPORTANTE CHAMAR ESSA FUNCAO 1 VEZ POR EXECUCAO
 		getTipos();
 		getValores();
 		classificaCampo();
 
-		exibirElementos();
+		List<Titulo> documento = gerarJSON();
 
+		for (Titulo titulo : documento) {
+
+			for (Tipo tipo : titulo.getTipos()) {
+
+				for (Eixos eixos : tipo.getEixos()) {
+
+					for (EixoValor eixoValor : eixos.getEixos()) {
+
+						System.out.println("{" + titulo.getNome() + ":");
+						System.out.println(tipo.getNome() + ":");
+						System.out.println("eixos" + eixoValor.getNumEixo() + ":");
+						System.out.println("Deslocamento: " + eixoValor.getDeslocamento());
+						System.out.println("Carga Descarga: " + eixoValor.getCargaDescarga());
+
+					}
+				}
+			}
+		}
+
+		// exibirElementos(); Essa é a funcao antiga que usava String para gerar o JSON
+
+	}
+
+	private static List<Titulo> gerarJSON() {
+
+		JSONObject jsonObject = new JSONObject();
+
+		FileWriter writeFile = null;
+		List<String> tipos = new ArrayList<>();
+
+		// terminou a linha, vai estar em 9, basta resetar para 2 os eixos
+		eixo = 1;
+
+		tipos.add("granelSolido");
+		tipos.add("granelLiquido");
+		tipos.add("frigorificada");
+		tipos.add("conteinerizada");
+		tipos.add("cargaGeral");
+		tipos.add("neogranel");
+		tipos.add("perigosaGranelSolido");
+		tipos.add("perigosaGranelLiquido");
+		tipos.add("perigosaCargaFrigorificada");
+		tipos.add("perigosaConteinerizada");
+		tipos.add("perigosaCargaGeral");
+		tipos.add("granelPressurizada");
+
+		List<Titulo> tabela = new ArrayList<>();
+		for (String tituloStr : titulos) {
+
+			Titulo titulo = new Titulo();
+			for (String nomeTipo : tipos) {
+				Tipo tipo = new Tipo();
+
+				for (Linha linha : linhas) {
+
+					HashMap<String, String> deslocamento = linha.getEixos_deslocamento();
+					HashMap<String, String> carga_descarga = linha.getEixos_carga_descarga();
+					Eixos listaDeEixos = new Eixos();
+
+					for (String eixoAtual : listaEixos) {
+						EixoValor valor = new EixoValor();
+						listaDeEixos.setNome("eixos" + eixoAtual);
+						valor.setNumEixo(eixoAtual);
+						valor.setCargaDescarga(carga_descarga.get(eixoAtual));
+						valor.setDeslocamento(deslocamento.get(eixoAtual));
+						listaDeEixos.add(valor);
+
+					}
+
+					tipo.setNome(nomeTipo);
+					tipo.addEixo(listaDeEixos);
+				}
+				titulo.addTipo(tipo);
+
+			}
+			titulo.setNome(tituloStr);
+			tabela.add(titulo);
+		}
+		return tabela;
 	}
 
 	private static void escrever(String arquivo) {
@@ -45,7 +136,7 @@ public class Main {
 
 			arq.close();
 		} catch (Exception e) {
-			// TODO: handle exception
+
 		}
 	}
 
@@ -60,7 +151,7 @@ public class Main {
 		for (Linha linha : linhas) {
 			linha.setTipo(linha.getTipo().replace(" ", "_"));
 			if (ultimoTitulo != linha.getTitulo()) {
-				System.out.println(ultimoTitulo + "!=" + linha.getTitulo());
+
 				ultimoTitulo = linha.getTitulo();
 				saida = saida + "\"" + linha.getTitulo() + "\":{";
 
@@ -332,7 +423,6 @@ public class Main {
 			return eixo;
 		}
 		eixo = eixo + 1;
-
 		return eixo;
 	}
 }
