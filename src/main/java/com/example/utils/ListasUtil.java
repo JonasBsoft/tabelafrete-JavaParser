@@ -57,6 +57,26 @@ public class ListasUtil {
             add("perigosaConteinerizada");
             add("perigosaCargaGeral");
             add("granelPressurizada");
+
+        }
+    };
+
+    public static List<String> popularTiposSemFiltro = new ArrayList<String>() {
+        {
+            add("Carga Geral");
+            add("Granel");
+            add("Frigorificada ou Aquecida");
+            add("Perigosa (conteinerizada)");
+            add("Perigosa (frigorificada ou aquecida)");
+            add("Perigosa (granel líquido)");
+            add("Perigosa (granel sólido)");
+            add("Neogranel");
+            add("Conteinerizada");
+            add("Granel líquido");
+            add("Granel sólido");
+            add("Carga Granel Pressurizada");
+            add("Perigosa (carga geral)");
+
         }
     };
 

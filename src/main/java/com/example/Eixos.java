@@ -6,6 +6,7 @@ import java.util.List;
 
 public class Eixos {
     private String nome;
+
     private List<EixoValor> eixos = new ArrayList();
 
     public List<EixoValor> getEixos() {
