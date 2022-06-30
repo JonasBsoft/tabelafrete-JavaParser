@@ -60,44 +60,49 @@ public class Main {
 
 	private static boolean escreverArquivoJSON() {
 		JSONArray arquivoPronto = new JSONArray();
+		JSONObject titulosJSON = new JSONObject();
 
 		for (Titulo titulo : gerarJSON()) {// lista de Titulos
 
-			JSONObject titulosObj = new JSONObject();
-			JSONArray tiposJSON = new JSONArray();
+			JSONObject tiposJSON = new JSONObject();
+
+			JSONObject eixosJSON = new JSONObject();
 			System.out.println("\tTitulo: " + titulo.getNome());
+
 			for (Tipo tipo : titulo.getTipos()) {
 				System.out.println("\t\tTipo: " + tipo.getNome());
 
+				JSONObject eixoObj = new JSONObject();
 				for (Eixos eixos : tipo.getEixos()) {
-					JSONArray eixosJSON = new JSONArray();
-					JSONArray eixosArray = new JSONArray();
 
 					for (EixoValor eixovalor : eixos.getEixos()) {
 						System.out.println("\t\t\teixos" + eixovalor.getNumEixo() + ":");
 						int eixo = Integer.parseInt(eixovalor.getNumEixo());
-						JSONObject eixoObj = new JSONObject();
+						if (eixovalor.getCargaDescarga() == null) {
+							System.out.println(eixovalor.getNumEixo() + " ERRO");
+						}
 
-						System.out.println("\t\t\t\tCarga_Descarga: " + eixovalor.getCargaDescarga());
-						System.out.println("\t\t\t\tDeslocamento: " + eixovalor.getDeslocamento());
+						// System.out.println("\t\t\t\tCarga_Descarga: " +
+						// eixovalor.getCargaDescarga());
+						// System.out.println("\t\t\t\tDeslocamento: " + eixovalor.getDeslocamento());
 						EixoValor valor = new EixoValor();
+						JSONObject eixoValorJSON = new JSONObject();
 
-						valor.setCargaDescarga(eixovalor.getCargaDescarga());
-						valor.setDeslocamento(eixovalor.getDeslocamento());
+						eixoValorJSON.put("Carga_Descarga", eixovalor.getCargaDescarga());
+						eixoValorJSON.put("Deslocamento", eixovalor.getDeslocamento());
 
-						eixoObj.put("eixo" + eixo, valor);
+						eixoObj.put("eixo" + eixo, eixoValorJSON);
+
 					}
+
 				}
-				JSONObject tituloObj = new JSONObject();
-
-				tiposJSON.add("a");
-
+				tiposJSON.put(tipo.getNome(), eixoObj);
 			}
 
-			// titulosJSON.put(titulo.getNome(), tiposJSON);
-
-			// arquivoPronto.add(titulosJSON);
+			titulosJSON.put(titulo.getNome(), tiposJSON);
 		}
+		arquivoPronto.add(titulosJSON);
+		// arquivoPronto.add(titulosJSON);
 
 		try (FileWriter file = new FileWriter("tabelafrete.json")) {
 			file.write(arquivoPronto.toJSONString());
@@ -207,6 +212,9 @@ public class Main {
 					// contar(linha.getEixos_deslocamento().get(eixoAtual));
 					// contar(linha.getEixos_carga_descarga().get(eixoAtual));
 
+					if (valor == null) {
+						System.out.println("Erro ao adicionar na lista" + eixoAtual);
+					}
 					listaDeEixos.add(valor);
 
 				}
