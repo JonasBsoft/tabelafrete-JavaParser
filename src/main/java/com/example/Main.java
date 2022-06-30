@@ -54,12 +54,65 @@ public class Main {
 		escreverArquivoJSON(); // escreve o arquivo em si
 		for (String key : chaves) {
 
-			System.out.print("\n" + key + "[" + valores.get(key) + "]");
 		}
 
 	}
 
 	private static boolean escreverArquivoJSON() {
+		JSONArray arquivoPronto = new JSONArray();
+
+		for (Titulo titulo : gerarJSON()) {// lista de Titulos
+
+			JSONObject titulosObj = new JSONObject();
+			JSONArray tiposJSON = new JSONArray();
+			System.out.println("\tTitulo: " + titulo.getNome());
+			for (Tipo tipo : titulo.getTipos()) {
+				System.out.println("\t\tTipo: " + tipo.getNome());
+
+				for (Eixos eixos : tipo.getEixos()) {
+					JSONArray eixosJSON = new JSONArray();
+					JSONArray eixosArray = new JSONArray();
+
+					for (EixoValor eixovalor : eixos.getEixos()) {
+						System.out.println("\t\t\teixos" + eixovalor.getNumEixo() + ":");
+						int eixo = Integer.parseInt(eixovalor.getNumEixo());
+						JSONObject eixoObj = new JSONObject();
+
+						System.out.println("\t\t\t\tCarga_Descarga: " + eixovalor.getCargaDescarga());
+						System.out.println("\t\t\t\tDeslocamento: " + eixovalor.getDeslocamento());
+						EixoValor valor = new EixoValor();
+
+						valor.setCargaDescarga(eixovalor.getCargaDescarga());
+						valor.setDeslocamento(eixovalor.getDeslocamento());
+
+						eixoObj.put("eixo" + eixo, valor);
+					}
+				}
+				JSONObject tituloObj = new JSONObject();
+
+				tiposJSON.add("a");
+
+			}
+
+			// titulosJSON.put(titulo.getNome(), tiposJSON);
+
+			// arquivoPronto.add(titulosJSON);
+		}
+
+		try (FileWriter file = new FileWriter("tabelafrete.json")) {
+			file.write(arquivoPronto.toJSONString());
+			file.flush();
+			System.out.println("Arquivo Gerado");
+			return true;
+		} catch (IOException e) {
+			System.out.println("Erro ao gerar arquivo");
+			e.printStackTrace();
+			return false;
+		}
+
+	}
+
+	private static boolean OLDescreverArquivoJSON() {
 		List<Titulo> documento = gerarJSON();
 
 		JSONArray jsontiposArray = new JSONArray();
@@ -68,11 +121,13 @@ public class Main {
 		for (Titulo titulo : documento) {
 			JSONObject jsontitulo = new JSONObject();
 			for (Tipo tipo : titulo.getTipos()) {
+				System.out.println("{ Titulo:" + titulo.getNome() + "}:");
 				JSONObject jsontipos = new JSONObject();
 
+				JSONObject jsoneixo = new JSONObject();
 				for (Eixos eixos : tipo.getEixos()) {
-					JSONObject jsoneixo = new JSONObject();
 
+					System.out.println("[ Tipo:" + tipo.getNome() + "]");
 					for (EixoValor eixoValor : eixos.getEixos()) { // objeto eixos2 ao exiso9 com oq
 
 						JSONObject valorescargaDeslocamento = new JSONObject();
@@ -83,17 +138,20 @@ public class Main {
 
 						valorescargaDeslocamento.put("custo_km", eixoValor.getDeslocamento());
 
+						System.out.println("(carga_descarga: " + eixoValor.getCargaDescarga());
+						System.out.println("custo_km: " + eixoValor.getDeslocamento() + ")");
 						jsoneixo.put("eixos" + eixoValor.getNumEixo(), valorescargaDeslocamento);
-
-						contar(eixoValor.getDeslocamento());
-						contar(eixoValor.getCargaDescarga());
-						// eixosN : "carga_descarga" : 2.343, "custo_km" : 12.5
-						listaJSON.add(jsoneixo);
 					}
+					// contar(eixoValor.getDeslocamento());
+					// contar(eixoValor.getCargaDescarga());
+					// // eixosN : "carga_descarga" : 2.343, "custo_km" : 12.5
+
 					jsontipos.put(tipo.getNome(), jsoneixo);
 
 				}
+
 				jsontitulo.put(titulo.getNome(), jsontipos);
+
 			}
 			jsonarquivo.add(jsontitulo);
 		}
@@ -155,7 +213,6 @@ public class Main {
 
 				tipo.setNome(nomeTipo);
 				tipo.addEixo(listaDeEixos);
-
 				titulo.addTipo(tipo);
 
 			}
@@ -306,7 +363,6 @@ public class Main {
 
 				} else {
 					if (indiceTitulo <= 3) {
-						System.out.print(elemento + " é: ");
 
 						adicionarLinhaEmTabela(linhaAtual, tipos.get(tipoIndex), titulos.get(indiceTitulo));
 					}
@@ -344,7 +400,7 @@ public class Main {
 	private static void adicionarLinhaEmTabela(Linha linhasAtual, String tipo, String titulo) {
 
 		// linhasAtuais.add(linhaAtual);
-		System.out.println(titulo + " " + tipo);
+
 		linhasMap.put(titulo + tipo, linhaAtual);
 
 	}
