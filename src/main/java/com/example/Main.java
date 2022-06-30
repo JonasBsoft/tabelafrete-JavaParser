@@ -23,6 +23,7 @@ public class Main {
 	static Document doc;
 	static List<String> elementos = new ArrayList<>();
 	static HashMap<String, Linha> linhasMap = new HashMap<>();
+	static HashMap<String, EixoValor> eixosMap = new HashMap<>();
 	static List<Linha> linhasList = new ArrayList<>();
 	static Linha linha = new Linha();
 	static List<String> titulos = getTitulos();
@@ -33,6 +34,7 @@ public class Main {
 	static Linha linhaAtual = new Linha();
 	static boolean coeficienteisDeslocamento = false;
 	static List<String> listaEixos = ListasUtil.popularEixos;
+	static List<JSONObject> listaJSON = new ArrayList<>();
 
 	static List<Linha> linhasAtuais = new ArrayList<>();
 
@@ -48,9 +50,8 @@ public class Main {
 	private static void init() {
 		conectar(); // conecta ao sit
 		getValores(); // adquire os valores do site
-		classificaCampo(); // separa os dados adquiridos
-		gerarJSON();
-		// escreverArquivoJSON(); // escreve o arquivo em si
+
+		escreverArquivoJSON(); // escreve o arquivo em si
 		for (String key : chaves) {
 
 			System.out.print("\n" + key + "[" + valores.get(key) + "]");
@@ -60,31 +61,42 @@ public class Main {
 
 	private static boolean escreverArquivoJSON() {
 		List<Titulo> documento = gerarJSON();
-		JSONObject jsoneixo = new JSONObject();
-		JSONObject jsontipos = new JSONObject();
-		JSONObject jsontitulo = new JSONObject();
+
+		JSONArray jsontiposArray = new JSONArray();
 		JSONArray jsonarquivo = new JSONArray();
 
 		for (Titulo titulo : documento) {
-
+			JSONObject jsontitulo = new JSONObject();
 			for (Tipo tipo : titulo.getTipos()) {
+				JSONObject jsontipos = new JSONObject();
 
 				for (Eixos eixos : tipo.getEixos()) {
+					JSONObject jsoneixo = new JSONObject();
 
-					for (EixoValor eixoValor : eixos.getEixos()) {
+					for (EixoValor eixoValor : eixos.getEixos()) { // objeto eixos2 ao exiso9 com oq
 
 						JSONObject valorescargaDeslocamento = new JSONObject();
-						valorescargaDeslocamento.put("carga_descarga", eixoValor.getCargaDescarga());
+
+						valorescargaDeslocamento.put(
+								"carga_descarga",
+								eixoValor.getCargaDescarga());
+
 						valorescargaDeslocamento.put("custo_km", eixoValor.getDeslocamento());
+
 						jsoneixo.put("eixos" + eixoValor.getNumEixo(), valorescargaDeslocamento);
 
+						contar(eixoValor.getDeslocamento());
+						contar(eixoValor.getCargaDescarga());
+						// eixosN : "carga_descarga" : 2.343, "custo_km" : 12.5
+						listaJSON.add(jsoneixo);
 					}
+					jsontipos.put(tipo.getNome(), jsoneixo);
+
 				}
-				jsontipos.put(tipo.getNome(), jsoneixo);
+				jsontitulo.put(titulo.getNome(), jsontipos);
 			}
-			jsontitulo.put(titulo.getNome(), jsontipos);
+			jsonarquivo.add(jsontitulo);
 		}
-		jsonarquivo.add(jsontitulo);
 
 		try (FileWriter file = new FileWriter("tabelafrete.json")) {
 			file.write(jsonarquivo.toJSONString());
@@ -102,7 +114,7 @@ public class Main {
 	private static void contar(String var) {
 
 		if (valores.containsKey(var)) {
-			valores.replace(var, valores.get(var) + 1);
+			valores.put(var, valores.get(var) + 1);
 		} else {
 			chaves.add(var);
 			valores.put(var, 1);
@@ -120,28 +132,27 @@ public class Main {
 
 			for (String nomeTipo : tipos) {
 				Tipo tipo = new Tipo();
-				// TODO resolva essa cagada
-				System.out.println("Key:|" + tituloStr + nomeTipo + "|");
-				System.out.println(linhasMap.get(tituloStr + nomeTipo));
 
 				linha = linhasMap.get(tituloStr + nomeTipo);
 
-				// HashMap<String, String> deslocamento = linha.getEixos_deslocamento();
-				// HashMap<String, String> carga_descarga = linha.getEixos_carga_descarga();
 				Eixos listaDeEixos = new Eixos();
 				for (String eixoAtual : listaEixos) {
+
 					EixoValor valor = new EixoValor();
+
 					listaDeEixos.setNome("eixos" + eixoAtual);
 					valor.setNumEixo(eixoAtual);
 
 					valor.setCargaDescarga(linha.getEixos_deslocamento().get(eixoAtual));
 					valor.setDeslocamento(linha.getEixos_carga_descarga().get(eixoAtual));
 
-					// contar(deslocamento.get(eixoAtual));
-					// contar(carga_descarga.get(eixoAtual));
+					// contar(linha.getEixos_deslocamento().get(eixoAtual));
+					// contar(linha.getEixos_carga_descarga().get(eixoAtual));
+
 					listaDeEixos.add(valor);
 
 				}
+
 				tipo.setNome(nomeTipo);
 				tipo.addEixo(listaDeEixos);
 
@@ -157,7 +168,6 @@ public class Main {
 
 	public static void conectar() {
 		try {
-
 			doc = Jsoup.connect(Main.url).get();
 		} catch (Exception e) {
 		}
@@ -295,8 +305,8 @@ public class Main {
 					elemento = "VAZIO";
 
 				} else {
-					System.out.print(elemento + " é: ");
 					if (indiceTitulo <= 3) {
+						System.out.print(elemento + " é: ");
 
 						adicionarLinhaEmTabela(linhaAtual, tipos.get(tipoIndex), titulos.get(indiceTitulo));
 					}
