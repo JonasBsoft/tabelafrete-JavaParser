@@ -2,1448 +2,1448 @@
     "lotacaoAltoDesempenho": {
         "perigosaCargaFrigorificada": {
             "eixo2": {
-                "Carga_Descarga": 147.88,
-                "Deslocamento": 3.1543
+                "carga_descarga": 147.88,
+                "custo_km": 3.1543
             },
             "eixo3": {
-                "Carga_Descarga": 157.79,
-                "Deslocamento": 3.9033
+                "carga_descarga": 157.79,
+                "custo_km": 3.9033
             },
             "eixo4": {
-                "Carga_Descarga": 175.89,
-                "Deslocamento": 4.5186
+                "carga_descarga": 175.89,
+                "custo_km": 4.5186
             },
             "eixo5": {
-                "Carga_Descarga": 188.67,
-                "Deslocamento": 5.1169
+                "carga_descarga": 188.67,
+                "custo_km": 5.1169
             },
             "eixo6": {
-                "Carga_Descarga": 196.89,
-                "Deslocamento": 5.738
+                "carga_descarga": 196.89,
+                "custo_km": 5.738
             },
             "eixo7": {
-                "Carga_Descarga": 222.83,
-                "Deslocamento": 6.1301
+                "carga_descarga": 222.83,
+                "custo_km": 6.1301
             },
             "eixo9": {
-                "Carga_Descarga": 232.37,
-                "Deslocamento": 6.9615
+                "carga_descarga": 232.37,
+                "custo_km": 6.9615
             }
         },
         "perigosaGranelSolido": {
             "eixo2": {
-                "Carga_Descarga": 132.07,
-                "Deslocamento": 2.7056
+                "carga_descarga": 132.07,
+                "custo_km": 2.7056
             },
             "eixo3": {
-                "Carga_Descarga": 141.8,
-                "Deslocamento": 3.3417
+                "carga_descarga": 141.8,
+                "custo_km": 3.3417
             },
             "eixo4": {
-                "Carga_Descarga": 154.21,
-                "Deslocamento": 3.8612
+                "carga_descarga": 154.21,
+                "custo_km": 3.8612
             },
             "eixo5": {
-                "Carga_Descarga": 160.9,
-                "Deslocamento": 4.3426
+                "carga_descarga": 160.9,
+                "custo_km": 4.3426
             },
             "eixo6": {
-                "Carga_Descarga": 169.12,
-                "Deslocamento": 4.8727
+                "carga_descarga": 169.12,
+                "custo_km": 4.8727
             },
             "eixo7": {
-                "Carga_Descarga": 192.12,
-                "Deslocamento": 5.2469
+                "carga_descarga": 192.12,
+                "custo_km": 5.2469
             },
             "eixo9": {
-                "Carga_Descarga": 200.63,
-                "Deslocamento": 5.961
+                "carga_descarga": 200.63,
+                "custo_km": 5.961
             }
         },
         "frigorificada": {
             "eixo2": {
-                "Carga_Descarga": 116.05,
-                "Deslocamento": 2.7943
+                "carga_descarga": 116.05,
+                "custo_km": 2.7943
             },
             "eixo3": {
-                "Carga_Descarga": 125.96,
-                "Deslocamento": 3.5433
+                "carga_descarga": 125.96,
+                "custo_km": 3.5433
             },
             "eixo4": {
-                "Carga_Descarga": 139.67,
-                "Deslocamento": 4.1361
+                "carga_descarga": 139.67,
+                "custo_km": 4.1361
             },
             "eixo5": {
-                "Carga_Descarga": 152.45,
-                "Deslocamento": 4.7345
+                "carga_descarga": 152.45,
+                "custo_km": 4.7345
             },
             "eixo6": {
-                "Carga_Descarga": 160.67,
-                "Deslocamento": 5.3555
+                "carga_descarga": 160.67,
+                "custo_km": 5.3555
             },
             "eixo7": {
-                "Carga_Descarga": 182.28,
-                "Deslocamento": 5.7213
+                "carga_descarga": 182.28,
+                "custo_km": 5.7213
             },
             "eixo9": {
-                "Carga_Descarga": 191.82,
-                "Deslocamento": 6.5527
+                "carga_descarga": 191.82,
+                "custo_km": 6.5527
             }
         },
         "granelSolido": {
             "eixo2": {
-                "Carga_Descarga": 96.68,
-                "Deslocamento": 2.3105
+                "carga_descarga": 96.68,
+                "custo_km": 2.3105
             },
             "eixo3": {
-                "Carga_Descarga": 106.41,
-                "Deslocamento": 2.9466
+                "carga_descarga": 106.41,
+                "custo_km": 2.9466
             },
             "eixo4": {
-                "Carga_Descarga": 115.45,
-                "Deslocamento": 3.4361
+                "carga_descarga": 115.45,
+                "custo_km": 3.4361
             },
             "eixo5": {
-                "Carga_Descarga": 122.14,
-                "Deslocamento": 3.9175
+                "carga_descarga": 122.14,
+                "custo_km": 3.9175
             },
             "eixo6": {
-                "Carga_Descarga": 130.36,
-                "Deslocamento": 4.4476
+                "carga_descarga": 130.36,
+                "custo_km": 4.4476
             },
             "eixo7": {
-                "Carga_Descarga": 150.02,
-                "Deslocamento": 4.8017
+                "carga_descarga": 150.02,
+                "custo_km": 4.8017
             },
             "eixo9": {
-                "Carga_Descarga": 158.53,
-                "Deslocamento": 5.5157
+                "carga_descarga": 158.53,
+                "custo_km": 5.5157
             }
         },
         "perigosaConteinerizada": {
             "eixo2": {
-                "Carga_Descarga": 132.39,
-                "Deslocamento": 3.1136
+                "carga_descarga": 132.39,
+                "custo_km": 3.1136
             },
             "eixo3": {
-                "Carga_Descarga": 132.39,
-                "Deslocamento": 3.1136
+                "carga_descarga": 132.39,
+                "custo_km": 3.1136
             },
             "eixo4": {
-                "Carga_Descarga": 145.16,
-                "Deslocamento": 3.6352
+                "carga_descarga": 145.16,
+                "custo_km": 3.6352
             },
             "eixo5": {
-                "Carga_Descarga": 152.1,
-                "Deslocamento": 4.1181
+                "carga_descarga": 152.1,
+                "custo_km": 4.1181
             },
             "eixo6": {
-                "Carga_Descarga": 160.32,
-                "Deslocamento": 4.6482
+                "carga_descarga": 160.32,
+                "custo_km": 4.6482
             },
             "eixo7": {
-                "Carga_Descarga": 183.45,
-                "Deslocamento": 5.0233
+                "carga_descarga": 183.45,
+                "custo_km": 5.0233
             },
             "eixo9": {
-                "Carga_Descarga": 191.57,
-                "Deslocamento": 5.735
+                "carga_descarga": 191.57,
+                "custo_km": 5.735
             }
         },
         "granelLiquido": {
             "eixo2": {
-                "Carga_Descarga": 97.9,
-                "Deslocamento": 2.3349
+                "carga_descarga": 97.9,
+                "custo_km": 2.3349
             },
             "eixo3": {
-                "Carga_Descarga": 108.22,
-                "Deslocamento": 2.9746
+                "carga_descarga": 108.22,
+                "custo_km": 2.9746
             },
             "eixo4": {
-                "Carga_Descarga": 115.09,
-                "Deslocamento": 3.468
+                "carga_descarga": 115.09,
+                "custo_km": 3.468
             },
             "eixo5": {
-                "Carga_Descarga": 124.87,
-                "Deslocamento": 3.9681
+                "carga_descarga": 124.87,
+                "custo_km": 3.9681
             },
             "eixo6": {
-                "Carga_Descarga": 133.08,
-                "Deslocamento": 4.4982
+                "carga_descarga": 133.08,
+                "custo_km": 4.4982
             },
             "eixo7": {
-                "Carga_Descarga": 155.01,
-                "Deslocamento": 4.8659
+                "carga_descarga": 155.01,
+                "custo_km": 4.8659
             },
             "eixo9": {
-                "Carga_Descarga": 163.48,
-                "Deslocamento": 5.5798
+                "carga_descarga": 163.48,
+                "custo_km": 5.5798
             }
         },
         "granelPressurizada": {
             "eixo2": {
-                "Carga_Descarga": 131.5,
-                "Deslocamento": 3.9742
+                "carga_descarga": 131.5,
+                "custo_km": 3.9742
             },
             "eixo3": {
-                "Carga_Descarga": 131.5,
-                "Deslocamento": 3.9742
+                "carga_descarga": 131.5,
+                "custo_km": 3.9742
             },
             "eixo4": {
-                "Carga_Descarga": 131.5,
-                "Deslocamento": 3.9742
+                "carga_descarga": 131.5,
+                "custo_km": 3.9742
             },
             "eixo5": {
-                "Carga_Descarga": 131.5,
-                "Deslocamento": 3.9742
+                "carga_descarga": 131.5,
+                "custo_km": 3.9742
             },
             "eixo6": {
-                "Carga_Descarga": 139.71,
-                "Deslocamento": 4.5043
+                "carga_descarga": 139.71,
+                "custo_km": 4.5043
             },
             "eixo7": {
-                "Carga_Descarga": 172.18,
-                "Deslocamento": 5.5985
+                "carga_descarga": 172.18,
+                "custo_km": 5.5985
             },
             "eixo9": {
-                "Carga_Descarga": 172.18,
-                "Deslocamento": 5.5985
+                "carga_descarga": 172.18,
+                "custo_km": 5.5985
             }
         },
         "cargaGeral": {
             "eixo2": {
-                "Carga_Descarga": 96.29,
-                "Deslocamento": 2.3081
+                "carga_descarga": 96.29,
+                "custo_km": 2.3081
             },
             "eixo3": {
-                "Carga_Descarga": 105.7,
-                "Deslocamento": 2.9423
+                "carga_descarga": 105.7,
+                "custo_km": 2.9423
             },
             "eixo4": {
-                "Carga_Descarga": 115.09,
-                "Deslocamento": 3.434
+                "carga_descarga": 115.09,
+                "custo_km": 3.434
             },
             "eixo5": {
-                "Carga_Descarga": 122.04,
-                "Deslocamento": 3.9169
+                "carga_descarga": 122.04,
+                "custo_km": 3.9169
             },
             "eixo6": {
-                "Carga_Descarga": 130.25,
-                "Deslocamento": 4.447
+                "carga_descarga": 130.25,
+                "custo_km": 4.447
             },
             "eixo7": {
-                "Carga_Descarga": 150.06,
-                "Deslocamento": 4.8019
+                "carga_descarga": 150.06,
+                "custo_km": 4.8019
             },
             "eixo9": {
-                "Carga_Descarga": 158.18,
-                "Deslocamento": 5.5136
+                "carga_descarga": 158.18,
+                "custo_km": 5.5136
             }
         },
         "perigosaGranelLiquido": {
             "eixo2": {
-                "Carga_Descarga": 135.44,
-                "Deslocamento": 2.726
+                "carga_descarga": 135.44,
+                "custo_km": 2.726
             },
             "eixo3": {
-                "Carga_Descarga": 145.75,
-                "Deslocamento": 3.3657
+                "carga_descarga": 145.75,
+                "custo_km": 3.3657
             },
             "eixo4": {
-                "Carga_Descarga": 156.0,
-                "Deslocamento": 3.8721
+                "carga_descarga": 156.0,
+                "custo_km": 3.8721
             },
             "eixo5": {
-                "Carga_Descarga": 165.78,
-                "Deslocamento": 4.3721
+                "carga_descarga": 165.78,
+                "custo_km": 4.3721
             },
             "eixo6": {
-                "Carga_Descarga": 173.99,
-                "Deslocamento": 4.9022
+                "carga_descarga": 173.99,
+                "custo_km": 4.9022
             },
             "eixo7": {
-                "Carga_Descarga": 199.25,
-                "Deslocamento": 5.2902
+                "carga_descarga": 199.25,
+                "custo_km": 5.2902
             },
             "eixo9": {
-                "Carga_Descarga": 207.73,
-                "Deslocamento": 6.004
+                "carga_descarga": 207.73,
+                "custo_km": 6.004
             }
         },
         "perigosaCargaGeral": {
             "eixo2": {
-                "Carga_Descarga": 122.98,
-                "Deslocamento": 2.4794
+                "carga_descarga": 122.98,
+                "custo_km": 2.4794
             },
             "eixo3": {
-                "Carga_Descarga": 132.39,
-                "Deslocamento": 3.1136
+                "carga_descarga": 132.39,
+                "custo_km": 3.1136
             },
             "eixo4": {
-                "Carga_Descarga": 145.16,
-                "Deslocamento": 3.6352
+                "carga_descarga": 145.16,
+                "custo_km": 3.6352
             },
             "eixo5": {
-                "Carga_Descarga": 152.1,
-                "Deslocamento": 4.1181
+                "carga_descarga": 152.1,
+                "custo_km": 4.1181
             },
             "eixo6": {
-                "Carga_Descarga": 160.32,
-                "Deslocamento": 4.6482
+                "carga_descarga": 160.32,
+                "custo_km": 4.6482
             },
             "eixo7": {
-                "Carga_Descarga": 183.45,
-                "Deslocamento": 5.0233
+                "carga_descarga": 183.45,
+                "custo_km": 5.0233
             },
             "eixo9": {
-                "Carga_Descarga": 191.57,
-                "Deslocamento": 5.735
+                "carga_descarga": 191.57,
+                "custo_km": 5.735
             }
         },
         "conteinerizada": {
             "eixo2": {
-                "Carga_Descarga": 105.7,
-                "Deslocamento": 2.9423
+                "carga_descarga": 105.7,
+                "custo_km": 2.9423
             },
             "eixo3": {
-                "Carga_Descarga": 105.7,
-                "Deslocamento": 2.9423
+                "carga_descarga": 105.7,
+                "custo_km": 2.9423
             },
             "eixo4": {
-                "Carga_Descarga": 115.09,
-                "Deslocamento": 3.434
+                "carga_descarga": 115.09,
+                "custo_km": 3.434
             },
             "eixo5": {
-                "Carga_Descarga": 122.04,
-                "Deslocamento": 3.9169
+                "carga_descarga": 122.04,
+                "custo_km": 3.9169
             },
             "eixo6": {
-                "Carga_Descarga": 130.25,
-                "Deslocamento": 4.447
+                "carga_descarga": 130.25,
+                "custo_km": 4.447
             },
             "eixo7": {
-                "Carga_Descarga": 150.06,
-                "Deslocamento": 4.8019
+                "carga_descarga": 150.06,
+                "custo_km": 4.8019
             },
             "eixo9": {
-                "Carga_Descarga": 158.18,
-                "Deslocamento": 5.5136
+                "carga_descarga": 158.18,
+                "custo_km": 5.5136
             }
         },
         "neogranel": {
             "eixo2": {
-                "Carga_Descarga": 96.29,
-                "Deslocamento": 2.0117
+                "carga_descarga": 96.29,
+                "custo_km": 2.0117
             },
             "eixo3": {
-                "Carga_Descarga": 105.7,
-                "Deslocamento": 2.9423
+                "carga_descarga": 105.7,
+                "custo_km": 2.9423
             },
             "eixo4": {
-                "Carga_Descarga": 116.08,
-                "Deslocamento": 3.44
+                "carga_descarga": 116.08,
+                "custo_km": 3.44
             },
             "eixo5": {
-                "Carga_Descarga": 122.04,
-                "Deslocamento": 3.9169
+                "carga_descarga": 122.04,
+                "custo_km": 3.9169
             },
             "eixo6": {
-                "Carga_Descarga": 130.25,
-                "Deslocamento": 4.447
+                "carga_descarga": 130.25,
+                "custo_km": 4.447
             },
             "eixo7": {
-                "Carga_Descarga": 150.06,
-                "Deslocamento": 4.8019
+                "carga_descarga": 150.06,
+                "custo_km": 4.8019
             },
             "eixo9": {
-                "Carga_Descarga": 158.18,
-                "Deslocamento": 5.5136
+                "carga_descarga": 158.18,
+                "custo_km": 5.5136
             }
         }
     },
     "somenteAutomotorAltoDesempenho": {
         "perigosaCargaFrigorificada": {
             "eixo2": {
-                "Carga_Descarga": 166.45,
-                "Deslocamento": 4.2434
+                "carga_descarga": 166.45,
+                "custo_km": 4.2434
             },
             "eixo3": {
-                "Carga_Descarga": 166.45,
-                "Deslocamento": 4.2434
+                "carga_descarga": 166.45,
+                "custo_km": 4.2434
             },
             "eixo4": {
-                "Carga_Descarga": 166.45,
-                "Deslocamento": 4.2434
+                "carga_descarga": 166.45,
+                "custo_km": 4.2434
             },
             "eixo5": {
-                "Carga_Descarga": 171.98,
-                "Deslocamento": 4.6888
+                "carga_descarga": 171.98,
+                "custo_km": 4.6888
             },
             "eixo6": {
-                "Carga_Descarga": 180.2,
-                "Deslocamento": 5.3098
+                "carga_descarga": 180.2,
+                "custo_km": 5.3098
             },
             "eixo7": {
-                "Carga_Descarga": 204.42,
-                "Deslocamento": 5.5824
+                "carga_descarga": 204.42,
+                "custo_km": 5.5824
             },
             "eixo9": {
-                "Carga_Descarga": 209.01,
-                "Deslocamento": 6.1658
+                "carga_descarga": 209.01,
+                "custo_km": 6.1658
             }
         },
         "perigosaGranelSolido": {
             "eixo2": {
-                "Carga_Descarga": 148.49,
-                "Deslocamento": 3.6085
+                "carga_descarga": 148.49,
+                "custo_km": 3.6085
             },
             "eixo3": {
-                "Carga_Descarga": 148.49,
-                "Deslocamento": 3.6085
+                "carga_descarga": 148.49,
+                "custo_km": 3.6085
             },
             "eixo4": {
-                "Carga_Descarga": 148.49,
-                "Deslocamento": 3.6085
+                "carga_descarga": 148.49,
+                "custo_km": 3.6085
             },
             "eixo5": {
-                "Carga_Descarga": 154.02,
-                "Deslocamento": 3.9738
+                "carga_descarga": 154.02,
+                "custo_km": 3.9738
             },
             "eixo6": {
-                "Carga_Descarga": 162.23,
-                "Deslocamento": 4.5039
+                "carga_descarga": 162.23,
+                "custo_km": 4.5039
             },
             "eixo7": {
-                "Carga_Descarga": 182.13,
-                "Deslocamento": 4.7503
+                "carga_descarga": 182.13,
+                "custo_km": 4.7503
             },
             "eixo9": {
-                "Carga_Descarga": 186.71,
-                "Deslocamento": 5.2225
+                "carga_descarga": 186.71,
+                "custo_km": 5.2225
             }
         },
         "frigorificada": {
             "eixo2": {
-                "Carga_Descarga": 130.24,
-                "Deslocamento": 3.8609
+                "carga_descarga": 130.24,
+                "custo_km": 3.8609
             },
             "eixo3": {
-                "Carga_Descarga": 130.24,
-                "Deslocamento": 3.8609
+                "carga_descarga": 130.24,
+                "custo_km": 3.8609
             },
             "eixo4": {
-                "Carga_Descarga": 130.24,
-                "Deslocamento": 3.8609
+                "carga_descarga": 130.24,
+                "custo_km": 3.8609
             },
             "eixo5": {
-                "Carga_Descarga": 135.77,
-                "Deslocamento": 4.3063
+                "carga_descarga": 135.77,
+                "custo_km": 4.3063
             },
             "eixo6": {
-                "Carga_Descarga": 143.98,
-                "Deslocamento": 4.9273
+                "carga_descarga": 143.98,
+                "custo_km": 4.9273
             },
             "eixo7": {
-                "Carga_Descarga": 163.87,
-                "Deslocamento": 5.1737
+                "carga_descarga": 163.87,
+                "custo_km": 5.1737
             },
             "eixo9": {
-                "Carga_Descarga": 168.46,
-                "Deslocamento": 5.757
+                "carga_descarga": 168.46,
+                "custo_km": 5.757
             }
         },
         "granelSolido": {
             "eixo2": {
-                "Carga_Descarga": 109.73,
-                "Deslocamento": 3.1834
+                "carga_descarga": 109.73,
+                "custo_km": 3.1834
             },
             "eixo3": {
-                "Carga_Descarga": 109.73,
-                "Deslocamento": 3.1834
+                "carga_descarga": 109.73,
+                "custo_km": 3.1834
             },
             "eixo4": {
-                "Carga_Descarga": 109.73,
-                "Deslocamento": 3.1834
+                "carga_descarga": 109.73,
+                "custo_km": 3.1834
             },
             "eixo5": {
-                "Carga_Descarga": 115.25,
-                "Deslocamento": 3.5487
+                "carga_descarga": 115.25,
+                "custo_km": 3.5487
             },
             "eixo6": {
-                "Carga_Descarga": 123.47,
-                "Deslocamento": 4.0788
+                "carga_descarga": 123.47,
+                "custo_km": 4.0788
             },
             "eixo7": {
-                "Carga_Descarga": 140.03,
-                "Deslocamento": 4.305
+                "carga_descarga": 140.03,
+                "custo_km": 4.305
             },
             "eixo9": {
-                "Carga_Descarga": 144.62,
-                "Deslocamento": 4.7773
+                "carga_descarga": 144.62,
+                "custo_km": 4.7773
             }
         },
         "perigosaConteinerizada": {
             "eixo2": {
-                "Carga_Descarga": 139.79,
-                "Deslocamento": 3.3846
+                "carga_descarga": 139.79,
+                "custo_km": 3.3846
             },
             "eixo3": {
-                "Carga_Descarga": 139.79,
-                "Deslocamento": 3.3846
+                "carga_descarga": 139.79,
+                "custo_km": 3.3846
             },
             "eixo4": {
-                "Carga_Descarga": 139.79,
-                "Deslocamento": 3.3846
+                "carga_descarga": 139.79,
+                "custo_km": 3.3846
             },
             "eixo5": {
-                "Carga_Descarga": 145.32,
-                "Deslocamento": 3.7499
+                "carga_descarga": 145.32,
+                "custo_km": 3.7499
             },
             "eixo6": {
-                "Carga_Descarga": 153.54,
-                "Deslocamento": 4.2801
+                "carga_descarga": 153.54,
+                "custo_km": 4.2801
             },
             "eixo7": {
-                "Carga_Descarga": 173.43,
-                "Deslocamento": 4.5265
+                "carga_descarga": 173.43,
+                "custo_km": 4.5265
             },
             "eixo9": {
-                "Carga_Descarga": 178.01,
-                "Deslocamento": 4.9987
+                "carga_descarga": 178.01,
+                "custo_km": 4.9987
             }
         },
         "granelLiquido": {
             "eixo2": {
-                "Carga_Descarga": 109.73,
-                "Deslocamento": 3.2174
+                "carga_descarga": 109.73,
+                "custo_km": 3.2174
             },
             "eixo3": {
-                "Carga_Descarga": 109.73,
-                "Deslocamento": 3.2174
+                "carga_descarga": 109.73,
+                "custo_km": 3.2174
             },
             "eixo4": {
-                "Carga_Descarga": 109.73,
-                "Deslocamento": 3.2174
+                "carga_descarga": 109.73,
+                "custo_km": 3.2174
             },
             "eixo5": {
-                "Carga_Descarga": 115.25,
-                "Deslocamento": 3.5827
+                "carga_descarga": 115.25,
+                "custo_km": 3.5827
             },
             "eixo6": {
-                "Carga_Descarga": 123.47,
-                "Deslocamento": 4.1129
+                "carga_descarga": 123.47,
+                "custo_km": 4.1129
             },
             "eixo7": {
-                "Carga_Descarga": 140.03,
-                "Deslocamento": 4.3391
+                "carga_descarga": 140.03,
+                "custo_km": 4.3391
             },
             "eixo9": {
-                "Carga_Descarga": 144.62,
-                "Deslocamento": 4.8113
+                "carga_descarga": 144.62,
+                "custo_km": 4.8113
             }
         },
         "granelPressurizada": {
             "eixo2": {
-                "Carga_Descarga": 115.25,
-                "Deslocamento": 3.5487
+                "carga_descarga": 115.25,
+                "custo_km": 3.5487
             },
             "eixo3": {
-                "Carga_Descarga": 115.25,
-                "Deslocamento": 3.5487
+                "carga_descarga": 115.25,
+                "custo_km": 3.5487
             },
             "eixo4": {
-                "Carga_Descarga": 115.25,
-                "Deslocamento": 3.5487
+                "carga_descarga": 115.25,
+                "custo_km": 3.5487
             },
             "eixo5": {
-                "Carga_Descarga": 115.25,
-                "Deslocamento": 3.5487
+                "carga_descarga": 115.25,
+                "custo_km": 3.5487
             },
             "eixo6": {
-                "Carga_Descarga": 123.47,
-                "Deslocamento": 4.0788
+                "carga_descarga": 123.47,
+                "custo_km": 4.0788
             },
             "eixo7": {
-                "Carga_Descarga": 144.62,
-                "Deslocamento": 4.7773
+                "carga_descarga": 144.62,
+                "custo_km": 4.7773
             },
             "eixo9": {
-                "Carga_Descarga": 144.62,
-                "Deslocamento": 4.7773
+                "carga_descarga": 144.62,
+                "custo_km": 4.7773
             }
         },
         "cargaGeral": {
             "eixo2": {
-                "Carga_Descarga": 109.73,
-                "Deslocamento": 3.1834
+                "carga_descarga": 109.73,
+                "custo_km": 3.1834
             },
             "eixo3": {
-                "Carga_Descarga": 109.73,
-                "Deslocamento": 3.1834
+                "carga_descarga": 109.73,
+                "custo_km": 3.1834
             },
             "eixo4": {
-                "Carga_Descarga": 109.73,
-                "Deslocamento": 3.1834
+                "carga_descarga": 109.73,
+                "custo_km": 3.1834
             },
             "eixo5": {
-                "Carga_Descarga": 115.25,
-                "Deslocamento": 3.5487
+                "carga_descarga": 115.25,
+                "custo_km": 3.5487
             },
             "eixo6": {
-                "Carga_Descarga": 123.47,
-                "Deslocamento": 4.0788
+                "carga_descarga": 123.47,
+                "custo_km": 4.0788
             },
             "eixo7": {
-                "Carga_Descarga": 140.03,
-                "Deslocamento": 4.305
+                "carga_descarga": 140.03,
+                "custo_km": 4.305
             },
             "eixo9": {
-                "Carga_Descarga": 144.62,
-                "Deslocamento": 4.7773
+                "carga_descarga": 144.62,
+                "custo_km": 4.7773
             }
         },
         "perigosaGranelLiquido": {
             "eixo2": {
-                "Carga_Descarga": 150.64,
-                "Deslocamento": 3.6215
+                "carga_descarga": 150.64,
+                "custo_km": 3.6215
             },
             "eixo3": {
-                "Carga_Descarga": 150.64,
-                "Deslocamento": 3.6215
+                "carga_descarga": 150.64,
+                "custo_km": 3.6215
             },
             "eixo4": {
-                "Carga_Descarga": 150.64,
-                "Deslocamento": 3.6215
+                "carga_descarga": 150.64,
+                "custo_km": 3.6215
             },
             "eixo5": {
-                "Carga_Descarga": 156.17,
-                "Deslocamento": 3.9868
+                "carga_descarga": 156.17,
+                "custo_km": 3.9868
             },
             "eixo6": {
-                "Carga_Descarga": 164.38,
-                "Deslocamento": 4.5169
+                "carga_descarga": 164.38,
+                "custo_km": 4.5169
             },
             "eixo7": {
-                "Carga_Descarga": 184.27,
-                "Deslocamento": 4.7633
+                "carga_descarga": 184.27,
+                "custo_km": 4.7633
             },
             "eixo9": {
-                "Carga_Descarga": 188.86,
-                "Deslocamento": 5.2356
+                "carga_descarga": 188.86,
+                "custo_km": 5.2356
             }
         },
         "perigosaCargaGeral": {
             "eixo2": {
-                "Carga_Descarga": 139.79,
-                "Deslocamento": 3.3846
+                "carga_descarga": 139.79,
+                "custo_km": 3.3846
             },
             "eixo3": {
-                "Carga_Descarga": 139.79,
-                "Deslocamento": 3.3846
+                "carga_descarga": 139.79,
+                "custo_km": 3.3846
             },
             "eixo4": {
-                "Carga_Descarga": 139.79,
-                "Deslocamento": 3.3846
+                "carga_descarga": 139.79,
+                "custo_km": 3.3846
             },
             "eixo5": {
-                "Carga_Descarga": 145.32,
-                "Deslocamento": 3.7499
+                "carga_descarga": 145.32,
+                "custo_km": 3.7499
             },
             "eixo6": {
-                "Carga_Descarga": 153.54,
-                "Deslocamento": 4.2801
+                "carga_descarga": 153.54,
+                "custo_km": 4.2801
             },
             "eixo7": {
-                "Carga_Descarga": 173.43,
-                "Deslocamento": 4.5265
+                "carga_descarga": 173.43,
+                "custo_km": 4.5265
             },
             "eixo9": {
-                "Carga_Descarga": 178.01,
-                "Deslocamento": 4.9987
+                "carga_descarga": 178.01,
+                "custo_km": 4.9987
             }
         },
         "conteinerizada": {
             "eixo2": {
-                "Carga_Descarga": 109.73,
-                "Deslocamento": 3.1834
+                "carga_descarga": 109.73,
+                "custo_km": 3.1834
             },
             "eixo3": {
-                "Carga_Descarga": 109.73,
-                "Deslocamento": 3.1834
+                "carga_descarga": 109.73,
+                "custo_km": 3.1834
             },
             "eixo4": {
-                "Carga_Descarga": 109.73,
-                "Deslocamento": 3.1834
+                "carga_descarga": 109.73,
+                "custo_km": 3.1834
             },
             "eixo5": {
-                "Carga_Descarga": 115.25,
-                "Deslocamento": 3.5487
+                "carga_descarga": 115.25,
+                "custo_km": 3.5487
             },
             "eixo6": {
-                "Carga_Descarga": 123.47,
-                "Deslocamento": 4.0788
+                "carga_descarga": 123.47,
+                "custo_km": 4.0788
             },
             "eixo7": {
-                "Carga_Descarga": 140.03,
-                "Deslocamento": 4.305
+                "carga_descarga": 140.03,
+                "custo_km": 4.305
             },
             "eixo9": {
-                "Carga_Descarga": 144.62,
-                "Deslocamento": 4.7773
+                "carga_descarga": 144.62,
+                "custo_km": 4.7773
             }
         },
         "neogranel": {
             "eixo2": {
-                "Carga_Descarga": 109.73,
-                "Deslocamento": 3.1834
+                "carga_descarga": 109.73,
+                "custo_km": 3.1834
             },
             "eixo3": {
-                "Carga_Descarga": 109.73,
-                "Deslocamento": 3.1834
+                "carga_descarga": 109.73,
+                "custo_km": 3.1834
             },
             "eixo4": {
-                "Carga_Descarga": 109.73,
-                "Deslocamento": 3.1834
+                "carga_descarga": 109.73,
+                "custo_km": 3.1834
             },
             "eixo5": {
-                "Carga_Descarga": 115.25,
-                "Deslocamento": 3.5487
+                "carga_descarga": 115.25,
+                "custo_km": 3.5487
             },
             "eixo6": {
-                "Carga_Descarga": 123.47,
-                "Deslocamento": 4.0788
+                "carga_descarga": 123.47,
+                "custo_km": 4.0788
             },
             "eixo7": {
-                "Carga_Descarga": 140.03,
-                "Deslocamento": 4.305
+                "carga_descarga": 140.03,
+                "custo_km": 4.305
             },
             "eixo9": {
-                "Carga_Descarga": 144.62,
-                "Deslocamento": 4.7773
+                "carga_descarga": 144.62,
+                "custo_km": 4.7773
             }
         }
     },
     "lotacao": {
         "perigosaCargaFrigorificada": {
             "eixo2": {
-                "Carga_Descarga": 353.51,
-                "Deslocamento": 3.5436
+                "carga_descarga": 353.51,
+                "custo_km": 3.5436
             },
             "eixo3": {
-                "Carga_Descarga": 399.5,
-                "Deslocamento": 4.3997
+                "carga_descarga": 399.5,
+                "custo_km": 4.3997
             },
             "eixo4": {
-                "Carga_Descarga": 424.72,
-                "Deslocamento": 4.9971
+                "carga_descarga": 424.72,
+                "custo_km": 4.9971
             },
             "eixo5": {
-                "Carga_Descarga": 484.04,
-                "Deslocamento": 5.7336
+                "carga_descarga": 484.04,
+                "custo_km": 5.7336
             },
             "eixo6": {
-                "Carga_Descarga": 522.17,
-                "Deslocamento": 6.4435
+                "carga_descarga": 522.17,
+                "custo_km": 6.4435
             },
             "eixo7": {
-                "Carga_Descarga": 584.52,
-                "Deslocamento": 6.9051
+                "carga_descarga": 584.52,
+                "custo_km": 6.9051
             },
             "eixo9": {
-                "Carga_Descarga": 628.77,
-                "Deslocamento": 7.8396
+                "carga_descarga": 628.77,
+                "custo_km": 7.8396
             }
         },
         "perigosaGranelSolido": {
             "eixo2": {
-                "Carga_Descarga": 349.07,
-                "Deslocamento": 3.1745
+                "carga_descarga": 349.07,
+                "custo_km": 3.1745
             },
             "eixo3": {
-                "Carga_Descarga": 394.24,
-                "Deslocamento": 3.9159
+                "carga_descarga": 394.24,
+                "custo_km": 3.9159
             },
             "eixo4": {
-                "Carga_Descarga": 406.6,
-                "Deslocamento": 4.4051
+                "carga_descarga": 406.6,
+                "custo_km": 4.4051
             },
             "eixo5": {
-                "Carga_Descarga": 437.68,
-                "Deslocamento": 4.959
+                "carga_descarga": 437.68,
+                "custo_km": 4.959
             },
             "eixo6": {
-                "Carga_Descarga": 475.81,
-                "Deslocamento": 5.5779
+                "carga_descarga": 475.81,
+                "custo_km": 5.5779
             },
             "eixo7": {
-                "Carga_Descarga": 537.87,
-                "Deslocamento": 6.0385
+                "carga_descarga": 537.87,
+                "custo_km": 6.0385
             },
             "eixo9": {
-                "Carga_Descarga": 577.36,
-                "Deslocamento": 6.8446
+                "carga_descarga": 577.36,
+                "custo_km": 6.8446
             }
         },
         "frigorificada": {
             "eixo2": {
-                "Carga_Descarga": 274.71,
-                "Deslocamento": 3.09
+                "carga_descarga": 274.71,
+                "custo_km": 3.09
             },
             "eixo3": {
-                "Carga_Descarga": 320.7,
-                "Deslocamento": 3.9461
+                "carga_descarga": 320.7,
+                "custo_km": 3.9461
             },
             "eixo4": {
-                "Carga_Descarga": 339.13,
-                "Deslocamento": 4.5228
+                "carga_descarga": 339.13,
+                "custo_km": 4.5228
             },
             "eixo5": {
-                "Carga_Descarga": 398.45,
-                "Deslocamento": 5.2594
+                "carga_descarga": 398.45,
+                "custo_km": 5.2594
             },
             "eixo6": {
-                "Carga_Descarga": 436.58,
-                "Deslocamento": 5.9693
+                "carga_descarga": 436.58,
+                "custo_km": 5.9693
             },
             "eixo7": {
-                "Carga_Descarga": 492.23,
-                "Deslocamento": 6.4065
+                "carga_descarga": 492.23,
+                "custo_km": 6.4065
             },
             "eixo9": {
-                "Carga_Descarga": 536.49,
-                "Deslocamento": 7.3411
+                "carga_descarga": 536.49,
+                "custo_km": 7.3411
             }
         },
         "granelSolido": {
             "eixo2": {
-                "Carga_Descarga": 237.85,
-                "Deslocamento": 2.5895
+                "carga_descarga": 237.85,
+                "custo_km": 2.5895
             },
             "eixo3": {
-                "Carga_Descarga": 283.02,
-                "Deslocamento": 3.3309
+                "carga_descarga": 283.02,
+                "custo_km": 3.3309
             },
             "eixo4": {
-                "Carga_Descarga": 290.16,
-                "Deslocamento": 3.7916
+                "carga_descarga": 290.16,
+                "custo_km": 3.7916
             },
             "eixo5": {
-                "Carga_Descarga": 321.24,
-                "Deslocamento": 4.3454
+                "carga_descarga": 321.24,
+                "custo_km": 4.3454
             },
             "eixo6": {
-                "Carga_Descarga": 359.37,
-                "Deslocamento": 4.9644
+                "carga_descarga": 359.37,
+                "custo_km": 4.9644
             },
             "eixo7": {
-                "Carga_Descarga": 416.28,
-                "Deslocamento": 5.4062
+                "carga_descarga": 416.28,
+                "custo_km": 5.4062
             },
             "eixo9": {
-                "Carga_Descarga": 455.77,
-                "Deslocamento": 6.2123
+                "carga_descarga": 455.77,
+                "custo_km": 6.2123
             }
         },
         "perigosaConteinerizada": {
             "eixo2": {
-                "Carga_Descarga": 350.57,
-                "Deslocamento": 3.586
+                "carga_descarga": 350.57,
+                "custo_km": 3.586
             },
             "eixo3": {
-                "Carga_Descarga": 350.57,
-                "Deslocamento": 3.586
+                "carga_descarga": 350.57,
+                "custo_km": 3.586
             },
             "eixo4": {
-                "Carga_Descarga": 364.59,
-                "Deslocamento": 4.0812
+                "carga_descarga": 364.59,
+                "custo_km": 4.0812
             },
             "eixo5": {
-                "Carga_Descarga": 396.81,
-                "Deslocamento": 4.6392
+                "carga_descarga": 396.81,
+                "custo_km": 4.6392
             },
             "eixo6": {
-                "Carga_Descarga": 434.95,
-                "Deslocamento": 5.2582
+                "carga_descarga": 434.95,
+                "custo_km": 5.2582
             },
             "eixo7": {
-                "Carga_Descarga": 497.66,
-                "Deslocamento": 5.7211
+                "carga_descarga": 497.66,
+                "custo_km": 5.7211
             },
             "eixo9": {
-                "Carga_Descarga": 535.35,
-                "Deslocamento": 6.5207
+                "carga_descarga": 535.35,
+                "custo_km": 6.5207
             }
         },
         "granelLiquido": {
             "eixo2": {
-                "Carga_Descarga": 243.52,
-                "Deslocamento": 2.6271
+                "carga_descarga": 243.52,
+                "custo_km": 2.6271
             },
             "eixo3": {
-                "Carga_Descarga": 291.4,
-                "Deslocamento": 3.3783
+                "carga_descarga": 291.4,
+                "custo_km": 3.3783
             },
             "eixo4": {
-                "Carga_Descarga": 288.52,
-                "Deslocamento": 3.8196
+                "carga_descarga": 288.52,
+                "custo_km": 3.8196
             },
             "eixo5": {
-                "Carga_Descarga": 333.88,
-                "Deslocamento": 4.4254
+                "carga_descarga": 333.88,
+                "custo_km": 4.4254
             },
             "eixo6": {
-                "Carga_Descarga": 372.02,
-                "Deslocamento": 5.0444
+                "carga_descarga": 372.02,
+                "custo_km": 5.0444
             },
             "eixo7": {
-                "Carga_Descarga": 439.43,
-                "Deslocamento": 5.5244
+                "carga_descarga": 439.43,
+                "custo_km": 5.5244
             },
             "eixo9": {
-                "Carga_Descarga": 478.76,
-                "Deslocamento": 6.3299
+                "carga_descarga": 478.76,
+                "custo_km": 6.3299
             }
         },
         "granelPressurizada": {
             "eixo2": {
-                "Carga_Descarga": 364.65,
-                "Deslocamento": 4.5033
+                "carga_descarga": 364.65,
+                "custo_km": 4.5033
             },
             "eixo3": {
-                "Carga_Descarga": 364.65,
-                "Deslocamento": 4.5033
+                "carga_descarga": 364.65,
+                "custo_km": 4.5033
             },
             "eixo4": {
-                "Carga_Descarga": 364.65,
-                "Deslocamento": 4.5033
+                "carga_descarga": 364.65,
+                "custo_km": 4.5033
             },
             "eixo5": {
-                "Carga_Descarga": 364.65,
-                "Deslocamento": 4.5033
+                "carga_descarga": 364.65,
+                "custo_km": 4.5033
             },
             "eixo6": {
-                "Carga_Descarga": 402.78,
-                "Deslocamento": 5.1222
+                "carga_descarga": 402.78,
+                "custo_km": 5.1222
             },
             "eixo7": {
-                "Carga_Descarga": 519.11,
-                "Deslocamento": 6.4426
+                "carga_descarga": 519.11,
+                "custo_km": 6.4426
             },
             "eixo9": {
-                "Carga_Descarga": 519.11,
-                "Deslocamento": 6.4426
+                "carga_descarga": 519.11,
+                "custo_km": 6.4426
             }
         },
         "cargaGeral": {
             "eixo2": {
-                "Carga_Descarga": 236.05,
-                "Deslocamento": 2.5829
+                "carga_descarga": 236.05,
+                "custo_km": 2.5829
             },
             "eixo3": {
-                "Carga_Descarga": 279.72,
-                "Deslocamento": 3.3189
+                "carga_descarga": 279.72,
+                "custo_km": 3.3189
             },
             "eixo4": {
-                "Carga_Descarga": 288.52,
-                "Deslocamento": 3.7856
+                "carga_descarga": 288.52,
+                "custo_km": 3.7856
             },
             "eixo5": {
-                "Carga_Descarga": 320.75,
-                "Deslocamento": 4.3436
+                "carga_descarga": 320.75,
+                "custo_km": 4.3436
             },
             "eixo6": {
-                "Carga_Descarga": 358.88,
-                "Deslocamento": 4.9626
+                "carga_descarga": 358.88,
+                "custo_km": 4.9626
             },
             "eixo7": {
-                "Carga_Descarga": 416.44,
-                "Deslocamento": 5.4068
+                "carga_descarga": 416.44,
+                "custo_km": 5.4068
             },
             "eixo9": {
-                "Carga_Descarga": 454.13,
-                "Deslocamento": 6.2063
+                "carga_descarga": 454.13,
+                "custo_km": 6.2063
             }
         },
         "perigosaGranelLiquido": {
             "eixo2": {
-                "Carga_Descarga": 364.71,
-                "Deslocamento": 3.2314
+                "carga_descarga": 364.71,
+                "custo_km": 3.2314
             },
             "eixo3": {
-                "Carga_Descarga": 412.57,
-                "Deslocamento": 3.9826
+                "carga_descarga": 412.57,
+                "custo_km": 3.9826
             },
             "eixo4": {
-                "Carga_Descarga": 414.93,
-                "Deslocamento": 4.4354
+                "carga_descarga": 414.93,
+                "custo_km": 4.4354
             },
             "eixo5": {
-                "Carga_Descarga": 460.29,
-                "Deslocamento": 5.0412
+                "carga_descarga": 460.29,
+                "custo_km": 5.0412
             },
             "eixo6": {
-                "Carga_Descarga": 498.42,
-                "Deslocamento": 5.6602
+                "carga_descarga": 498.42,
+                "custo_km": 5.6602
             },
             "eixo7": {
-                "Carga_Descarga": 570.99,
-                "Deslocamento": 6.1589
+                "carga_descarga": 570.99,
+                "custo_km": 6.1589
             },
             "eixo9": {
-                "Carga_Descarga": 610.32,
-                "Deslocamento": 6.9644
+                "carga_descarga": 610.32,
+                "custo_km": 6.9644
             }
         },
         "perigosaCargaGeral": {
             "eixo2": {
-                "Carga_Descarga": 306.9,
-                "Deslocamento": 2.85
+                "carga_descarga": 306.9,
+                "custo_km": 2.85
             },
             "eixo3": {
-                "Carga_Descarga": 350.57,
-                "Deslocamento": 3.586
+                "carga_descarga": 350.57,
+                "custo_km": 3.586
             },
             "eixo4": {
-                "Carga_Descarga": 364.59,
-                "Deslocamento": 4.0812
+                "carga_descarga": 364.59,
+                "custo_km": 4.0812
             },
             "eixo5": {
-                "Carga_Descarga": 396.81,
-                "Deslocamento": 4.6392
+                "carga_descarga": 396.81,
+                "custo_km": 4.6392
             },
             "eixo6": {
-                "Carga_Descarga": 434.95,
-                "Deslocamento": 5.2582
+                "carga_descarga": 434.95,
+                "custo_km": 5.2582
             },
             "eixo7": {
-                "Carga_Descarga": 497.66,
-                "Deslocamento": 5.7211
+                "carga_descarga": 497.66,
+                "custo_km": 5.7211
             },
             "eixo9": {
-                "Carga_Descarga": 535.35,
-                "Deslocamento": 6.5207
+                "carga_descarga": 535.35,
+                "custo_km": 6.5207
             }
         },
         "conteinerizada": {
             "eixo2": {
-                "Carga_Descarga": 279.72,
-                "Deslocamento": 3.3189
+                "carga_descarga": 279.72,
+                "custo_km": 3.3189
             },
             "eixo3": {
-                "Carga_Descarga": 279.72,
-                "Deslocamento": 3.3189
+                "carga_descarga": 279.72,
+                "custo_km": 3.3189
             },
             "eixo4": {
-                "Carga_Descarga": 288.52,
-                "Deslocamento": 3.7856
+                "carga_descarga": 288.52,
+                "custo_km": 3.7856
             },
             "eixo5": {
-                "Carga_Descarga": 320.75,
-                "Deslocamento": 4.3436
+                "carga_descarga": 320.75,
+                "custo_km": 4.3436
             },
             "eixo6": {
-                "Carga_Descarga": 358.88,
-                "Deslocamento": 4.9626
+                "carga_descarga": 358.88,
+                "custo_km": 4.9626
             },
             "eixo7": {
-                "Carga_Descarga": 416.44,
-                "Deslocamento": 5.4068
+                "carga_descarga": 416.44,
+                "custo_km": 5.4068
             },
             "eixo9": {
-                "Carga_Descarga": 454.13,
-                "Deslocamento": 6.2063
+                "carga_descarga": 454.13,
+                "custo_km": 6.2063
             }
         },
         "neogranel": {
             "eixo2": {
-                "Carga_Descarga": 236.05,
-                "Deslocamento": 2.2865
+                "carga_descarga": 236.05,
+                "custo_km": 2.2865
             },
             "eixo3": {
-                "Carga_Descarga": 279.72,
-                "Deslocamento": 3.3189
+                "carga_descarga": 279.72,
+                "custo_km": 3.3189
             },
             "eixo4": {
-                "Carga_Descarga": 293.12,
-                "Deslocamento": 3.8023
+                "carga_descarga": 293.12,
+                "custo_km": 3.8023
             },
             "eixo5": {
-                "Carga_Descarga": 320.75,
-                "Deslocamento": 4.3436
+                "carga_descarga": 320.75,
+                "custo_km": 4.3436
             },
             "eixo6": {
-                "Carga_Descarga": 358.88,
-                "Deslocamento": 4.9626
+                "carga_descarga": 358.88,
+                "custo_km": 4.9626
             },
             "eixo7": {
-                "Carga_Descarga": 416.44,
-                "Deslocamento": 5.4068
+                "carga_descarga": 416.44,
+                "custo_km": 5.4068
             },
             "eixo9": {
-                "Carga_Descarga": 454.13,
-                "Deslocamento": 6.2063
+                "carga_descarga": 454.13,
+                "custo_km": 6.2063
             }
         }
     },
     "somenteAutomotor": {
         "perigosaCargaFrigorificada": {
             "eixo2": {
-                "Carga_Descarga": 380.94,
-                "Deslocamento": 4.6198
+                "carga_descarga": 380.94,
+                "custo_km": 4.6198
             },
             "eixo3": {
-                "Carga_Descarga": 380.94,
-                "Deslocamento": 4.6198
+                "carga_descarga": 380.94,
+                "custo_km": 4.6198
             },
             "eixo4": {
-                "Carga_Descarga": 380.94,
-                "Deslocamento": 4.6198
+                "carga_descarga": 380.94,
+                "custo_km": 4.6198
             },
             "eixo5": {
-                "Carga_Descarga": 406.59,
-                "Deslocamento": 5.1249
+                "carga_descarga": 406.59,
+                "custo_km": 5.1249
             },
             "eixo6": {
-                "Carga_Descarga": 444.73,
-                "Deslocamento": 5.8348
+                "carga_descarga": 444.73,
+                "custo_km": 5.8348
             },
             "eixo7": {
-                "Carga_Descarga": 499.08,
-                "Deslocamento": 6.1583
+                "carga_descarga": 499.08,
+                "custo_km": 6.1583
             },
             "eixo9": {
-                "Carga_Descarga": 520.35,
-                "Deslocamento": 6.7913
+                "carga_descarga": 520.35,
+                "custo_km": 6.7913
             }
         },
         "perigosaGranelSolido": {
             "eixo2": {
-                "Carga_Descarga": 380.06,
-                "Deslocamento": 4.0906
+                "carga_descarga": 380.06,
+                "custo_km": 4.0906
             },
             "eixo3": {
-                "Carga_Descarga": 380.06,
-                "Deslocamento": 4.0906
+                "carga_descarga": 380.06,
+                "custo_km": 4.0906
             },
             "eixo4": {
-                "Carga_Descarga": 380.06,
-                "Deslocamento": 4.0906
+                "carga_descarga": 380.06,
+                "custo_km": 4.0906
             },
             "eixo5": {
-                "Carga_Descarga": 405.71,
-                "Deslocamento": 4.5157
+                "carga_descarga": 405.71,
+                "custo_km": 4.5157
             },
             "eixo6": {
-                "Carga_Descarga": 443.85,
-                "Deslocamento": 5.1347
+                "carga_descarga": 443.85,
+                "custo_km": 5.1347
             },
             "eixo7": {
-                "Carga_Descarga": 491.51,
-                "Deslocamento": 5.4338
+                "carga_descarga": 491.51,
+                "custo_km": 5.4338
             },
             "eixo9": {
-                "Carga_Descarga": 512.78,
-                "Deslocamento": 5.9556
+                "carga_descarga": 512.78,
+                "custo_km": 5.9556
             }
         },
         "frigorificada": {
             "eixo2": {
-                "Carga_Descarga": 295.35,
-                "Deslocamento": 4.1456
+                "carga_descarga": 295.35,
+                "custo_km": 4.1456
             },
             "eixo3": {
-                "Carga_Descarga": 295.35,
-                "Deslocamento": 4.1456
+                "carga_descarga": 295.35,
+                "custo_km": 4.1456
             },
             "eixo4": {
-                "Carga_Descarga": 295.35,
-                "Deslocamento": 4.1456
+                "carga_descarga": 295.35,
+                "custo_km": 4.1456
             },
             "eixo5": {
-                "Carga_Descarga": 321.01,
-                "Deslocamento": 4.6507
+                "carga_descarga": 321.01,
+                "custo_km": 4.6507
             },
             "eixo6": {
-                "Carga_Descarga": 359.14,
-                "Deslocamento": 5.3606
+                "carga_descarga": 359.14,
+                "custo_km": 5.3606
             },
             "eixo7": {
-                "Carga_Descarga": 406.8,
-                "Deslocamento": 5.6598
+                "carga_descarga": 406.8,
+                "custo_km": 5.6598
             },
             "eixo9": {
-                "Carga_Descarga": 428.07,
-                "Deslocamento": 6.2927
+                "carga_descarga": 428.07,
+                "custo_km": 6.2927
             }
         },
         "granelSolido": {
             "eixo2": {
-                "Carga_Descarga": 263.62,
-                "Deslocamento": 3.477
+                "carga_descarga": 263.62,
+                "custo_km": 3.477
             },
             "eixo3": {
-                "Carga_Descarga": 263.62,
-                "Deslocamento": 3.477
+                "carga_descarga": 263.62,
+                "custo_km": 3.477
             },
             "eixo4": {
-                "Carga_Descarga": 263.62,
-                "Deslocamento": 3.477
+                "carga_descarga": 263.62,
+                "custo_km": 3.477
             },
             "eixo5": {
-                "Carga_Descarga": 289.28,
-                "Deslocamento": 3.9021
+                "carga_descarga": 289.28,
+                "custo_km": 3.9021
             },
             "eixo6": {
-                "Carga_Descarga": 327.41,
-                "Deslocamento": 4.5211
+                "carga_descarga": 327.41,
+                "custo_km": 4.5211
             },
             "eixo7": {
-                "Carga_Descarga": 369.92,
-                "Deslocamento": 4.8015
+                "carga_descarga": 369.92,
+                "custo_km": 4.8015
             },
             "eixo9": {
-                "Carga_Descarga": 391.19,
-                "Deslocamento": 5.3233
+                "carga_descarga": 391.19,
+                "custo_km": 5.3233
             }
         },
         "perigosaConteinerizada": {
             "eixo2": {
-                "Carga_Descarga": 339.69,
-                "Deslocamento": 3.7726
+                "carga_descarga": 339.69,
+                "custo_km": 3.7726
             },
             "eixo3": {
-                "Carga_Descarga": 339.69,
-                "Deslocamento": 3.7726
+                "carga_descarga": 339.69,
+                "custo_km": 3.7726
             },
             "eixo4": {
-                "Carga_Descarga": 339.69,
-                "Deslocamento": 3.7726
+                "carga_descarga": 339.69,
+                "custo_km": 3.7726
             },
             "eixo5": {
-                "Carga_Descarga": 365.34,
-                "Deslocamento": 4.1977
+                "carga_descarga": 365.34,
+                "custo_km": 4.1977
             },
             "eixo6": {
-                "Carga_Descarga": 403.48,
-                "Deslocamento": 4.8167
+                "carga_descarga": 403.48,
+                "custo_km": 4.8167
             },
             "eixo7": {
-                "Carga_Descarga": 451.14,
-                "Deslocamento": 5.1159
+                "carga_descarga": 451.14,
+                "custo_km": 5.1159
             },
             "eixo9": {
-                "Carga_Descarga": 472.41,
-                "Deslocamento": 5.6377
+                "carga_descarga": 472.41,
+                "custo_km": 5.6377
             }
         },
         "granelLiquido": {
             "eixo2": {
-                "Carga_Descarga": 263.62,
-                "Deslocamento": 3.511
+                "carga_descarga": 263.62,
+                "custo_km": 3.511
             },
             "eixo3": {
-                "Carga_Descarga": 263.62,
-                "Deslocamento": 3.511
+                "carga_descarga": 263.62,
+                "custo_km": 3.511
             },
             "eixo4": {
-                "Carga_Descarga": 263.62,
-                "Deslocamento": 3.511
+                "carga_descarga": 263.62,
+                "custo_km": 3.511
             },
             "eixo5": {
-                "Carga_Descarga": 289.28,
-                "Deslocamento": 3.9361
+                "carga_descarga": 289.28,
+                "custo_km": 3.9361
             },
             "eixo6": {
-                "Carga_Descarga": 327.41,
-                "Deslocamento": 4.5551
+                "carga_descarga": 327.41,
+                "custo_km": 4.5551
             },
             "eixo7": {
-                "Carga_Descarga": 369.92,
-                "Deslocamento": 4.8355
+                "carga_descarga": 369.92,
+                "custo_km": 4.8355
             },
             "eixo9": {
-                "Carga_Descarga": 391.19,
-                "Deslocamento": 5.3573
+                "carga_descarga": 391.19,
+                "custo_km": 5.3573
             }
         },
         "granelPressurizada": {
             "eixo2": {
-                "Carga_Descarga": 289.28,
-                "Deslocamento": 3.9021
+                "carga_descarga": 289.28,
+                "custo_km": 3.9021
             },
             "eixo3": {
-                "Carga_Descarga": 289.28,
-                "Deslocamento": 3.9021
+                "carga_descarga": 289.28,
+                "custo_km": 3.9021
             },
             "eixo4": {
-                "Carga_Descarga": 289.28,
-                "Deslocamento": 3.9021
+                "carga_descarga": 289.28,
+                "custo_km": 3.9021
             },
             "eixo5": {
-                "Carga_Descarga": 289.28,
-                "Deslocamento": 3.9021
+                "carga_descarga": 289.28,
+                "custo_km": 3.9021
             },
             "eixo6": {
-                "Carga_Descarga": 327.41,
-                "Deslocamento": 4.5211
+                "carga_descarga": 327.41,
+                "custo_km": 4.5211
             },
             "eixo7": {
-                "Carga_Descarga": 391.19,
-                "Deslocamento": 5.3233
+                "carga_descarga": 391.19,
+                "custo_km": 5.3233
             },
             "eixo9": {
-                "Carga_Descarga": 391.19,
-                "Deslocamento": 5.3233
+                "carga_descarga": 391.19,
+                "custo_km": 5.3233
             }
         },
         "cargaGeral": {
             "eixo2": {
-                "Carga_Descarga": 263.62,
-                "Deslocamento": 3.477
+                "carga_descarga": 263.62,
+                "custo_km": 3.477
             },
             "eixo3": {
-                "Carga_Descarga": 263.62,
-                "Deslocamento": 3.477
+                "carga_descarga": 263.62,
+                "custo_km": 3.477
             },
             "eixo4": {
-                "Carga_Descarga": 263.62,
-                "Deslocamento": 3.477
+                "carga_descarga": 263.62,
+                "custo_km": 3.477
             },
             "eixo5": {
-                "Carga_Descarga": 289.28,
-                "Deslocamento": 3.9021
+                "carga_descarga": 289.28,
+                "custo_km": 3.9021
             },
             "eixo6": {
-                "Carga_Descarga": 327.41,
-                "Deslocamento": 4.5211
+                "carga_descarga": 327.41,
+                "custo_km": 4.5211
             },
             "eixo7": {
-                "Carga_Descarga": 369.92,
-                "Deslocamento": 4.8015
+                "carga_descarga": 369.92,
+                "custo_km": 4.8015
             },
             "eixo9": {
-                "Carga_Descarga": 391.19,
-                "Deslocamento": 5.3233
+                "carga_descarga": 391.19,
+                "custo_km": 5.3233
             }
         },
         "perigosaGranelLiquido": {
             "eixo2": {
-                "Carga_Descarga": 390.03,
-                "Deslocamento": 4.1268
+                "carga_descarga": 390.03,
+                "custo_km": 4.1268
             },
             "eixo3": {
-                "Carga_Descarga": 390.03,
-                "Deslocamento": 4.1268
+                "carga_descarga": 390.03,
+                "custo_km": 4.1268
             },
             "eixo4": {
-                "Carga_Descarga": 390.03,
-                "Deslocamento": 4.1268
+                "carga_descarga": 390.03,
+                "custo_km": 4.1268
             },
             "eixo5": {
-                "Carga_Descarga": 415.68,
-                "Deslocamento": 4.5519
+                "carga_descarga": 415.68,
+                "custo_km": 4.5519
             },
             "eixo6": {
-                "Carga_Descarga": 453.82,
-                "Deslocamento": 5.1709
+                "carga_descarga": 453.82,
+                "custo_km": 5.1709
             },
             "eixo7": {
-                "Carga_Descarga": 501.48,
-                "Deslocamento": 5.4701
+                "carga_descarga": 501.48,
+                "custo_km": 5.4701
             },
             "eixo9": {
-                "Carga_Descarga": 522.75,
-                "Deslocamento": 5.9919
+                "carga_descarga": 522.75,
+                "custo_km": 5.9919
             }
         },
         "perigosaCargaGeral": {
             "eixo2": {
-                "Carga_Descarga": 339.69,
-                "Deslocamento": 3.7726
+                "carga_descarga": 339.69,
+                "custo_km": 3.7726
             },
             "eixo3": {
-                "Carga_Descarga": 339.69,
-                "Deslocamento": 3.7726
+                "carga_descarga": 339.69,
+                "custo_km": 3.7726
             },
             "eixo4": {
-                "Carga_Descarga": 339.69,
-                "Deslocamento": 3.7726
+                "carga_descarga": 339.69,
+                "custo_km": 3.7726
             },
             "eixo5": {
-                "Carga_Descarga": 365.34,
-                "Deslocamento": 4.1977
+                "carga_descarga": 365.34,
+                "custo_km": 4.1977
             },
             "eixo6": {
-                "Carga_Descarga": 403.48,
-                "Deslocamento": 4.8167
+                "carga_descarga": 403.48,
+                "custo_km": 4.8167
             },
             "eixo7": {
-                "Carga_Descarga": 451.14,
-                "Deslocamento": 5.1159
+                "carga_descarga": 451.14,
+                "custo_km": 5.1159
             },
             "eixo9": {
-                "Carga_Descarga": 472.41,
-                "Deslocamento": 5.6377
+                "carga_descarga": 472.41,
+                "custo_km": 5.6377
             }
         },
         "conteinerizada": {
             "eixo2": {
-                "Carga_Descarga": 263.62,
-                "Deslocamento": 3.477
+                "carga_descarga": 263.62,
+                "custo_km": 3.477
             },
             "eixo3": {
-                "Carga_Descarga": 263.62,
-                "Deslocamento": 3.477
+                "carga_descarga": 263.62,
+                "custo_km": 3.477
             },
             "eixo4": {
-                "Carga_Descarga": 263.62,
-                "Deslocamento": 3.477
+                "carga_descarga": 263.62,
+                "custo_km": 3.477
             },
             "eixo5": {
-                "Carga_Descarga": 289.28,
-                "Deslocamento": 3.9021
+                "carga_descarga": 289.28,
+                "custo_km": 3.9021
             },
             "eixo6": {
-                "Carga_Descarga": 327.41,
-                "Deslocamento": 4.5211
+                "carga_descarga": 327.41,
+                "custo_km": 4.5211
             },
             "eixo7": {
-                "Carga_Descarga": 369.92,
-                "Deslocamento": 4.8015
+                "carga_descarga": 369.92,
+                "custo_km": 4.8015
             },
             "eixo9": {
-                "Carga_Descarga": 391.19,
-                "Deslocamento": 5.3233
+                "carga_descarga": 391.19,
+                "custo_km": 5.3233
             }
         },
         "neogranel": {
             "eixo2": {
-                "Carga_Descarga": 263.62,
-                "Deslocamento": 3.477
+                "carga_descarga": 263.62,
+                "custo_km": 3.477
             },
             "eixo3": {
-                "Carga_Descarga": 263.62,
-                "Deslocamento": 3.477
+                "carga_descarga": 263.62,
+                "custo_km": 3.477
             },
             "eixo4": {
-                "Carga_Descarga": 263.62,
-                "Deslocamento": 3.477
+                "carga_descarga": 263.62,
+                "custo_km": 3.477
             },
             "eixo5": {
-                "Carga_Descarga": 289.28,
-                "Deslocamento": 3.9021
+                "carga_descarga": 289.28,
+                "custo_km": 3.9021
             },
             "eixo6": {
-                "Carga_Descarga": 327.41,
-                "Deslocamento": 4.5211
+                "carga_descarga": 327.41,
+                "custo_km": 4.5211
             },
             "eixo7": {
-                "Carga_Descarga": 369.92,
-                "Deslocamento": 4.8015
+                "carga_descarga": 369.92,
+                "custo_km": 4.8015
             },
             "eixo9": {
-                "Carga_Descarga": 391.19,
-                "Deslocamento": 5.3233
+                "carga_descarga": 391.19,
+                "custo_km": 5.3233
             }
         }
     }
