@@ -27,11 +27,11 @@ public class Main {
 	}
 
 	private static void init() {
-		conectar(); // conecta ao site
-		getValores();
-		classificaCampo();
-		popularConteudo();
-		gerarJSON();
+		conectar();
+		adquirirValores();
+		classificarCampos();
+		armazenarConteudo();
+		gerarArquivoJSON();
 	}
 
 	public static void conectar() {
@@ -41,7 +41,7 @@ public class Main {
 		}
 	}
 
-	public static void getValores() {
+	public static void adquirirValores() {
 		List<String> elementosTabelas = new ArrayList<>();
 		try {
 			for (Element e : doc.select(".dou-paragraph")) {
@@ -55,7 +55,7 @@ public class Main {
 		}
 	}
 
-	public static void popularConteudo() {
+	public static void armazenarConteudo() {
 		List<Conteudo> conteudos = new ArrayList<>();
 		int flag = 0;
 		int flag2 = flag + 7;
@@ -81,7 +81,7 @@ public class Main {
 				conteudo.getTipos().add(tipo);
 			}
 			conteudos.add(conteudo);
-			System.out.println("Flag: " + flag);
+
 		}
 		Main.informacoes = conteudos;
 	}
@@ -99,7 +99,7 @@ public class Main {
 		return true;
 	}
 
-	public static void classificaCampo() {
+	public static void classificarCampos() {
 		int i = 1;
 		for (String elemento : elementos) {
 			if (elemento.length() == 0) {
@@ -125,7 +125,7 @@ public class Main {
 		}
 	}
 
-	public static void gerarJSON() {
+	public static void gerarArquivoJSON() {
 		JSONArray arquivoPronto = new JSONArray();
 		JSONObject titulosJSON = new JSONObject();
 		for (Conteudo titulo : informacoes) {// lista de Titulos
