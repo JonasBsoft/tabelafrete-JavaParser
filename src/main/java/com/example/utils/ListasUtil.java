@@ -20,20 +20,6 @@ public class ListasUtil {
         }
     };
 
-    public static List<String> replaceTipos = new ArrayList<String>() {
-        {
-            add("Carga e descarga");
-            add("()!");
-            add("!");
-            add("     )");
-            add("  ");
-            add("Deslocamento");
-            add("(!");
-            add("(CCD)");
-            add("(CC)");
-        }
-    };
-
     public static List<String> regexs = new ArrayList<String>() {
         {
             add("\\d.\\d\\d\\d\\d");
@@ -57,18 +43,45 @@ public class ListasUtil {
             add("perigosaConteinerizada");
             add("perigosaCargaGeral");
             add("granelPressurizada");
+
+        }
+    };
+
+    public static List<String> popularTiposSemFiltro = new ArrayList<String>() {
+        {
+            add("Granel sólido");
+            add("Granel líquido");
+            add("Frigorificada ou Aquecida");
+            add("Conteinerizada");
+            add("Carga Geral");
+            add("Neogranel");
+            add("Perigosa (granel sólido)");
+            add("Perigosa (granel líquido)");
+            add("Perigosa (frigorificada ou aquecida)");
+            add("Perigosa (conteinerizada)");
+            add("Perigosa (carga geral)");
+            add("Carga Granel Pressurizada");
         }
     };
 
     public static List<String> popularEixos = new ArrayList<String>() {
         {
-            add("2");
-            add("3");
-            add("4");
-            add("5");
-            add("6");
-            add("7");
-            add("9");
+            add("eixo2");
+            add("eixo3");
+            add("eixo4");
+            add("eixo5");
+            add("eixo6");
+            add("eixo7");
+            add("eixo9");
+        }
+    };
+
+    public static List<String> titulos = new ArrayList<String>() {
+        {
+            add("lotacao");
+            add("somenteAutomotor");
+            add("lotacaoAltoDesempenho");
+            add("somenteAutomotorAltoDesempenho");
         }
     };
 }
