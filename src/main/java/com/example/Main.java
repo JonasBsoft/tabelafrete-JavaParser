@@ -1,167 +1,107 @@
 package com.example;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 
-import com.example.utils.LimpaElementos;
+import com.example.utils.ListasUtil;
 
 public class Main {
+
+	static Document doc;
 	static String url = "https://www.in.gov.br/en/web/dou/-/resolucao-n-5.959-de-20-de-janeiro-de-2022-375504795";
-	static List<String> tipos = new ArrayList<>();
-	static Document doc = conectar();
 	static List<String> elementos = new ArrayList<>();
-	static List<Linha> linhas = new ArrayList<>();
-	static Linha linha = new Linha();
-	static List<String> titulos = new ArrayList<>();
-	static int indiceTitulo = -1;
-	static int eixo = 1;
-	static Linha linhaAtual = new Linha();
 	static boolean coeficienteisDeslocamento = false;
+	static List<String> valores = new ArrayList<>();
+	static List<Conteudo> informacoes;
 
 	public static void main(String[] args) {
-		getTitulos();
-		getTipos();
-		getValores();
-		classificaCampo();
-
-		exibirElementos();
-
+		init();
 	}
 
-	private static void exibirElementos() {
-		int i = 1;
-		System.out.println("Entrando no exibir");
-		for (Linha linha : linhas) {
-			System.out.println("{");
-			System.out.println(linha.getTitulo() + ":{");
-			System.out.println(linha.getTipo() + ":{");
-			System.out.println("eixos2:{");
-			System.out.println("custo_km:");
-			System.out.println(linha.getEixos_deslocamento().get("2") + ",");
-			System.out.println("carga_descarga:");
-			System.out.println(linha.getEixos_carga_descarga().get("2"));
-			System.out.println("}, .... etc");
-		}
+	private static void init() {
+		conectar();
+		adquirirValores();
+		classificarCampos();
+		armazenarConteudo();
+		gerarArquivoJSON();
 	}
 
-	public static Document conectar() {
+	public static void conectar() {
 		try {
-
-			return Jsoup.connect(Main.url).get();
+			doc = Jsoup.connect(Main.url).get();
 		} catch (Exception e) {
-
 		}
-		return null;
 	}
 
-	public static void getTitulos() {
-		/**
-		 * atualiza os titulos da lista estatica de titulos
-		 */
-		Elements elementosTag = Main.doc.getElementsContainingText("TABELA");
-
-		int i = 0;
-		titulos = new ArrayList<>();
-		for (Element el : elementosTag)
-			if (el.text().contains("TABELA")) {
-				if (i >= 25) {
-					titulos.add(el.text());
-				}
-				i++;
-			}
-	}
-
-	public static void getTipos() {
-		/**
-		 * atualiza os tipos da lista estatica de tipos
-		 */
-
-		for (Element e : doc.select("tr")) {
-			String text = e.text();
-
-			String texto = "";
-
-			for (int j = 0; j < text.length(); j++) {
-				// itera letra por letra de cada linha
-
-				if (text.contains("#") || text.contains("Páginas") || text.contains("Visitantes")) {
-					j = text.length(); // remove as linhas Paginas/Visitantes/#Tipo de carga
-				} else {
-
-					if (text.charAt(j) == ')') {
-
-						j = text.length() + 20;
-					} else {
-
-						texto = texto + text.charAt(j);
-
-					}
-
-				}
-			}
-			if (texto.length() > 0) {
-
-				if (!(texto.charAt(texto.length() - 1) == '(')) {
-					texto = texto + ")";
-				}
-			}
-
-			texto = texto + "!";
-			texto = texto.replaceAll("[0-9]", "");
-
-			for (String string : LimpaElementos.replaceTipos) {
-				texto = texto.replace(string, "");
-			}
-
-			if (!tipos.contains(texto) && texto.length() > 1) {
-				tipos.add(texto);
-			}
-
-		}
-
-	}
-
-	public static void getValores() {
-
+	public static void adquirirValores() {
 		List<String> elementosTabelas = new ArrayList<>();
-
-		for (Element e : doc.select(".dou-paragraph")) {
-
-			String text = e.text();
-
-			if (limparElementos(text)) {
-				elementosTabelas.add(text);
+		try {
+			for (Element e : doc.select(".dou-paragraph")) {
+				String text = e.text();
+				if (limparElementos(text)) {
+					elementosTabelas.add(text);
+				}
 			}
+			elementos = elementosTabelas;
+		} catch (Exception e) {
 		}
+	}
 
-		elementos = elementosTabelas;
+	public static void armazenarConteudo() {
+		List<Conteudo> conteudos = new ArrayList<>();
+		int flag = 0;
+		int flag2 = flag + 7;
+		for (String titulo : ListasUtil.titulos) {
+
+			Conteudo conteudo = new Conteudo();
+			conteudo.setTitulo(titulo);
+			for (String tipos : ListasUtil.popularTipos) {
+				Tipo tipo = new Tipo();
+				tipo.setNome(tipos);
+				for (String eixos : ListasUtil.popularEixos) {
+					Eixo eixo = new Eixo();
+					eixo.setNomeEixo(eixos);
+					// System.out.println(flag + ", " + flag2);
+					eixo.setDeslocamento(Double.parseDouble(valores.get(flag)));
+					eixo.setCarga(Double.parseDouble(valores.get(flag2)));
+					tipo.getEixos().add(eixo);
+					flag++;
+					flag2 = flag + 7;
+				}
+				flag = flag + 7;
+				flag2 = flag + 7;
+				conteudo.getTipos().add(tipo);
+			}
+			conteudos.add(conteudo);
+
+		}
+		Main.informacoes = conteudos;
 	}
 
 	public static boolean limparElementos(String elemento) {
-
 		if (elemento.length() == 1) {
 			return false;
 		}
 
-		for (String string : LimpaElementos.palavrasParaRetirar) {
+		for (String string : ListasUtil.palavrasParaRetirar) {
 			if (elemento.contains(string)) {
 				return false;
 			}
 		}
-
 		return true;
 	}
 
-	public static void classificaCampo() {
-
+	public static void classificarCampos() {
 		int i = 1;
-
 		for (String elemento : elementos) {
-
 			if (elemento.length() == 0) {
 				if (elementos.get(i).length() == 0) {
 
@@ -173,102 +113,44 @@ public class Main {
 				} else {
 					elemento = elementos.get(i);
 				}
-
 			}
 
-			if (elemento.contains("(CC")) {
-				coeficienteisDeslocamento = !coeficienteisDeslocamento;
-
-			}
-
-			if (elemento.matches("\\d.\\d\\d\\d\\d")) {
-
-				elemento = adicionarValorEmLinha(elemento);
-
-			}
-			if (elemento.matches("\\d\\d.\\d\\d\\d\\d")) {
-				elemento = adicionarValorEmLinha(elemento);
-
-			}
-			if (elemento.matches("\\d\\d.\\d\\d")) {
-				elemento = adicionarValorEmLinha(elemento);
-
-			}
-			if (elemento.matches("\\d\\d\\d.\\d\\d")) {
-				elemento = adicionarValorEmLinha(elemento);
-
-			}
-			if (elemento.contains("TABELA")) {
-				// é o titulo de uma tabela
-
-				indiceTitulo = indiceTitulo + 1;
-
-			}
-
-			if (isTipo(elemento)) {
-				linhaAtual.setTipo(elemento);
-				linhaAtual.setTitulo(titulos.get(indiceTitulo));
-				if (isTipo(elementos.get(i))) {
-					// entra aqui caso o proximo elemento tambem seja um tipo
-					// serve para resolver o problema de ter dois tipos em seguida
-					elemento = "VAZIO";
-
-				} else {
-					adicionarLinhaEmTabela(linhaAtual);
-					linhaAtual = new Linha();
-
+			for (String regex : ListasUtil.regexs) {
+				if (elemento.matches(regex)) {
+					elemento = elemento.replace(",", ".");
+					valores.add(elemento);
 				}
-
-				// System.out.println(linhaAtual.getTitulo());
-
 			}
 			i++;
 		}
-
 	}
 
-	private static String adicionarValorEmLinha(String elemento) {
-		String eixo = String.valueOf(getEixo());
-
-		if (coeficienteisDeslocamento) {
-			linhaAtual.addEixos_deslocamento(eixo, elemento);
-
-		}
-		linhaAtual.addEixos_CargaeDescarga(eixo, elemento);
-		return "[" + eixo + "]VALORES: " + elemento;
-	}
-
-	private static void adicionarLinhaEmTabela(Linha linhaAtual) {
-
-		linhas.add(linhaAtual);
-		// se nao for null:
-
-	}
-
-	private static boolean isTipo(String elemento) {
-
-		boolean retorno = false;
-
-		for (String tipo : tipos) {
-			if (tipo.contains(elemento)) {
-				retorno = true;
+	public static void gerarArquivoJSON() {
+		JSONArray arquivoPronto = new JSONArray();
+		JSONObject titulosJSON = new JSONObject();
+		for (Conteudo titulo : informacoes) {// lista de Titulos
+			JSONObject tiposJSON = new JSONObject();
+			for (Tipo tipo : titulo.getTipos()) {
+				JSONObject eixoObj = new JSONObject();
+				for (Eixo eixo : tipo.getEixos()) {
+					JSONObject eixoValorJSON = new JSONObject();
+					eixoValorJSON.put("carga_descarga", eixo.getCarga());
+					eixoValorJSON.put("custo_km", eixo.getDeslocamento());
+					eixoObj.put(eixo.getNomeEixo(), eixoValorJSON);
+				}
+				tiposJSON.put(tipo.getNome(), eixoObj);
 			}
-
+			titulosJSON.put(titulo.getTitulo(), tiposJSON);
 		}
-		return retorno;
-	}
+		arquivoPronto.add(titulosJSON);
 
-	public static int getEixo() {
-		if (eixo == 7) {
-			eixo = 9;
-			return eixo;
+		try (FileWriter file = new FileWriter("tabelafrete.json")) {
+			file.write(arquivoPronto.toJSONString());
+			file.flush();
+			System.out.println("Arquivo Gerado");
+		} catch (IOException e) {
+			System.out.println("Erro ao gerar arquivo");
+			e.printStackTrace();
 		}
-		if (eixo == 9) {
-			eixo = 2;
-			return eixo;
-		}
-		eixo = eixo + 1;
-
-		return eixo;
 	}
 }
