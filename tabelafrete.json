@@ -1,1450 +1,1450 @@
 [
     {
         "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHO": {
-            "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOconteinerizada": {
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOconteinerizadaeixo5": {
-                    "Carga_Descarga": "3.8609",
-                    "Deslocamento": "109.73"
+            "perigosaCargaFrigorificada": {
+                "eixo2": {
+                    "Carga_Descarga": "166.45",
+                    "Deslocamento": "4.2434"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOconteinerizadaeixo4": {
-                    "Carga_Descarga": "3.8609",
-                    "Deslocamento": "109.73"
+                "eixo3": {
+                    "Carga_Descarga": "166.45",
+                    "Deslocamento": "4.2434"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOconteinerizadaeixo3": {
-                    "Carga_Descarga": "3.8609",
-                    "Deslocamento": "109.73"
+                "eixo4": {
+                    "Carga_Descarga": "166.45",
+                    "Deslocamento": "4.2434"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOconteinerizadaeixo2": {
-                    "Carga_Descarga": "144.62",
-                    "Deslocamento": "4.8113"
+                "eixo5": {
+                    "Carga_Descarga": "171.98",
+                    "Deslocamento": "4.6888"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOconteinerizadaeixo9": {
-                    "Carga_Descarga": "5.1737",
-                    "Deslocamento": "140.03"
+                "eixo6": {
+                    "Carga_Descarga": "180.20",
+                    "Deslocamento": "5.3098"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOconteinerizadaeixo7": {
-                    "Carga_Descarga": "4.9273",
-                    "Deslocamento": "123.47"
+                "eixo7": {
+                    "Carga_Descarga": "204.42",
+                    "Deslocamento": "5.5824"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOconteinerizadaeixo6": {
-                    "Carga_Descarga": "4.3063",
-                    "Deslocamento": "115.25"
+                "eixo9": {
+                    "Carga_Descarga": "209.01",
+                    "Deslocamento": "6.1658"
                 }
             },
-            "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaConteinerizada": {
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaConteinerizadaeixo2": {
-                    "Carga_Descarga": "144.62",
-                    "Deslocamento": "4.7773"
+            "perigosaGranelSolido": {
+                "eixo2": {
+                    "Carga_Descarga": "148.49",
+                    "Deslocamento": "3.6085"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaConteinerizadaeixo3": {
-                    "Carga_Descarga": "3.1834",
-                    "Deslocamento": "109.73"
+                "eixo3": {
+                    "Carga_Descarga": "148.49",
+                    "Deslocamento": "3.6085"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaConteinerizadaeixo6": {
-                    "Carga_Descarga": "3.5487",
-                    "Deslocamento": "115.25"
+                "eixo4": {
+                    "Carga_Descarga": "148.49",
+                    "Deslocamento": "3.6085"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaConteinerizadaeixo7": {
-                    "Carga_Descarga": "4.0788",
-                    "Deslocamento": "123.47"
+                "eixo5": {
+                    "Carga_Descarga": "154.02",
+                    "Deslocamento": "3.9738"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaConteinerizadaeixo4": {
-                    "Carga_Descarga": "3.1834",
-                    "Deslocamento": "109.73"
+                "eixo6": {
+                    "Carga_Descarga": "162.23",
+                    "Deslocamento": "4.5039"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaConteinerizadaeixo5": {
-                    "Carga_Descarga": "3.1834",
-                    "Deslocamento": "109.73"
+                "eixo7": {
+                    "Carga_Descarga": "182.13",
+                    "Deslocamento": "4.7503"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaConteinerizadaeixo9": {
-                    "Carga_Descarga": "4.3050",
-                    "Deslocamento": "140.03"
+                "eixo9": {
+                    "Carga_Descarga": "186.71",
+                    "Deslocamento": "5.2225"
                 }
             },
-            "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOneogranel": {
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOneograneleixo3": {
-                    "Carga_Descarga": "3.1834",
-                    "Deslocamento": "130.24"
+            "frigorificada": {
+                "eixo2": {
+                    "Carga_Descarga": "130.24",
+                    "Deslocamento": "3.8609"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOneograneleixo4": {
-                    "Carga_Descarga": "3.1834",
-                    "Deslocamento": "130.24"
+                "eixo3": {
+                    "Carga_Descarga": "130.24",
+                    "Deslocamento": "3.8609"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOneograneleixo5": {
-                    "Carga_Descarga": "3.1834",
-                    "Deslocamento": "130.24"
+                "eixo4": {
+                    "Carga_Descarga": "130.24",
+                    "Deslocamento": "3.8609"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOneograneleixo6": {
-                    "Carga_Descarga": "3.5487",
-                    "Deslocamento": "135.77"
+                "eixo5": {
+                    "Carga_Descarga": "135.77",
+                    "Deslocamento": "4.3063"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOneograneleixo7": {
-                    "Carga_Descarga": "4.0788",
-                    "Deslocamento": "143.98"
+                "eixo6": {
+                    "Carga_Descarga": "143.98",
+                    "Deslocamento": "4.9273"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOneograneleixo9": {
-                    "Carga_Descarga": "4.3050",
-                    "Deslocamento": "163.87"
+                "eixo7": {
+                    "Carga_Descarga": "163.87",
+                    "Deslocamento": "5.1737"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOneograneleixo2": {
+                "eixo9": {
                     "Carga_Descarga": "168.46",
                     "Deslocamento": "5.7570"
                 }
             },
-            "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaCargaFrigorificada": {
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaCargaFrigorificadaeixo6": {
+            "granelSolido": {
+                "eixo2": {
+                    "Carga_Descarga": "109.73",
+                    "Deslocamento": "3.1834"
+                },
+                "eixo3": {
+                    "Carga_Descarga": "109.73",
+                    "Deslocamento": "3.1834"
+                },
+                "eixo4": {
+                    "Carga_Descarga": "109.73",
+                    "Deslocamento": "3.1834"
+                },
+                "eixo5": {
                     "Carga_Descarga": "115.25",
                     "Deslocamento": "3.5487"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaCargaFrigorificadaeixo7": {
+                "eixo6": {
                     "Carga_Descarga": "123.47",
                     "Deslocamento": "4.0788"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaCargaFrigorificadaeixo4": {
-                    "Carga_Descarga": "109.73",
-                    "Deslocamento": "3.1834"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaCargaFrigorificadaeixo5": {
-                    "Carga_Descarga": "109.73",
-                    "Deslocamento": "3.1834"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaCargaFrigorificadaeixo2": {
-                    "Carga_Descarga": "4.7773",
-                    "Deslocamento": "144.62"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaCargaFrigorificadaeixo3": {
-                    "Carga_Descarga": "109.73",
-                    "Deslocamento": "3.1834"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaCargaFrigorificadaeixo9": {
+                "eixo7": {
                     "Carga_Descarga": "140.03",
                     "Deslocamento": "4.3050"
-                }
-            },
-            "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaGranelLiquido": {
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaGranelLiquidoeixo9": {
-                    "Carga_Descarga": "4.3050",
-                    "Deslocamento": "140.03"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaGranelLiquidoeixo7": {
-                    "Carga_Descarga": "4.0788",
-                    "Deslocamento": "123.47"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaGranelLiquidoeixo6": {
-                    "Carga_Descarga": "3.5487",
-                    "Deslocamento": "115.25"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaGranelLiquidoeixo5": {
-                    "Carga_Descarga": "3.1834",
-                    "Deslocamento": "109.73"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaGranelLiquidoeixo4": {
-                    "Carga_Descarga": "3.1834",
-                    "Deslocamento": "109.73"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaGranelLiquidoeixo3": {
-                    "Carga_Descarga": "3.1834",
-                    "Deslocamento": "109.73"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaGranelLiquidoeixo2": {
+                "eixo9": {
                     "Carga_Descarga": "144.62",
                     "Deslocamento": "4.7773"
                 }
             },
-            "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOfrigorificada": {
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOfrigorificadaeixo4": {
+            "perigosaConteinerizada": {
+                "eixo2": {
+                    "Carga_Descarga": "139.79",
+                    "Deslocamento": "3.3846"
+                },
+                "eixo3": {
+                    "Carga_Descarga": "139.79",
+                    "Deslocamento": "3.3846"
+                },
+                "eixo4": {
+                    "Carga_Descarga": "139.79",
+                    "Deslocamento": "3.3846"
+                },
+                "eixo5": {
+                    "Carga_Descarga": "145.32",
+                    "Deslocamento": "3.7499"
+                },
+                "eixo6": {
+                    "Carga_Descarga": "153.54",
+                    "Deslocamento": "4.2801"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "173.43",
+                    "Deslocamento": "4.5265"
+                },
+                "eixo9": {
+                    "Carga_Descarga": "178.01",
+                    "Deslocamento": "4.9987"
+                }
+            },
+            "granelLiquido": {
+                "eixo2": {
                     "Carga_Descarga": "109.73",
                     "Deslocamento": "3.2174"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOfrigorificadaeixo5": {
+                "eixo3": {
                     "Carga_Descarga": "109.73",
                     "Deslocamento": "3.2174"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOfrigorificadaeixo2": {
-                    "Carga_Descarga": "4.8113",
-                    "Deslocamento": "144.62"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOfrigorificadaeixo3": {
+                "eixo4": {
                     "Carga_Descarga": "109.73",
                     "Deslocamento": "3.2174"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOfrigorificadaeixo9": {
-                    "Carga_Descarga": "140.03",
-                    "Deslocamento": "4.3391"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOfrigorificadaeixo6": {
+                "eixo5": {
                     "Carga_Descarga": "115.25",
                     "Deslocamento": "3.5827"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOfrigorificadaeixo7": {
+                "eixo6": {
                     "Carga_Descarga": "123.47",
                     "Deslocamento": "4.1129"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "140.03",
+                    "Deslocamento": "4.3391"
+                },
+                "eixo9": {
+                    "Carga_Descarga": "144.62",
+                    "Deslocamento": "4.8113"
                 }
             },
-            "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaCargaGeral": {
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaCargaGeraleixo3": {
-                    "Carga_Descarga": "109.73",
-                    "Deslocamento": "3.1834"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaCargaGeraleixo4": {
-                    "Carga_Descarga": "109.73",
-                    "Deslocamento": "3.1834"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaCargaGeraleixo2": {
-                    "Carga_Descarga": "4.7773",
-                    "Deslocamento": "144.62"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaCargaGeraleixo7": {
-                    "Carga_Descarga": "123.47",
-                    "Deslocamento": "4.0788"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaCargaGeraleixo5": {
-                    "Carga_Descarga": "109.73",
-                    "Deslocamento": "3.1834"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaCargaGeraleixo6": {
+            "granelPressurizada": {
+                "eixo2": {
                     "Carga_Descarga": "115.25",
                     "Deslocamento": "3.5487"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaCargaGeraleixo9": {
-                    "Carga_Descarga": "140.03",
-                    "Deslocamento": "4.3050"
-                }
-            },
-            "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaGranelSolido": {
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaGranelSolidoeixo9": {
-                    "Carga_Descarga": "140.03",
-                    "Deslocamento": "4.3050"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaGranelSolidoeixo7": {
-                    "Carga_Descarga": "123.47",
-                    "Deslocamento": "4.0788"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaGranelSolidoeixo5": {
-                    "Carga_Descarga": "109.73",
-                    "Deslocamento": "3.1834"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaGranelSolidoeixo6": {
+                "eixo3": {
                     "Carga_Descarga": "115.25",
                     "Deslocamento": "3.5487"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaGranelSolidoeixo3": {
-                    "Carga_Descarga": "109.73",
-                    "Deslocamento": "3.1834"
+                "eixo4": {
+                    "Carga_Descarga": "115.25",
+                    "Deslocamento": "3.5487"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaGranelSolidoeixo4": {
-                    "Carga_Descarga": "109.73",
-                    "Deslocamento": "3.1834"
+                "eixo5": {
+                    "Carga_Descarga": "115.25",
+                    "Deslocamento": "3.5487"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOperigosaGranelSolidoeixo2": {
-                    "Carga_Descarga": "4.7773",
-                    "Deslocamento": "168.46"
-                }
-            },
-            "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOgranelLiquido": {
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOgranelLiquidoeixo9": {
-                    "Carga_Descarga": "4.3391",
-                    "Deslocamento": "140.03"
+                "eixo6": {
+                    "Carga_Descarga": "123.47",
+                    "Deslocamento": "4.0788"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOgranelLiquidoeixo2": {
+                "eixo7": {
                     "Carga_Descarga": "144.62",
                     "Deslocamento": "4.7773"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOgranelLiquidoeixo3": {
-                    "Carga_Descarga": "3.2174",
-                    "Deslocamento": "109.73"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOgranelLiquidoeixo4": {
-                    "Carga_Descarga": "3.2174",
-                    "Deslocamento": "109.73"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOgranelLiquidoeixo5": {
-                    "Carga_Descarga": "3.2174",
-                    "Deslocamento": "109.73"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOgranelLiquidoeixo6": {
-                    "Carga_Descarga": "3.5827",
-                    "Deslocamento": "115.25"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOgranelLiquidoeixo7": {
-                    "Carga_Descarga": "4.1129",
-                    "Deslocamento": "123.47"
-                }
-            },
-            "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOcargaGeral": {
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOcargaGeraleixo2": {
-                    "Carga_Descarga": "5.7570",
-                    "Deslocamento": "144.62"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOcargaGeraleixo3": {
-                    "Carga_Descarga": "130.24",
-                    "Deslocamento": "3.8609"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOcargaGeraleixo4": {
-                    "Carga_Descarga": "130.24",
-                    "Deslocamento": "3.8609"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOcargaGeraleixo5": {
-                    "Carga_Descarga": "130.24",
-                    "Deslocamento": "3.8609"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOcargaGeraleixo6": {
-                    "Carga_Descarga": "135.77",
-                    "Deslocamento": "4.3063"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOcargaGeraleixo7": {
-                    "Carga_Descarga": "143.98",
-                    "Deslocamento": "4.9273"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOcargaGeraleixo9": {
-                    "Carga_Descarga": "163.87",
-                    "Deslocamento": "5.1737"
-                }
-            },
-            "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOgranelPressurizada": {
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOgranelPressurizadaeixo3": {
-                    "Carga_Descarga": "3.6085",
-                    "Deslocamento": "109.73"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOgranelPressurizadaeixo2": {
+                "eixo9": {
                     "Carga_Descarga": "144.62",
                     "Deslocamento": "4.7773"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOgranelPressurizadaeixo5": {
-                    "Carga_Descarga": "3.6085",
-                    "Deslocamento": "109.73"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOgranelPressurizadaeixo4": {
-                    "Carga_Descarga": "3.6085",
-                    "Deslocamento": "109.73"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOgranelPressurizadaeixo7": {
-                    "Carga_Descarga": "4.5039",
-                    "Deslocamento": "123.47"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOgranelPressurizadaeixo6": {
-                    "Carga_Descarga": "3.9738",
-                    "Deslocamento": "115.25"
-                },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOgranelPressurizadaeixo9": {
-                    "Carga_Descarga": "4.7503",
-                    "Deslocamento": "140.03"
                 }
             },
-            "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOgranelSolido": {
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOgranelSolidoeixo9": {
-                    "Carga_Descarga": "140.03",
-                    "Deslocamento": "4.3050"
+            "cargaGeral": {
+                "eixo2": {
+                    "Carga_Descarga": "109.73",
+                    "Deslocamento": "3.1834"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOgranelSolidoeixo7": {
-                    "Carga_Descarga": "123.47",
-                    "Deslocamento": "4.0788"
+                "eixo3": {
+                    "Carga_Descarga": "109.73",
+                    "Deslocamento": "3.1834"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOgranelSolidoeixo6": {
+                "eixo4": {
+                    "Carga_Descarga": "109.73",
+                    "Deslocamento": "3.1834"
+                },
+                "eixo5": {
                     "Carga_Descarga": "115.25",
                     "Deslocamento": "3.5487"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOgranelSolidoeixo5": {
+                "eixo6": {
+                    "Carga_Descarga": "123.47",
+                    "Deslocamento": "4.0788"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "140.03",
+                    "Deslocamento": "4.3050"
+                },
+                "eixo9": {
+                    "Carga_Descarga": "144.62",
+                    "Deslocamento": "4.7773"
+                }
+            },
+            "perigosaGranelLiquido": {
+                "eixo2": {
+                    "Carga_Descarga": "150.64",
+                    "Deslocamento": "3.6215"
+                },
+                "eixo3": {
+                    "Carga_Descarga": "150.64",
+                    "Deslocamento": "3.6215"
+                },
+                "eixo4": {
+                    "Carga_Descarga": "150.64",
+                    "Deslocamento": "3.6215"
+                },
+                "eixo5": {
+                    "Carga_Descarga": "156.17",
+                    "Deslocamento": "3.9868"
+                },
+                "eixo6": {
+                    "Carga_Descarga": "164.38",
+                    "Deslocamento": "4.5169"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "184.27",
+                    "Deslocamento": "4.7633"
+                },
+                "eixo9": {
+                    "Carga_Descarga": "188.86",
+                    "Deslocamento": "5.2356"
+                }
+            },
+            "perigosaCargaGeral": {
+                "eixo2": {
+                    "Carga_Descarga": "139.79",
+                    "Deslocamento": "3.3846"
+                },
+                "eixo3": {
+                    "Carga_Descarga": "139.79",
+                    "Deslocamento": "3.3846"
+                },
+                "eixo4": {
+                    "Carga_Descarga": "139.79",
+                    "Deslocamento": "3.3846"
+                },
+                "eixo5": {
+                    "Carga_Descarga": "145.32",
+                    "Deslocamento": "3.7499"
+                },
+                "eixo6": {
+                    "Carga_Descarga": "153.54",
+                    "Deslocamento": "4.2801"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "173.43",
+                    "Deslocamento": "4.5265"
+                },
+                "eixo9": {
+                    "Carga_Descarga": "178.01",
+                    "Deslocamento": "4.9987"
+                }
+            },
+            "conteinerizada": {
+                "eixo2": {
                     "Carga_Descarga": "109.73",
                     "Deslocamento": "3.1834"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOgranelSolidoeixo4": {
+                "eixo3": {
                     "Carga_Descarga": "109.73",
                     "Deslocamento": "3.1834"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOgranelSolidoeixo3": {
+                "eixo4": {
                     "Carga_Descarga": "109.73",
                     "Deslocamento": "3.1834"
                 },
-                "AUTOMOTOR DE CARGAS DE ALTO DESEMPENHOgranelSolidoeixo2": {
-                    "Carga_Descarga": "5.9610",
-                    "Deslocamento": "172.18"
+                "eixo5": {
+                    "Carga_Descarga": "115.25",
+                    "Deslocamento": "3.5487"
+                },
+                "eixo6": {
+                    "Carga_Descarga": "123.47",
+                    "Deslocamento": "4.0788"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "140.03",
+                    "Deslocamento": "4.3050"
+                },
+                "eixo9": {
+                    "Carga_Descarga": "144.62",
+                    "Deslocamento": "4.7773"
+                }
+            },
+            "neogranel": {
+                "eixo2": {
+                    "Carga_Descarga": "109.73",
+                    "Deslocamento": "3.1834"
+                },
+                "eixo3": {
+                    "Carga_Descarga": "109.73",
+                    "Deslocamento": "3.1834"
+                },
+                "eixo4": {
+                    "Carga_Descarga": "109.73",
+                    "Deslocamento": "3.1834"
+                },
+                "eixo5": {
+                    "Carga_Descarga": "115.25",
+                    "Deslocamento": "3.5487"
+                },
+                "eixo6": {
+                    "Carga_Descarga": "123.47",
+                    "Deslocamento": "4.0788"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "140.03",
+                    "Deslocamento": "4.3050"
+                },
+                "eixo9": {
+                    "Carga_Descarga": "144.62",
+                    "Deslocamento": "4.7773"
                 }
             }
         },
-        "LOTA��O DE ALTO DESEMPENHO": {
-            "LOTA��O DE ALTO DESEMPENHOperigosaGranelLiquido": {
-                "LOTA��O DE ALTO DESEMPENHOperigosaGranelLiquidoeixo9": {
-                    "Carga_Descarga": "4.8019",
-                    "Deslocamento": "150.06"
+        "LOTAÇÃO DE ALTO DESEMPENHO": {
+            "perigosaCargaFrigorificada": {
+                "eixo2": {
+                    "Carga_Descarga": "147.88",
+                    "Deslocamento": "3.1543"
                 },
-                "LOTA��O DE ALTO DESEMPENHOperigosaGranelLiquidoeixo7": {
-                    "Carga_Descarga": "4.4470",
-                    "Deslocamento": "130.25"
+                "eixo3": {
+                    "Carga_Descarga": "157.79",
+                    "Deslocamento": "3.9033"
                 },
-                "LOTA��O DE ALTO DESEMPENHOperigosaGranelLiquidoeixo2": {
-                    "Carga_Descarga": "158.18",
-                    "Deslocamento": "5.5136"
+                "eixo4": {
+                    "Carga_Descarga": "175.89",
+                    "Deslocamento": "4.5186"
                 },
-                "LOTA��O DE ALTO DESEMPENHOperigosaGranelLiquidoeixo5": {
-                    "Carga_Descarga": "3.4340",
-                    "Deslocamento": "115.09"
+                "eixo5": {
+                    "Carga_Descarga": "188.67",
+                    "Deslocamento": "5.1169"
                 },
-                "LOTA��O DE ALTO DESEMPENHOperigosaGranelLiquidoeixo6": {
-                    "Carga_Descarga": "3.9169",
-                    "Deslocamento": "122.04"
+                "eixo6": {
+                    "Carga_Descarga": "196.89",
+                    "Deslocamento": "5.7380"
                 },
-                "LOTA��O DE ALTO DESEMPENHOperigosaGranelLiquidoeixo3": {
-                    "Carga_Descarga": "2.3081",
-                    "Deslocamento": "105.70"
+                "eixo7": {
+                    "Carga_Descarga": "222.83",
+                    "Deslocamento": "6.1301"
                 },
-                "LOTA��O DE ALTO DESEMPENHOperigosaGranelLiquidoeixo4": {
-                    "Carga_Descarga": "2.9423",
-                    "Deslocamento": "105.70"
+                "eixo9": {
+                    "Carga_Descarga": "232.37",
+                    "Deslocamento": "6.9615"
                 }
             },
-            "LOTA��O DE ALTO DESEMPENHOfrigorificada": {
-                "LOTA��O DE ALTO DESEMPENHOfrigorificadaeixo2": {
-                    "Carga_Descarga": "5.5798",
-                    "Deslocamento": "158.53"
+            "perigosaGranelSolido": {
+                "eixo2": {
+                    "Carga_Descarga": "132.07",
+                    "Deslocamento": "2.7056"
                 },
-                "LOTA��O DE ALTO DESEMPENHOfrigorificadaeixo6": {
-                    "Carga_Descarga": "124.87",
-                    "Deslocamento": "3.9681"
+                "eixo3": {
+                    "Carga_Descarga": "141.80",
+                    "Deslocamento": "3.3417"
                 },
-                "LOTA��O DE ALTO DESEMPENHOfrigorificadaeixo5": {
-                    "Carga_Descarga": "115.09",
-                    "Deslocamento": "3.4680"
+                "eixo4": {
+                    "Carga_Descarga": "154.21",
+                    "Deslocamento": "3.8612"
                 },
-                "LOTA��O DE ALTO DESEMPENHOfrigorificadaeixo4": {
-                    "Carga_Descarga": "108.22",
-                    "Deslocamento": "2.9746"
+                "eixo5": {
+                    "Carga_Descarga": "160.90",
+                    "Deslocamento": "4.3426"
                 },
-                "LOTA��O DE ALTO DESEMPENHOfrigorificadaeixo3": {
-                    "Carga_Descarga": "97.90",
-                    "Deslocamento": "2.3349"
+                "eixo6": {
+                    "Carga_Descarga": "169.12",
+                    "Deslocamento": "4.8727"
                 },
-                "LOTA��O DE ALTO DESEMPENHOfrigorificadaeixo9": {
-                    "Carga_Descarga": "155.01",
-                    "Deslocamento": "4.8659"
+                "eixo7": {
+                    "Carga_Descarga": "192.12",
+                    "Deslocamento": "5.2469"
                 },
-                "LOTA��O DE ALTO DESEMPENHOfrigorificadaeixo7": {
-                    "Carga_Descarga": "133.08",
-                    "Deslocamento": "4.4982"
+                "eixo9": {
+                    "Carga_Descarga": "200.63",
+                    "Deslocamento": "5.9610"
                 }
             },
-            "LOTA��O DE ALTO DESEMPENHOperigosaCargaGeral": {
-                "LOTA��O DE ALTO DESEMPENHOperigosaCargaGeraleixo4": {
-                    "Carga_Descarga": "105.70",
-                    "Deslocamento": "2.9423"
-                },
-                "LOTA��O DE ALTO DESEMPENHOperigosaCargaGeraleixo5": {
-                    "Carga_Descarga": "116.08",
-                    "Deslocamento": "3.4400"
-                },
-                "LOTA��O DE ALTO DESEMPENHOperigosaCargaGeraleixo6": {
-                    "Carga_Descarga": "122.04",
-                    "Deslocamento": "3.9169"
-                },
-                "LOTA��O DE ALTO DESEMPENHOperigosaCargaGeraleixo7": {
-                    "Carga_Descarga": "130.25",
-                    "Deslocamento": "4.4470"
-                },
-                "LOTA��O DE ALTO DESEMPENHOperigosaCargaGeraleixo9": {
-                    "Carga_Descarga": "150.06",
-                    "Deslocamento": "4.8019"
-                },
-                "LOTA��O DE ALTO DESEMPENHOperigosaCargaGeraleixo2": {
-                    "Carga_Descarga": "5.5136",
-                    "Deslocamento": "158.18"
-                },
-                "LOTA��O DE ALTO DESEMPENHOperigosaCargaGeraleixo3": {
-                    "Carga_Descarga": "96.29",
-                    "Deslocamento": "2.0117"
-                }
-            },
-            "LOTA��O DE ALTO DESEMPENHOperigosaCargaFrigorificada": {
-                "LOTA��O DE ALTO DESEMPENHOperigosaCargaFrigorificadaeixo7": {
-                    "Carga_Descarga": "130.25",
-                    "Deslocamento": "4.4470"
-                },
-                "LOTA��O DE ALTO DESEMPENHOperigosaCargaFrigorificadaeixo9": {
-                    "Carga_Descarga": "150.06",
-                    "Deslocamento": "4.8019"
-                },
-                "LOTA��O DE ALTO DESEMPENHOperigosaCargaFrigorificadaeixo2": {
-                    "Carga_Descarga": "5.5136",
-                    "Deslocamento": "158.18"
-                },
-                "LOTA��O DE ALTO DESEMPENHOperigosaCargaFrigorificadaeixo3": {
-                    "Carga_Descarga": "96.29",
-                    "Deslocamento": "2.3081"
-                },
-                "LOTA��O DE ALTO DESEMPENHOperigosaCargaFrigorificadaeixo4": {
-                    "Carga_Descarga": "105.70",
-                    "Deslocamento": "2.9423"
-                },
-                "LOTA��O DE ALTO DESEMPENHOperigosaCargaFrigorificadaeixo5": {
-                    "Carga_Descarga": "115.09",
-                    "Deslocamento": "3.4340"
-                },
-                "LOTA��O DE ALTO DESEMPENHOperigosaCargaFrigorificadaeixo6": {
-                    "Carga_Descarga": "122.04",
-                    "Deslocamento": "3.9169"
-                }
-            },
-            "LOTA��O DE ALTO DESEMPENHOcargaGeral": {
-                "LOTA��O DE ALTO DESEMPENHOcargaGeraleixo5": {
-                    "Carga_Descarga": "139.67",
-                    "Deslocamento": "4.1361"
-                },
-                "LOTA��O DE ALTO DESEMPENHOcargaGeraleixo4": {
-                    "Carga_Descarga": "125.96",
-                    "Deslocamento": "3.5433"
-                },
-                "LOTA��O DE ALTO DESEMPENHOcargaGeraleixo3": {
+            "frigorificada": {
+                "eixo2": {
                     "Carga_Descarga": "116.05",
                     "Deslocamento": "2.7943"
                 },
-                "LOTA��O DE ALTO DESEMPENHOcargaGeraleixo2": {
-                    "Carga_Descarga": "6.5527",
-                    "Deslocamento": "163.48"
+                "eixo3": {
+                    "Carga_Descarga": "125.96",
+                    "Deslocamento": "3.5433"
                 },
-                "LOTA��O DE ALTO DESEMPENHOcargaGeraleixo9": {
-                    "Carga_Descarga": "182.28",
-                    "Deslocamento": "5.7213"
+                "eixo4": {
+                    "Carga_Descarga": "139.67",
+                    "Deslocamento": "4.1361"
                 },
-                "LOTA��O DE ALTO DESEMPENHOcargaGeraleixo7": {
+                "eixo5": {
+                    "Carga_Descarga": "152.45",
+                    "Deslocamento": "4.7345"
+                },
+                "eixo6": {
                     "Carga_Descarga": "160.67",
                     "Deslocamento": "5.3555"
                 },
-                "LOTA��O DE ALTO DESEMPENHOcargaGeraleixo6": {
-                    "Carga_Descarga": "152.45",
-                    "Deslocamento": "4.7345"
-                }
-            },
-            "LOTA��O DE ALTO DESEMPENHOgranelPressurizada": {
-                "LOTA��O DE ALTO DESEMPENHOgranelPressurizadaeixo4": {
-                    "Carga_Descarga": "3.3417",
-                    "Deslocamento": "105.70"
+                "eixo7": {
+                    "Carga_Descarga": "182.28",
+                    "Deslocamento": "5.7213"
                 },
-                "LOTA��O DE ALTO DESEMPENHOgranelPressurizadaeixo3": {
-                    "Carga_Descarga": "2.7056",
-                    "Deslocamento": "96.29"
-                },
-                "LOTA��O DE ALTO DESEMPENHOgranelPressurizadaeixo2": {
-                    "Carga_Descarga": "158.18",
-                    "Deslocamento": "5.5136"
-                },
-                "LOTA��O DE ALTO DESEMPENHOgranelPressurizadaeixo9": {
-                    "Carga_Descarga": "5.2469",
-                    "Deslocamento": "150.06"
-                },
-                "LOTA��O DE ALTO DESEMPENHOgranelPressurizadaeixo7": {
-                    "Carga_Descarga": "4.8727",
-                    "Deslocamento": "130.25"
-                },
-                "LOTA��O DE ALTO DESEMPENHOgranelPressurizadaeixo6": {
-                    "Carga_Descarga": "4.3426",
-                    "Deslocamento": "122.04"
-                },
-                "LOTA��O DE ALTO DESEMPENHOgranelPressurizadaeixo5": {
-                    "Carga_Descarga": "3.8612",
-                    "Deslocamento": "116.08"
-                }
-            },
-            "LOTA��O DE ALTO DESEMPENHOneogranel": {
-                "LOTA��O DE ALTO DESEMPENHOneograneleixo7": {
-                    "Carga_Descarga": "4.4470",
-                    "Deslocamento": "160.67"
-                },
-                "LOTA��O DE ALTO DESEMPENHOneograneleixo6": {
-                    "Carga_Descarga": "3.9169",
-                    "Deslocamento": "152.45"
-                },
-                "LOTA��O DE ALTO DESEMPENHOneograneleixo5": {
-                    "Carga_Descarga": "3.4340",
-                    "Deslocamento": "139.67"
-                },
-                "LOTA��O DE ALTO DESEMPENHOneograneleixo4": {
-                    "Carga_Descarga": "2.9423",
-                    "Deslocamento": "125.96"
-                },
-                "LOTA��O DE ALTO DESEMPENHOneograneleixo9": {
-                    "Carga_Descarga": "4.8019",
-                    "Deslocamento": "182.28"
-                },
-                "LOTA��O DE ALTO DESEMPENHOneograneleixo3": {
-                    "Carga_Descarga": "2.9423",
-                    "Deslocamento": "116.05"
-                },
-                "LOTA��O DE ALTO DESEMPENHOneograneleixo2": {
+                "eixo9": {
                     "Carga_Descarga": "191.82",
                     "Deslocamento": "6.5527"
                 }
             },
-            "LOTA��O DE ALTO DESEMPENHOperigosaConteinerizada": {
-                "LOTA��O DE ALTO DESEMPENHOperigosaConteinerizadaeixo9": {
-                    "Carga_Descarga": "4.8019",
-                    "Deslocamento": "150.06"
+            "granelSolido": {
+                "eixo2": {
+                    "Carga_Descarga": "96.68",
+                    "Deslocamento": "2.3105"
                 },
-                "LOTA��O DE ALTO DESEMPENHOperigosaConteinerizadaeixo7": {
-                    "Carga_Descarga": "4.4470",
-                    "Deslocamento": "130.25"
+                "eixo3": {
+                    "Carga_Descarga": "106.41",
+                    "Deslocamento": "2.9466"
                 },
-                "LOTA��O DE ALTO DESEMPENHOperigosaConteinerizadaeixo5": {
-                    "Carga_Descarga": "3.4400",
-                    "Deslocamento": "115.09"
+                "eixo4": {
+                    "Carga_Descarga": "115.45",
+                    "Deslocamento": "3.4361"
                 },
-                "LOTA��O DE ALTO DESEMPENHOperigosaConteinerizadaeixo6": {
-                    "Carga_Descarga": "3.9169",
-                    "Deslocamento": "122.04"
+                "eixo5": {
+                    "Carga_Descarga": "122.14",
+                    "Deslocamento": "3.9175"
                 },
-                "LOTA��O DE ALTO DESEMPENHOperigosaConteinerizadaeixo3": {
-                    "Carga_Descarga": "2.0117",
-                    "Deslocamento": "96.29"
+                "eixo6": {
+                    "Carga_Descarga": "130.36",
+                    "Deslocamento": "4.4476"
                 },
-                "LOTA��O DE ALTO DESEMPENHOperigosaConteinerizadaeixo4": {
-                    "Carga_Descarga": "2.9423",
-                    "Deslocamento": "105.70"
+                "eixo7": {
+                    "Carga_Descarga": "150.02",
+                    "Deslocamento": "4.8017"
                 },
-                "LOTA��O DE ALTO DESEMPENHOperigosaConteinerizadaeixo2": {
+                "eixo9": {
+                    "Carga_Descarga": "158.53",
+                    "Deslocamento": "5.5157"
+                }
+            },
+            "perigosaConteinerizada": {
+                "eixo2": {
+                    "Carga_Descarga": "132.39",
+                    "Deslocamento": "3.1136"
+                },
+                "eixo3": {
+                    "Carga_Descarga": "132.39",
+                    "Deslocamento": "3.1136"
+                },
+                "eixo4": {
+                    "Carga_Descarga": "145.16",
+                    "Deslocamento": "3.6352"
+                },
+                "eixo5": {
+                    "Carga_Descarga": "152.10",
+                    "Deslocamento": "4.1181"
+                },
+                "eixo6": {
+                    "Carga_Descarga": "160.32",
+                    "Deslocamento": "4.6482"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "183.45",
+                    "Deslocamento": "5.0233"
+                },
+                "eixo9": {
+                    "Carga_Descarga": "191.57",
+                    "Deslocamento": "5.7350"
+                }
+            },
+            "granelLiquido": {
+                "eixo2": {
+                    "Carga_Descarga": "97.90",
+                    "Deslocamento": "2.3349"
+                },
+                "eixo3": {
+                    "Carga_Descarga": "108.22",
+                    "Deslocamento": "2.9746"
+                },
+                "eixo4": {
+                    "Carga_Descarga": "115.09",
+                    "Deslocamento": "3.4680"
+                },
+                "eixo5": {
+                    "Carga_Descarga": "124.87",
+                    "Deslocamento": "3.9681"
+                },
+                "eixo6": {
+                    "Carga_Descarga": "133.08",
+                    "Deslocamento": "4.4982"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "155.01",
+                    "Deslocamento": "4.8659"
+                },
+                "eixo9": {
+                    "Carga_Descarga": "163.48",
+                    "Deslocamento": "5.5798"
+                }
+            },
+            "granelPressurizada": {
+                "eixo2": {
+                    "Carga_Descarga": "131.50",
+                    "Deslocamento": "3.9742"
+                },
+                "eixo3": {
+                    "Carga_Descarga": "131.50",
+                    "Deslocamento": "3.9742"
+                },
+                "eixo4": {
+                    "Carga_Descarga": "131.50",
+                    "Deslocamento": "3.9742"
+                },
+                "eixo5": {
+                    "Carga_Descarga": "131.50",
+                    "Deslocamento": "3.9742"
+                },
+                "eixo6": {
+                    "Carga_Descarga": "139.71",
+                    "Deslocamento": "4.5043"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "172.18",
+                    "Deslocamento": "5.5985"
+                },
+                "eixo9": {
+                    "Carga_Descarga": "172.18",
+                    "Deslocamento": "5.5985"
+                }
+            },
+            "cargaGeral": {
+                "eixo2": {
+                    "Carga_Descarga": "96.29",
+                    "Deslocamento": "2.3081"
+                },
+                "eixo3": {
+                    "Carga_Descarga": "105.70",
+                    "Deslocamento": "2.9423"
+                },
+                "eixo4": {
+                    "Carga_Descarga": "115.09",
+                    "Deslocamento": "3.4340"
+                },
+                "eixo5": {
+                    "Carga_Descarga": "122.04",
+                    "Deslocamento": "3.9169"
+                },
+                "eixo6": {
+                    "Carga_Descarga": "130.25",
+                    "Deslocamento": "4.4470"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "150.06",
+                    "Deslocamento": "4.8019"
+                },
+                "eixo9": {
                     "Carga_Descarga": "158.18",
                     "Deslocamento": "5.5136"
                 }
             },
-            "LOTA��O DE ALTO DESEMPENHOgranelLiquido": {
-                "LOTA��O DE ALTO DESEMPENHOgranelLiquidoeixo9": {
-                    "Carga_Descarga": "4.8659",
-                    "Deslocamento": "150.02"
+            "perigosaGranelLiquido": {
+                "eixo2": {
+                    "Carga_Descarga": "135.44",
+                    "Deslocamento": "2.7260"
                 },
-                "LOTA��O DE ALTO DESEMPENHOgranelLiquidoeixo2": {
-                    "Carga_Descarga": "158.53",
-                    "Deslocamento": "5.5157"
+                "eixo3": {
+                    "Carga_Descarga": "145.75",
+                    "Deslocamento": "3.3657"
                 },
-                "LOTA��O DE ALTO DESEMPENHOgranelLiquidoeixo4": {
-                    "Carga_Descarga": "2.9746",
-                    "Deslocamento": "106.41"
+                "eixo4": {
+                    "Carga_Descarga": "156.00",
+                    "Deslocamento": "3.8721"
                 },
-                "LOTA��O DE ALTO DESEMPENHOgranelLiquidoeixo3": {
-                    "Carga_Descarga": "2.3349",
-                    "Deslocamento": "96.68"
+                "eixo5": {
+                    "Carga_Descarga": "165.78",
+                    "Deslocamento": "4.3721"
                 },
-                "LOTA��O DE ALTO DESEMPENHOgranelLiquidoeixo6": {
-                    "Carga_Descarga": "3.9681",
-                    "Deslocamento": "122.14"
+                "eixo6": {
+                    "Carga_Descarga": "173.99",
+                    "Deslocamento": "4.9022"
                 },
-                "LOTA��O DE ALTO DESEMPENHOgranelLiquidoeixo5": {
-                    "Carga_Descarga": "3.4680",
-                    "Deslocamento": "115.45"
+                "eixo7": {
+                    "Carga_Descarga": "199.25",
+                    "Deslocamento": "5.2902"
                 },
-                "LOTA��O DE ALTO DESEMPENHOgranelLiquidoeixo7": {
-                    "Carga_Descarga": "4.4982",
-                    "Deslocamento": "130.36"
+                "eixo9": {
+                    "Carga_Descarga": "207.73",
+                    "Deslocamento": "6.0040"
                 }
             },
-            "LOTA��O DE ALTO DESEMPENHOconteinerizada": {
-                "LOTA��O DE ALTO DESEMPENHOconteinerizadaeixo2": {
-                    "Carga_Descarga": "163.48",
-                    "Deslocamento": "5.5798"
+            "perigosaCargaGeral": {
+                "eixo2": {
+                    "Carga_Descarga": "122.98",
+                    "Deslocamento": "2.4794"
                 },
-                "LOTA��O DE ALTO DESEMPENHOconteinerizadaeixo4": {
-                    "Carga_Descarga": "3.5433",
-                    "Deslocamento": "108.22"
+                "eixo3": {
+                    "Carga_Descarga": "132.39",
+                    "Deslocamento": "3.1136"
                 },
-                "LOTA��O DE ALTO DESEMPENHOconteinerizadaeixo3": {
-                    "Carga_Descarga": "2.7943",
-                    "Deslocamento": "97.90"
+                "eixo4": {
+                    "Carga_Descarga": "145.16",
+                    "Deslocamento": "3.6352"
                 },
-                "LOTA��O DE ALTO DESEMPENHOconteinerizadaeixo6": {
-                    "Carga_Descarga": "4.7345",
-                    "Deslocamento": "124.87"
+                "eixo5": {
+                    "Carga_Descarga": "152.10",
+                    "Deslocamento": "4.1181"
                 },
-                "LOTA��O DE ALTO DESEMPENHOconteinerizadaeixo5": {
-                    "Carga_Descarga": "4.1361",
-                    "Deslocamento": "115.09"
+                "eixo6": {
+                    "Carga_Descarga": "160.32",
+                    "Deslocamento": "4.6482"
                 },
-                "LOTA��O DE ALTO DESEMPENHOconteinerizadaeixo7": {
-                    "Carga_Descarga": "5.3555",
-                    "Deslocamento": "133.08"
+                "eixo7": {
+                    "Carga_Descarga": "183.45",
+                    "Deslocamento": "5.0233"
                 },
-                "LOTA��O DE ALTO DESEMPENHOconteinerizadaeixo9": {
-                    "Carga_Descarga": "5.7213",
-                    "Deslocamento": "155.01"
+                "eixo9": {
+                    "Carga_Descarga": "191.57",
+                    "Deslocamento": "5.7350"
                 }
             },
-            "LOTA��O DE ALTO DESEMPENHOgranelSolido": {
-                "LOTA��O DE ALTO DESEMPENHOgranelSolidoeixo4": {
-                    "Carga_Descarga": "106.41",
-                    "Deslocamento": "2.9466"
+            "conteinerizada": {
+                "eixo2": {
+                    "Carga_Descarga": "105.70",
+                    "Deslocamento": "2.9423"
                 },
-                "LOTA��O DE ALTO DESEMPENHOgranelSolidoeixo5": {
-                    "Carga_Descarga": "115.45",
-                    "Deslocamento": "3.4361"
+                "eixo3": {
+                    "Carga_Descarga": "105.70",
+                    "Deslocamento": "2.9423"
                 },
-                "LOTA��O DE ALTO DESEMPENHOgranelSolidoeixo6": {
-                    "Carga_Descarga": "122.14",
-                    "Deslocamento": "3.9175"
-                },
-                "LOTA��O DE ALTO DESEMPENHOgranelSolidoeixo7": {
-                    "Carga_Descarga": "130.36",
-                    "Deslocamento": "4.4476"
-                },
-                "LOTA��O DE ALTO DESEMPENHOgranelSolidoeixo9": {
-                    "Carga_Descarga": "150.02",
-                    "Deslocamento": "4.8017"
-                },
-                "LOTA��O DE ALTO DESEMPENHOgranelSolidoeixo2": {
-                    "Carga_Descarga": "5.9556",
-                    "Deslocamento": "391.19"
-                },
-                "LOTA��O DE ALTO DESEMPENHOgranelSolidoeixo3": {
-                    "Carga_Descarga": "96.68",
-                    "Deslocamento": "2.3105"
-                }
-            },
-            "LOTA��O DE ALTO DESEMPENHOperigosaGranelSolido": {
-                "LOTA��O DE ALTO DESEMPENHOperigosaGranelSolidoeixo9": {
-                    "Carga_Descarga": "150.06",
-                    "Deslocamento": "4.8019"
-                },
-                "LOTA��O DE ALTO DESEMPENHOperigosaGranelSolidoeixo7": {
-                    "Carga_Descarga": "130.25",
-                    "Deslocamento": "4.4470"
-                },
-                "LOTA��O DE ALTO DESEMPENHOperigosaGranelSolidoeixo6": {
-                    "Carga_Descarga": "122.04",
-                    "Deslocamento": "3.9169"
-                },
-                "LOTA��O DE ALTO DESEMPENHOperigosaGranelSolidoeixo5": {
+                "eixo4": {
                     "Carga_Descarga": "115.09",
                     "Deslocamento": "3.4340"
                 },
-                "LOTA��O DE ALTO DESEMPENHOperigosaGranelSolidoeixo4": {
+                "eixo5": {
+                    "Carga_Descarga": "122.04",
+                    "Deslocamento": "3.9169"
+                },
+                "eixo6": {
+                    "Carga_Descarga": "130.25",
+                    "Deslocamento": "4.4470"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "150.06",
+                    "Deslocamento": "4.8019"
+                },
+                "eixo9": {
+                    "Carga_Descarga": "158.18",
+                    "Deslocamento": "5.5136"
+                }
+            },
+            "neogranel": {
+                "eixo2": {
+                    "Carga_Descarga": "96.29",
+                    "Deslocamento": "2.0117"
+                },
+                "eixo3": {
                     "Carga_Descarga": "105.70",
                     "Deslocamento": "2.9423"
                 },
-                "LOTA��O DE ALTO DESEMPENHOperigosaGranelSolidoeixo3": {
-                    "Carga_Descarga": "105.70",
-                    "Deslocamento": "2.9423"
+                "eixo4": {
+                    "Carga_Descarga": "116.08",
+                    "Deslocamento": "3.4400"
                 },
-                "LOTA��O DE ALTO DESEMPENHOperigosaGranelSolidoeixo2": {
-                    "Carga_Descarga": "5.5136",
-                    "Deslocamento": "191.82"
+                "eixo5": {
+                    "Carga_Descarga": "122.04",
+                    "Deslocamento": "3.9169"
+                },
+                "eixo6": {
+                    "Carga_Descarga": "130.25",
+                    "Deslocamento": "4.4470"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "150.06",
+                    "Deslocamento": "4.8019"
+                },
+                "eixo9": {
+                    "Carga_Descarga": "158.18",
+                    "Deslocamento": "5.5136"
                 }
             }
         },
         "AUTOMOTOR DE CARGAS": {
-            "AUTOMOTOR DE CARGASconteinerizada": {
-                "AUTOMOTOR DE CARGASconteinerizadaeixo7": {
-                    "Carga_Descarga": "5.3606",
-                    "Deslocamento": "327.41"
+            "perigosaCargaFrigorificada": {
+                "eixo2": {
+                    "Carga_Descarga": "380.94",
+                    "Deslocamento": "4.6198"
                 },
-                "AUTOMOTOR DE CARGASconteinerizadaeixo5": {
-                    "Carga_Descarga": "4.1456",
-                    "Deslocamento": "263.62"
+                "eixo3": {
+                    "Carga_Descarga": "380.94",
+                    "Deslocamento": "4.6198"
                 },
-                "AUTOMOTOR DE CARGASconteinerizadaeixo6": {
-                    "Carga_Descarga": "4.6507",
-                    "Deslocamento": "289.28"
+                "eixo4": {
+                    "Carga_Descarga": "380.94",
+                    "Deslocamento": "4.6198"
                 },
-                "AUTOMOTOR DE CARGASconteinerizadaeixo9": {
-                    "Carga_Descarga": "5.6598",
-                    "Deslocamento": "369.92"
+                "eixo5": {
+                    "Carga_Descarga": "406.59",
+                    "Deslocamento": "5.1249"
                 },
-                "AUTOMOTOR DE CARGASconteinerizadaeixo3": {
-                    "Carga_Descarga": "4.1456",
-                    "Deslocamento": "263.62"
+                "eixo6": {
+                    "Carga_Descarga": "444.73",
+                    "Deslocamento": "5.8348"
                 },
-                "AUTOMOTOR DE CARGASconteinerizadaeixo4": {
-                    "Carga_Descarga": "4.1456",
-                    "Deslocamento": "263.62"
+                "eixo7": {
+                    "Carga_Descarga": "499.08",
+                    "Deslocamento": "6.1583"
                 },
-                "AUTOMOTOR DE CARGASconteinerizadaeixo2": {
+                "eixo9": {
+                    "Carga_Descarga": "520.35",
+                    "Deslocamento": "6.7913"
+                }
+            },
+            "perigosaGranelSolido": {
+                "eixo2": {
+                    "Carga_Descarga": "380.06",
+                    "Deslocamento": "4.0906"
+                },
+                "eixo3": {
+                    "Carga_Descarga": "380.06",
+                    "Deslocamento": "4.0906"
+                },
+                "eixo4": {
+                    "Carga_Descarga": "380.06",
+                    "Deslocamento": "4.0906"
+                },
+                "eixo5": {
+                    "Carga_Descarga": "405.71",
+                    "Deslocamento": "4.5157"
+                },
+                "eixo6": {
+                    "Carga_Descarga": "443.85",
+                    "Deslocamento": "5.1347"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "491.51",
+                    "Deslocamento": "5.4338"
+                },
+                "eixo9": {
+                    "Carga_Descarga": "512.78",
+                    "Deslocamento": "5.9556"
+                }
+            },
+            "frigorificada": {
+                "eixo2": {
+                    "Carga_Descarga": "295.35",
+                    "Deslocamento": "4.1456"
+                },
+                "eixo3": {
+                    "Carga_Descarga": "295.35",
+                    "Deslocamento": "4.1456"
+                },
+                "eixo4": {
+                    "Carga_Descarga": "295.35",
+                    "Deslocamento": "4.1456"
+                },
+                "eixo5": {
+                    "Carga_Descarga": "321.01",
+                    "Deslocamento": "4.6507"
+                },
+                "eixo6": {
+                    "Carga_Descarga": "359.14",
+                    "Deslocamento": "5.3606"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "406.80",
+                    "Deslocamento": "5.6598"
+                },
+                "eixo9": {
+                    "Carga_Descarga": "428.07",
+                    "Deslocamento": "6.2927"
+                }
+            },
+            "granelSolido": {
+                "eixo2": {
+                    "Carga_Descarga": "263.62",
+                    "Deslocamento": "3.4770"
+                },
+                "eixo3": {
+                    "Carga_Descarga": "263.62",
+                    "Deslocamento": "3.4770"
+                },
+                "eixo4": {
+                    "Carga_Descarga": "263.62",
+                    "Deslocamento": "3.4770"
+                },
+                "eixo5": {
+                    "Carga_Descarga": "289.28",
+                    "Deslocamento": "3.9021"
+                },
+                "eixo6": {
+                    "Carga_Descarga": "327.41",
+                    "Deslocamento": "4.5211"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "369.92",
+                    "Deslocamento": "4.8015"
+                },
+                "eixo9": {
+                    "Carga_Descarga": "391.19",
+                    "Deslocamento": "5.3233"
+                }
+            },
+            "perigosaConteinerizada": {
+                "eixo2": {
+                    "Carga_Descarga": "339.69",
+                    "Deslocamento": "3.7726"
+                },
+                "eixo3": {
+                    "Carga_Descarga": "339.69",
+                    "Deslocamento": "3.7726"
+                },
+                "eixo4": {
+                    "Carga_Descarga": "339.69",
+                    "Deslocamento": "3.7726"
+                },
+                "eixo5": {
+                    "Carga_Descarga": "365.34",
+                    "Deslocamento": "4.1977"
+                },
+                "eixo6": {
+                    "Carga_Descarga": "403.48",
+                    "Deslocamento": "4.8167"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "451.14",
+                    "Deslocamento": "5.1159"
+                },
+                "eixo9": {
+                    "Carga_Descarga": "472.41",
+                    "Deslocamento": "5.6377"
+                }
+            },
+            "granelLiquido": {
+                "eixo2": {
+                    "Carga_Descarga": "263.62",
+                    "Deslocamento": "3.5110"
+                },
+                "eixo3": {
+                    "Carga_Descarga": "263.62",
+                    "Deslocamento": "3.5110"
+                },
+                "eixo4": {
+                    "Carga_Descarga": "263.62",
+                    "Deslocamento": "3.5110"
+                },
+                "eixo5": {
+                    "Carga_Descarga": "289.28",
+                    "Deslocamento": "3.9361"
+                },
+                "eixo6": {
+                    "Carga_Descarga": "327.41",
+                    "Deslocamento": "4.5551"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "369.92",
+                    "Deslocamento": "4.8355"
+                },
+                "eixo9": {
                     "Carga_Descarga": "391.19",
                     "Deslocamento": "5.3573"
                 }
             },
-            "AUTOMOTOR DE CARGASperigosaConteinerizada": {
-                "AUTOMOTOR DE CARGASperigosaConteinerizadaeixo9": {
-                    "Carga_Descarga": "4.8015",
-                    "Deslocamento": "369.92"
+            "granelPressurizada": {
+                "eixo2": {
+                    "Carga_Descarga": "289.28",
+                    "Deslocamento": "3.9021"
                 },
-                "AUTOMOTOR DE CARGASperigosaConteinerizadaeixo7": {
-                    "Carga_Descarga": "4.5211",
-                    "Deslocamento": "327.41"
+                "eixo3": {
+                    "Carga_Descarga": "289.28",
+                    "Deslocamento": "3.9021"
                 },
-                "AUTOMOTOR DE CARGASperigosaConteinerizadaeixo6": {
-                    "Carga_Descarga": "3.9021",
-                    "Deslocamento": "289.28"
+                "eixo4": {
+                    "Carga_Descarga": "289.28",
+                    "Deslocamento": "3.9021"
                 },
-                "AUTOMOTOR DE CARGASperigosaConteinerizadaeixo5": {
-                    "Carga_Descarga": "3.4770",
-                    "Deslocamento": "263.62"
+                "eixo5": {
+                    "Carga_Descarga": "289.28",
+                    "Deslocamento": "3.9021"
                 },
-                "AUTOMOTOR DE CARGASperigosaConteinerizadaeixo4": {
-                    "Carga_Descarga": "3.4770",
-                    "Deslocamento": "263.62"
+                "eixo6": {
+                    "Carga_Descarga": "327.41",
+                    "Deslocamento": "4.5211"
                 },
-                "AUTOMOTOR DE CARGASperigosaConteinerizadaeixo3": {
-                    "Carga_Descarga": "3.4770",
-                    "Deslocamento": "263.62"
+                "eixo7": {
+                    "Carga_Descarga": "391.19",
+                    "Deslocamento": "5.3233"
                 },
-                "AUTOMOTOR DE CARGASperigosaConteinerizadaeixo2": {
+                "eixo9": {
                     "Carga_Descarga": "391.19",
                     "Deslocamento": "5.3233"
                 }
             },
-            "AUTOMOTOR DE CARGASgranelPressurizada": {
-                "AUTOMOTOR DE CARGASgranelPressurizadaeixo6": {
-                    "Carga_Descarga": "4.5157",
-                    "Deslocamento": "289.28"
+            "cargaGeral": {
+                "eixo2": {
+                    "Carga_Descarga": "263.62",
+                    "Deslocamento": "3.4770"
                 },
-                "AUTOMOTOR DE CARGASgranelPressurizadaeixo5": {
-                    "Carga_Descarga": "4.0906",
-                    "Deslocamento": "263.62"
+                "eixo3": {
+                    "Carga_Descarga": "263.62",
+                    "Deslocamento": "3.4770"
                 },
-                "AUTOMOTOR DE CARGASgranelPressurizadaeixo7": {
-                    "Carga_Descarga": "5.1347",
-                    "Deslocamento": "327.41"
+                "eixo4": {
+                    "Carga_Descarga": "263.62",
+                    "Deslocamento": "3.4770"
                 },
-                "AUTOMOTOR DE CARGASgranelPressurizadaeixo2": {
+                "eixo5": {
+                    "Carga_Descarga": "289.28",
+                    "Deslocamento": "3.9021"
+                },
+                "eixo6": {
+                    "Carga_Descarga": "327.41",
+                    "Deslocamento": "4.5211"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "369.92",
+                    "Deslocamento": "4.8015"
+                },
+                "eixo9": {
                     "Carga_Descarga": "391.19",
                     "Deslocamento": "5.3233"
-                },
-                "AUTOMOTOR DE CARGASgranelPressurizadaeixo4": {
-                    "Carga_Descarga": "4.0906",
-                    "Deslocamento": "263.62"
-                },
-                "AUTOMOTOR DE CARGASgranelPressurizadaeixo3": {
-                    "Carga_Descarga": "4.0906",
-                    "Deslocamento": "263.62"
-                },
-                "AUTOMOTOR DE CARGASgranelPressurizadaeixo9": {
-                    "Carga_Descarga": "5.4338",
-                    "Deslocamento": "369.92"
                 }
             },
-            "AUTOMOTOR DE CARGASgranelSolido": {
-                "AUTOMOTOR DE CARGASgranelSolidoeixo9": {
-                    "Carga_Descarga": "369.92",
-                    "Deslocamento": "4.8015"
+            "perigosaGranelLiquido": {
+                "eixo2": {
+                    "Carga_Descarga": "390.03",
+                    "Deslocamento": "4.1268"
                 },
-                "AUTOMOTOR DE CARGASgranelSolidoeixo6": {
+                "eixo3": {
+                    "Carga_Descarga": "390.03",
+                    "Deslocamento": "4.1268"
+                },
+                "eixo4": {
+                    "Carga_Descarga": "390.03",
+                    "Deslocamento": "4.1268"
+                },
+                "eixo5": {
+                    "Carga_Descarga": "415.68",
+                    "Deslocamento": "4.5519"
+                },
+                "eixo6": {
+                    "Carga_Descarga": "453.82",
+                    "Deslocamento": "5.1709"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "501.48",
+                    "Deslocamento": "5.4701"
+                },
+                "eixo9": {
+                    "Carga_Descarga": "522.75",
+                    "Deslocamento": "5.9919"
+                }
+            },
+            "perigosaCargaGeral": {
+                "eixo2": {
+                    "Carga_Descarga": "339.69",
+                    "Deslocamento": "3.7726"
+                },
+                "eixo3": {
+                    "Carga_Descarga": "339.69",
+                    "Deslocamento": "3.7726"
+                },
+                "eixo4": {
+                    "Carga_Descarga": "339.69",
+                    "Deslocamento": "3.7726"
+                },
+                "eixo5": {
+                    "Carga_Descarga": "365.34",
+                    "Deslocamento": "4.1977"
+                },
+                "eixo6": {
+                    "Carga_Descarga": "403.48",
+                    "Deslocamento": "4.8167"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "451.14",
+                    "Deslocamento": "5.1159"
+                },
+                "eixo9": {
+                    "Carga_Descarga": "472.41",
+                    "Deslocamento": "5.6377"
+                }
+            },
+            "conteinerizada": {
+                "eixo2": {
+                    "Carga_Descarga": "263.62",
+                    "Deslocamento": "3.4770"
+                },
+                "eixo3": {
+                    "Carga_Descarga": "263.62",
+                    "Deslocamento": "3.4770"
+                },
+                "eixo4": {
+                    "Carga_Descarga": "263.62",
+                    "Deslocamento": "3.4770"
+                },
+                "eixo5": {
                     "Carga_Descarga": "289.28",
                     "Deslocamento": "3.9021"
                 },
-                "AUTOMOTOR DE CARGASgranelSolidoeixo7": {
+                "eixo6": {
                     "Carga_Descarga": "327.41",
                     "Deslocamento": "4.5211"
                 },
-                "AUTOMOTOR DE CARGASgranelSolidoeixo4": {
-                    "Carga_Descarga": "263.62",
-                    "Deslocamento": "3.4770"
+                "eixo7": {
+                    "Carga_Descarga": "369.92",
+                    "Deslocamento": "4.8015"
                 },
-                "AUTOMOTOR DE CARGASgranelSolidoeixo5": {
-                    "Carga_Descarga": "263.62",
-                    "Deslocamento": "3.4770"
-                },
-                "AUTOMOTOR DE CARGASgranelSolidoeixo2": {
-                    "Carga_Descarga": "349.07",
-                    "Deslocamento": "519.11"
-                },
-                "AUTOMOTOR DE CARGASgranelSolidoeixo3": {
-                    "Carga_Descarga": "263.62",
-                    "Deslocamento": "3.4770"
-                }
-            },
-            "AUTOMOTOR DE CARGASgranelLiquido": {
-                "AUTOMOTOR DE CARGASgranelLiquidoeixo2": {
+                "eixo9": {
                     "Carga_Descarga": "391.19",
                     "Deslocamento": "5.3233"
-                },
-                "AUTOMOTOR DE CARGASgranelLiquidoeixo4": {
-                    "Carga_Descarga": "3.5110",
-                    "Deslocamento": "263.62"
-                },
-                "AUTOMOTOR DE CARGASgranelLiquidoeixo3": {
-                    "Carga_Descarga": "3.5110",
-                    "Deslocamento": "263.62"
-                },
-                "AUTOMOTOR DE CARGASgranelLiquidoeixo6": {
-                    "Carga_Descarga": "3.9361",
-                    "Deslocamento": "289.28"
-                },
-                "AUTOMOTOR DE CARGASgranelLiquidoeixo5": {
-                    "Carga_Descarga": "3.5110",
-                    "Deslocamento": "263.62"
-                },
-                "AUTOMOTOR DE CARGASgranelLiquidoeixo7": {
-                    "Carga_Descarga": "4.5551",
-                    "Deslocamento": "327.41"
-                },
-                "AUTOMOTOR DE CARGASgranelLiquidoeixo9": {
-                    "Carga_Descarga": "4.8355",
-                    "Deslocamento": "369.92"
                 }
             },
-            "AUTOMOTOR DE CARGASperigosaGranelSolido": {
-                "AUTOMOTOR DE CARGASperigosaGranelSolidoeixo2": {
-                    "Carga_Descarga": "5.3233",
-                    "Deslocamento": "428.07"
-                },
-                "AUTOMOTOR DE CARGASperigosaGranelSolidoeixo3": {
+            "neogranel": {
+                "eixo2": {
                     "Carga_Descarga": "263.62",
                     "Deslocamento": "3.4770"
                 },
-                "AUTOMOTOR DE CARGASperigosaGranelSolidoeixo4": {
+                "eixo3": {
                     "Carga_Descarga": "263.62",
                     "Deslocamento": "3.4770"
                 },
-                "AUTOMOTOR DE CARGASperigosaGranelSolidoeixo5": {
+                "eixo4": {
                     "Carga_Descarga": "263.62",
                     "Deslocamento": "3.4770"
                 },
-                "AUTOMOTOR DE CARGASperigosaGranelSolidoeixo6": {
+                "eixo5": {
                     "Carga_Descarga": "289.28",
                     "Deslocamento": "3.9021"
                 },
-                "AUTOMOTOR DE CARGASperigosaGranelSolidoeixo7": {
+                "eixo6": {
                     "Carga_Descarga": "327.41",
                     "Deslocamento": "4.5211"
                 },
-                "AUTOMOTOR DE CARGASperigosaGranelSolidoeixo9": {
-                    "Carga_Descarga": "369.92",
-                    "Deslocamento": "4.8015"
-                }
-            },
-            "AUTOMOTOR DE CARGASperigosaCargaFrigorificada": {
-                "AUTOMOTOR DE CARGASperigosaCargaFrigorificadaeixo3": {
-                    "Carga_Descarga": "263.62",
-                    "Deslocamento": "3.4770"
-                },
-                "AUTOMOTOR DE CARGASperigosaCargaFrigorificadaeixo4": {
-                    "Carga_Descarga": "263.62",
-                    "Deslocamento": "3.4770"
-                },
-                "AUTOMOTOR DE CARGASperigosaCargaFrigorificadaeixo5": {
-                    "Carga_Descarga": "263.62",
-                    "Deslocamento": "3.4770"
-                },
-                "AUTOMOTOR DE CARGASperigosaCargaFrigorificadaeixo6": {
-                    "Carga_Descarga": "289.28",
-                    "Deslocamento": "3.9021"
-                },
-                "AUTOMOTOR DE CARGASperigosaCargaFrigorificadaeixo7": {
-                    "Carga_Descarga": "327.41",
-                    "Deslocamento": "4.5211"
-                },
-                "AUTOMOTOR DE CARGASperigosaCargaFrigorificadaeixo9": {
+                "eixo7": {
                     "Carga_Descarga": "369.92",
                     "Deslocamento": "4.8015"
                 },
-                "AUTOMOTOR DE CARGASperigosaCargaFrigorificadaeixo2": {
-                    "Carga_Descarga": "5.3233",
-                    "Deslocamento": "391.19"
-                }
-            },
-            "AUTOMOTOR DE CARGASneogranel": {
-                "AUTOMOTOR DE CARGASneograneleixo2": {
-                    "Carga_Descarga": "428.07",
-                    "Deslocamento": "6.2927"
-                },
-                "AUTOMOTOR DE CARGASneograneleixo3": {
-                    "Carga_Descarga": "3.4770",
-                    "Deslocamento": "295.35"
-                },
-                "AUTOMOTOR DE CARGASneograneleixo6": {
-                    "Carga_Descarga": "3.9021",
-                    "Deslocamento": "321.01"
-                },
-                "AUTOMOTOR DE CARGASneograneleixo7": {
-                    "Carga_Descarga": "4.5211",
-                    "Deslocamento": "359.14"
-                },
-                "AUTOMOTOR DE CARGASneograneleixo4": {
-                    "Carga_Descarga": "3.4770",
-                    "Deslocamento": "295.35"
-                },
-                "AUTOMOTOR DE CARGASneograneleixo5": {
-                    "Carga_Descarga": "3.4770",
-                    "Deslocamento": "295.35"
-                },
-                "AUTOMOTOR DE CARGASneograneleixo9": {
-                    "Carga_Descarga": "4.8015",
-                    "Deslocamento": "406.80"
-                }
-            },
-            "AUTOMOTOR DE CARGAScargaGeral": {
-                "AUTOMOTOR DE CARGAScargaGeraleixo9": {
-                    "Carga_Descarga": "406.80",
-                    "Deslocamento": "5.6598"
-                },
-                "AUTOMOTOR DE CARGAScargaGeraleixo7": {
-                    "Carga_Descarga": "359.14",
-                    "Deslocamento": "5.3606"
-                },
-                "AUTOMOTOR DE CARGAScargaGeraleixo6": {
-                    "Carga_Descarga": "321.01",
-                    "Deslocamento": "4.6507"
-                },
-                "AUTOMOTOR DE CARGAScargaGeraleixo5": {
-                    "Carga_Descarga": "295.35",
-                    "Deslocamento": "4.1456"
-                },
-                "AUTOMOTOR DE CARGAScargaGeraleixo4": {
-                    "Carga_Descarga": "295.35",
-                    "Deslocamento": "4.1456"
-                },
-                "AUTOMOTOR DE CARGAScargaGeraleixo3": {
-                    "Carga_Descarga": "295.35",
-                    "Deslocamento": "4.1456"
-                },
-                "AUTOMOTOR DE CARGAScargaGeraleixo2": {
-                    "Carga_Descarga": "6.2927",
-                    "Deslocamento": "391.19"
-                }
-            },
-            "AUTOMOTOR DE CARGASperigosaCargaGeral": {
-                "AUTOMOTOR DE CARGASperigosaCargaGeraleixo7": {
-                    "Carga_Descarga": "327.41",
-                    "Deslocamento": "4.5211"
-                },
-                "AUTOMOTOR DE CARGASperigosaCargaGeraleixo6": {
-                    "Carga_Descarga": "289.28",
-                    "Deslocamento": "3.9021"
-                },
-                "AUTOMOTOR DE CARGASperigosaCargaGeraleixo5": {
-                    "Carga_Descarga": "263.62",
-                    "Deslocamento": "3.4770"
-                },
-                "AUTOMOTOR DE CARGASperigosaCargaGeraleixo4": {
-                    "Carga_Descarga": "263.62",
-                    "Deslocamento": "3.4770"
-                },
-                "AUTOMOTOR DE CARGASperigosaCargaGeraleixo3": {
-                    "Carga_Descarga": "263.62",
-                    "Deslocamento": "3.4770"
-                },
-                "AUTOMOTOR DE CARGASperigosaCargaGeraleixo2": {
-                    "Carga_Descarga": "5.3233",
-                    "Deslocamento": "391.19"
-                },
-                "AUTOMOTOR DE CARGASperigosaCargaGeraleixo9": {
-                    "Carga_Descarga": "369.92",
-                    "Deslocamento": "4.8015"
-                }
-            },
-            "AUTOMOTOR DE CARGASperigosaGranelLiquido": {
-                "AUTOMOTOR DE CARGASperigosaGranelLiquidoeixo2": {
+                "eixo9": {
                     "Carga_Descarga": "391.19",
                     "Deslocamento": "5.3233"
-                },
-                "AUTOMOTOR DE CARGASperigosaGranelLiquidoeixo9": {
-                    "Carga_Descarga": "4.8015",
-                    "Deslocamento": "369.92"
-                },
-                "AUTOMOTOR DE CARGASperigosaGranelLiquidoeixo7": {
-                    "Carga_Descarga": "4.5211",
-                    "Deslocamento": "327.41"
-                },
-                "AUTOMOTOR DE CARGASperigosaGranelLiquidoeixo5": {
-                    "Carga_Descarga": "3.4770",
-                    "Deslocamento": "263.62"
-                },
-                "AUTOMOTOR DE CARGASperigosaGranelLiquidoeixo6": {
-                    "Carga_Descarga": "3.9021",
-                    "Deslocamento": "289.28"
-                },
-                "AUTOMOTOR DE CARGASperigosaGranelLiquidoeixo3": {
-                    "Carga_Descarga": "3.4770",
-                    "Deslocamento": "263.62"
-                },
-                "AUTOMOTOR DE CARGASperigosaGranelLiquidoeixo4": {
-                    "Carga_Descarga": "3.4770",
-                    "Deslocamento": "263.62"
-                }
-            },
-            "AUTOMOTOR DE CARGASfrigorificada": {
-                "AUTOMOTOR DE CARGASfrigorificadaeixo7": {
-                    "Carga_Descarga": "327.41",
-                    "Deslocamento": "4.5551"
-                },
-                "AUTOMOTOR DE CARGASfrigorificadaeixo9": {
-                    "Carga_Descarga": "369.92",
-                    "Deslocamento": "4.8355"
-                },
-                "AUTOMOTOR DE CARGASfrigorificadaeixo3": {
-                    "Carga_Descarga": "263.62",
-                    "Deslocamento": "3.5110"
-                },
-                "AUTOMOTOR DE CARGASfrigorificadaeixo4": {
-                    "Carga_Descarga": "263.62",
-                    "Deslocamento": "3.5110"
-                },
-                "AUTOMOTOR DE CARGASfrigorificadaeixo5": {
-                    "Carga_Descarga": "263.62",
-                    "Deslocamento": "3.5110"
-                },
-                "AUTOMOTOR DE CARGASfrigorificadaeixo6": {
-                    "Carga_Descarga": "289.28",
-                    "Deslocamento": "3.9361"
-                },
-                "AUTOMOTOR DE CARGASfrigorificadaeixo2": {
-                    "Carga_Descarga": "5.3573",
-                    "Deslocamento": "391.19"
                 }
             }
         },
-        "lota��o": {
-            "lota��ofrigorificada": {
-                "lota��ofrigorificadaeixo2": {
-                    "Carga_Descarga": "243.52",
-                    "Deslocamento": "2.6271"
+        "lotação": {
+            "perigosaCargaFrigorificada": {
+                "eixo2": {
+                    "Carga_Descarga": "353.51",
+                    "Deslocamento": "3.5436"
                 },
-                "lota��ofrigorificadaeixo3": {
-                    "Carga_Descarga": "291.40",
-                    "Deslocamento": "3.3783"
+                "eixo3": {
+                    "Carga_Descarga": "399.50",
+                    "Deslocamento": "4.3997"
                 },
-                "lota��ofrigorificadaeixo4": {
-                    "Carga_Descarga": "288.52",
-                    "Deslocamento": "3.8196"
+                "eixo4": {
+                    "Carga_Descarga": "424.72",
+                    "Deslocamento": "4.9971"
                 },
-                "lota��ofrigorificadaeixo5": {
-                    "Carga_Descarga": "333.88",
-                    "Deslocamento": "4.4254"
+                "eixo5": {
+                    "Carga_Descarga": "484.04",
+                    "Deslocamento": "5.7336"
                 },
-                "lota��ofrigorificadaeixo6": {
-                    "Carga_Descarga": "372.02",
-                    "Deslocamento": "5.0444"
+                "eixo6": {
+                    "Carga_Descarga": "522.17",
+                    "Deslocamento": "6.4435"
                 },
-                "lota��ofrigorificadaeixo7": {
-                    "Carga_Descarga": "439.43",
-                    "Deslocamento": "5.5244"
+                "eixo7": {
+                    "Carga_Descarga": "584.52",
+                    "Deslocamento": "6.9051"
                 },
-                "lota��ofrigorificadaeixo9": {
-                    "Carga_Descarga": "478.76",
-                    "Deslocamento": "6.3299"
+                "eixo9": {
+                    "Carga_Descarga": "628.77",
+                    "Deslocamento": "7.8396"
                 }
             },
-            "lota��ogranelLiquido": {
-                "lota��ogranelLiquidoeixo3": {
-                    "Carga_Descarga": "3.3783",
-                    "Deslocamento": "283.02"
+            "perigosaGranelSolido": {
+                "eixo2": {
+                    "Carga_Descarga": "349.07",
+                    "Deslocamento": "3.1745"
                 },
-                "lota��ogranelLiquidoeixo2": {
-                    "Carga_Descarga": "2.6271",
-                    "Deslocamento": "237.85"
+                "eixo3": {
+                    "Carga_Descarga": "394.24",
+                    "Deslocamento": "3.9159"
                 },
-                "lota��ogranelLiquidoeixo9": {
-                    "Carga_Descarga": "6.3299",
-                    "Deslocamento": "455.77"
+                "eixo4": {
+                    "Carga_Descarga": "406.60",
+                    "Deslocamento": "4.4051"
                 },
-                "lota��ogranelLiquidoeixo5": {
-                    "Carga_Descarga": "4.4254",
-                    "Deslocamento": "321.24"
+                "eixo5": {
+                    "Carga_Descarga": "437.68",
+                    "Deslocamento": "4.9590"
                 },
-                "lota��ogranelLiquidoeixo4": {
-                    "Carga_Descarga": "3.8196",
-                    "Deslocamento": "290.16"
+                "eixo6": {
+                    "Carga_Descarga": "475.81",
+                    "Deslocamento": "5.5779"
                 },
-                "lota��ogranelLiquidoeixo7": {
-                    "Carga_Descarga": "5.5244",
-                    "Deslocamento": "416.28"
+                "eixo7": {
+                    "Carga_Descarga": "537.87",
+                    "Deslocamento": "6.0385"
                 },
-                "lota��ogranelLiquidoeixo6": {
-                    "Carga_Descarga": "5.0444",
-                    "Deslocamento": "359.37"
+                "eixo9": {
+                    "Carga_Descarga": "577.36",
+                    "Deslocamento": "6.8446"
                 }
             },
-            "lota��operigosaCargaGeral": {
-                "lota��operigosaCargaGeraleixo9": {
-                    "Carga_Descarga": "454.13",
-                    "Deslocamento": "6.2063"
+            "frigorificada": {
+                "eixo2": {
+                    "Carga_Descarga": "274.71",
+                    "Deslocamento": "3.0900"
                 },
-                "lota��operigosaCargaGeraleixo2": {
-                    "Carga_Descarga": "236.05",
-                    "Deslocamento": "2.2865"
-                },
-                "lota��operigosaCargaGeraleixo4": {
-                    "Carga_Descarga": "293.12",
-                    "Deslocamento": "3.8023"
-                },
-                "lota��operigosaCargaGeraleixo3": {
-                    "Carga_Descarga": "279.72",
-                    "Deslocamento": "3.3189"
-                },
-                "lota��operigosaCargaGeraleixo6": {
-                    "Carga_Descarga": "358.88",
-                    "Deslocamento": "4.9626"
-                },
-                "lota��operigosaCargaGeraleixo5": {
-                    "Carga_Descarga": "320.75",
-                    "Deslocamento": "4.3436"
-                },
-                "lota��operigosaCargaGeraleixo7": {
-                    "Carga_Descarga": "416.44",
-                    "Deslocamento": "5.4068"
-                }
-            },
-            "lota��ocargaGeral": {
-                "lota��ocargaGeraleixo7": {
-                    "Carga_Descarga": "492.23",
-                    "Deslocamento": "6.4065"
-                },
-                "lota��ocargaGeraleixo9": {
-                    "Carga_Descarga": "536.49",
-                    "Deslocamento": "7.3411"
-                },
-                "lota��ocargaGeraleixo4": {
-                    "Carga_Descarga": "339.13",
-                    "Deslocamento": "4.5228"
-                },
-                "lota��ocargaGeraleixo3": {
+                "eixo3": {
                     "Carga_Descarga": "320.70",
                     "Deslocamento": "3.9461"
                 },
-                "lota��ocargaGeraleixo6": {
-                    "Carga_Descarga": "436.58",
-                    "Deslocamento": "5.9693"
+                "eixo4": {
+                    "Carga_Descarga": "339.13",
+                    "Deslocamento": "4.5228"
                 },
-                "lota��ocargaGeraleixo5": {
+                "eixo5": {
                     "Carga_Descarga": "398.45",
                     "Deslocamento": "5.2594"
                 },
-                "lota��ocargaGeraleixo2": {
-                    "Carga_Descarga": "274.71",
-                    "Deslocamento": "3.0900"
+                "eixo6": {
+                    "Carga_Descarga": "436.58",
+                    "Deslocamento": "5.9693"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "492.23",
+                    "Deslocamento": "6.4065"
+                },
+                "eixo9": {
+                    "Carga_Descarga": "536.49",
+                    "Deslocamento": "7.3411"
                 }
             },
-            "lota��operigosaGranelSolido": {
-                "lota��operigosaGranelSolidoeixo7": {
-                    "Carga_Descarga": "416.44",
-                    "Deslocamento": "5.4068"
-                },
-                "lota��operigosaGranelSolidoeixo9": {
-                    "Carga_Descarga": "454.13",
-                    "Deslocamento": "6.2063"
-                },
-                "lota��operigosaGranelSolidoeixo3": {
-                    "Carga_Descarga": "279.72",
-                    "Deslocamento": "3.3189"
-                },
-                "lota��operigosaGranelSolidoeixo4": {
-                    "Carga_Descarga": "288.52",
-                    "Deslocamento": "3.7856"
-                },
-                "lota��operigosaGranelSolidoeixo5": {
-                    "Carga_Descarga": "320.75",
-                    "Deslocamento": "4.3436"
-                },
-                "lota��operigosaGranelSolidoeixo6": {
-                    "Carga_Descarga": "358.88",
-                    "Deslocamento": "4.9626"
-                },
-                "lota��operigosaGranelSolidoeixo2": {
-                    "Carga_Descarga": "279.72",
-                    "Deslocamento": "3.3189"
-                }
-            },
-            "lota��operigosaGranelLiquido": {
-                "lota��operigosaGranelLiquidoeixo6": {
-                    "Carga_Descarga": "4.9626",
-                    "Deslocamento": "358.88"
-                },
-                "lota��operigosaGranelLiquidoeixo7": {
-                    "Carga_Descarga": "5.4068",
-                    "Deslocamento": "416.44"
-                },
-                "lota��operigosaGranelLiquidoeixo9": {
-                    "Carga_Descarga": "6.2063",
-                    "Deslocamento": "454.13"
-                },
-                "lota��operigosaGranelLiquidoeixo2": {
-                    "Carga_Descarga": "2.5829",
-                    "Deslocamento": "279.72"
-                },
-                "lota��operigosaGranelLiquidoeixo3": {
-                    "Carga_Descarga": "3.3189",
-                    "Deslocamento": "279.72"
-                },
-                "lota��operigosaGranelLiquidoeixo4": {
-                    "Carga_Descarga": "3.7856",
-                    "Deslocamento": "288.52"
-                },
-                "lota��operigosaGranelLiquidoeixo5": {
-                    "Carga_Descarga": "4.3436",
-                    "Deslocamento": "320.75"
-                }
-            },
-            "lota��operigosaConteinerizada": {
-                "lota��operigosaConteinerizadaeixo9": {
-                    "Carga_Descarga": "6.2063",
-                    "Deslocamento": "454.13"
-                },
-                "lota��operigosaConteinerizadaeixo5": {
-                    "Carga_Descarga": "4.3436",
-                    "Deslocamento": "320.75"
-                },
-                "lota��operigosaConteinerizadaeixo4": {
-                    "Carga_Descarga": "3.8023",
-                    "Deslocamento": "288.52"
-                },
-                "lota��operigosaConteinerizadaeixo7": {
-                    "Carga_Descarga": "5.4068",
-                    "Deslocamento": "416.44"
-                },
-                "lota��operigosaConteinerizadaeixo6": {
-                    "Carga_Descarga": "4.9626",
-                    "Deslocamento": "358.88"
-                },
-                "lota��operigosaConteinerizadaeixo3": {
-                    "Carga_Descarga": "3.3189",
-                    "Deslocamento": "279.72"
-                },
-                "lota��operigosaConteinerizadaeixo2": {
-                    "Carga_Descarga": "2.2865",
-                    "Deslocamento": "236.05"
-                }
-            },
-            "lota��ogranelSolido": {
-                "lota��ogranelSolidoeixo7": {
-                    "Carga_Descarga": "416.28",
-                    "Deslocamento": "5.4062"
-                },
-                "lota��ogranelSolidoeixo6": {
-                    "Carga_Descarga": "359.37",
-                    "Deslocamento": "4.9644"
-                },
-                "lota��ogranelSolidoeixo5": {
-                    "Carga_Descarga": "321.24",
-                    "Deslocamento": "4.3454"
-                },
-                "lota��ogranelSolidoeixo4": {
-                    "Carga_Descarga": "290.16",
-                    "Deslocamento": "3.7916"
-                },
-                "lota��ogranelSolidoeixo3": {
-                    "Carga_Descarga": "283.02",
-                    "Deslocamento": "3.3309"
-                },
-                "lota��ogranelSolidoeixo2": {
+            "granelSolido": {
+                "eixo2": {
                     "Carga_Descarga": "237.85",
                     "Deslocamento": "2.5895"
                 },
-                "lota��ogranelSolidoeixo9": {
+                "eixo3": {
+                    "Carga_Descarga": "283.02",
+                    "Deslocamento": "3.3309"
+                },
+                "eixo4": {
+                    "Carga_Descarga": "290.16",
+                    "Deslocamento": "3.7916"
+                },
+                "eixo5": {
+                    "Carga_Descarga": "321.24",
+                    "Deslocamento": "4.3454"
+                },
+                "eixo6": {
+                    "Carga_Descarga": "359.37",
+                    "Deslocamento": "4.9644"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "416.28",
+                    "Deslocamento": "5.4062"
+                },
+                "eixo9": {
                     "Carga_Descarga": "455.77",
                     "Deslocamento": "6.2123"
                 }
             },
-            "lota��oconteinerizada": {
-                "lota��oconteinerizadaeixo5": {
-                    "Carga_Descarga": "5.2594",
-                    "Deslocamento": "333.88"
+            "perigosaConteinerizada": {
+                "eixo2": {
+                    "Carga_Descarga": "350.57",
+                    "Deslocamento": "3.5860"
                 },
-                "lota��oconteinerizadaeixo4": {
-                    "Carga_Descarga": "4.5228",
-                    "Deslocamento": "288.52"
+                "eixo3": {
+                    "Carga_Descarga": "350.57",
+                    "Deslocamento": "3.5860"
                 },
-                "lota��oconteinerizadaeixo3": {
-                    "Carga_Descarga": "3.9461",
-                    "Deslocamento": "291.40"
+                "eixo4": {
+                    "Carga_Descarga": "364.59",
+                    "Deslocamento": "4.0812"
                 },
-                "lota��oconteinerizadaeixo2": {
-                    "Carga_Descarga": "3.0900",
-                    "Deslocamento": "243.52"
+                "eixo5": {
+                    "Carga_Descarga": "396.81",
+                    "Deslocamento": "4.6392"
                 },
-                "lota��oconteinerizadaeixo9": {
-                    "Carga_Descarga": "7.3411",
-                    "Deslocamento": "478.76"
+                "eixo6": {
+                    "Carga_Descarga": "434.95",
+                    "Deslocamento": "5.2582"
                 },
-                "lota��oconteinerizadaeixo7": {
-                    "Carga_Descarga": "6.4065",
-                    "Deslocamento": "439.43"
+                "eixo7": {
+                    "Carga_Descarga": "497.66",
+                    "Deslocamento": "5.7211"
                 },
-                "lota��oconteinerizadaeixo6": {
-                    "Carga_Descarga": "5.9693",
-                    "Deslocamento": "372.02"
+                "eixo9": {
+                    "Carga_Descarga": "535.35",
+                    "Deslocamento": "6.5207"
                 }
             },
-            "lota��oneogranel": {
-                "lota��oneograneleixo9": {
-                    "Carga_Descarga": "6.2063",
-                    "Deslocamento": "536.49"
+            "granelLiquido": {
+                "eixo2": {
+                    "Carga_Descarga": "243.52",
+                    "Deslocamento": "2.6271"
                 },
-                "lota��oneograneleixo7": {
-                    "Carga_Descarga": "5.4068",
-                    "Deslocamento": "492.23"
+                "eixo3": {
+                    "Carga_Descarga": "291.40",
+                    "Deslocamento": "3.3783"
                 },
-                "lota��oneograneleixo5": {
-                    "Carga_Descarga": "4.3436",
-                    "Deslocamento": "398.45"
+                "eixo4": {
+                    "Carga_Descarga": "288.52",
+                    "Deslocamento": "3.8196"
                 },
-                "lota��oneograneleixo6": {
-                    "Carga_Descarga": "4.9626",
-                    "Deslocamento": "436.58"
+                "eixo5": {
+                    "Carga_Descarga": "333.88",
+                    "Deslocamento": "4.4254"
                 },
-                "lota��oneograneleixo3": {
-                    "Carga_Descarga": "3.3189",
-                    "Deslocamento": "320.70"
+                "eixo6": {
+                    "Carga_Descarga": "372.02",
+                    "Deslocamento": "5.0444"
                 },
-                "lota��oneograneleixo4": {
-                    "Carga_Descarga": "3.7856",
-                    "Deslocamento": "339.13"
+                "eixo7": {
+                    "Carga_Descarga": "439.43",
+                    "Deslocamento": "5.5244"
                 },
-                "lota��oneograneleixo2": {
-                    "Carga_Descarga": "3.3189",
-                    "Deslocamento": "274.71"
+                "eixo9": {
+                    "Carga_Descarga": "478.76",
+                    "Deslocamento": "6.3299"
                 }
             },
-            "lota��operigosaCargaFrigorificada": {
-                "lota��operigosaCargaFrigorificadaeixo2": {
+            "granelPressurizada": {
+                "eixo2": {
+                    "Carga_Descarga": "364.65",
+                    "Deslocamento": "4.5033"
+                },
+                "eixo3": {
+                    "Carga_Descarga": "364.65",
+                    "Deslocamento": "4.5033"
+                },
+                "eixo4": {
+                    "Carga_Descarga": "364.65",
+                    "Deslocamento": "4.5033"
+                },
+                "eixo5": {
+                    "Carga_Descarga": "364.65",
+                    "Deslocamento": "4.5033"
+                },
+                "eixo6": {
+                    "Carga_Descarga": "402.78",
+                    "Deslocamento": "5.1222"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "519.11",
+                    "Deslocamento": "6.4426"
+                },
+                "eixo9": {
+                    "Carga_Descarga": "519.11",
+                    "Deslocamento": "6.4426"
+                }
+            },
+            "cargaGeral": {
+                "eixo2": {
                     "Carga_Descarga": "236.05",
                     "Deslocamento": "2.5829"
                 },
-                "lota��operigosaCargaFrigorificadaeixo3": {
+                "eixo3": {
                     "Carga_Descarga": "279.72",
                     "Deslocamento": "3.3189"
                 },
-                "lota��operigosaCargaFrigorificadaeixo6": {
-                    "Carga_Descarga": "358.88",
-                    "Deslocamento": "4.9626"
-                },
-                "lota��operigosaCargaFrigorificadaeixo7": {
-                    "Carga_Descarga": "416.44",
-                    "Deslocamento": "5.4068"
-                },
-                "lota��operigosaCargaFrigorificadaeixo4": {
+                "eixo4": {
                     "Carga_Descarga": "288.52",
                     "Deslocamento": "3.7856"
                 },
-                "lota��operigosaCargaFrigorificadaeixo5": {
+                "eixo5": {
                     "Carga_Descarga": "320.75",
                     "Deslocamento": "4.3436"
                 },
-                "lota��operigosaCargaFrigorificadaeixo9": {
+                "eixo6": {
+                    "Carga_Descarga": "358.88",
+                    "Deslocamento": "4.9626"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "416.44",
+                    "Deslocamento": "5.4068"
+                },
+                "eixo9": {
                     "Carga_Descarga": "454.13",
                     "Deslocamento": "6.2063"
                 }
             },
-            "lota��ogranelPressurizada": {
-                "lota��ogranelPressurizadaeixo2": {
-                    "Carga_Descarga": "3.1745",
-                    "Deslocamento": "236.05"
+            "perigosaGranelLiquido": {
+                "eixo2": {
+                    "Carga_Descarga": "364.71",
+                    "Deslocamento": "3.2314"
                 },
-                "lota��ogranelPressurizadaeixo3": {
-                    "Carga_Descarga": "3.9159",
-                    "Deslocamento": "279.72"
+                "eixo3": {
+                    "Carga_Descarga": "412.57",
+                    "Deslocamento": "3.9826"
                 },
-                "lota��ogranelPressurizadaeixo4": {
-                    "Carga_Descarga": "4.4051",
-                    "Deslocamento": "293.12"
+                "eixo4": {
+                    "Carga_Descarga": "414.93",
+                    "Deslocamento": "4.4354"
                 },
-                "lota��ogranelPressurizadaeixo5": {
-                    "Carga_Descarga": "4.9590",
-                    "Deslocamento": "320.75"
+                "eixo5": {
+                    "Carga_Descarga": "460.29",
+                    "Deslocamento": "5.0412"
                 },
-                "lota��ogranelPressurizadaeixo6": {
-                    "Carga_Descarga": "5.5779",
-                    "Deslocamento": "358.88"
+                "eixo6": {
+                    "Carga_Descarga": "498.42",
+                    "Deslocamento": "5.6602"
                 },
-                "lota��ogranelPressurizadaeixo7": {
-                    "Carga_Descarga": "6.0385",
-                    "Deslocamento": "416.44"
+                "eixo7": {
+                    "Carga_Descarga": "570.99",
+                    "Deslocamento": "6.1589"
                 },
-                "lota��ogranelPressurizadaeixo9": {
-                    "Carga_Descarga": "6.8446",
-                    "Deslocamento": "454.13"
+                "eixo9": {
+                    "Carga_Descarga": "610.32",
+                    "Deslocamento": "6.9644"
+                }
+            },
+            "perigosaCargaGeral": {
+                "eixo2": {
+                    "Carga_Descarga": "306.90",
+                    "Deslocamento": "2.8500"
+                },
+                "eixo3": {
+                    "Carga_Descarga": "350.57",
+                    "Deslocamento": "3.5860"
+                },
+                "eixo4": {
+                    "Carga_Descarga": "364.59",
+                    "Deslocamento": "4.0812"
+                },
+                "eixo5": {
+                    "Carga_Descarga": "396.81",
+                    "Deslocamento": "4.6392"
+                },
+                "eixo6": {
+                    "Carga_Descarga": "434.95",
+                    "Deslocamento": "5.2582"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "497.66",
+                    "Deslocamento": "5.7211"
+                },
+                "eixo9": {
+                    "Carga_Descarga": "535.35",
+                    "Deslocamento": "6.5207"
+                }
+            },
+            "conteinerizada": {
+                "eixo2": {
+                    "Carga_Descarga": "279.72",
+                    "Deslocamento": "3.3189"
+                },
+                "eixo3": {
+                    "Carga_Descarga": "279.72",
+                    "Deslocamento": "3.3189"
+                },
+                "eixo4": {
+                    "Carga_Descarga": "288.52",
+                    "Deslocamento": "3.7856"
+                },
+                "eixo5": {
+                    "Carga_Descarga": "320.75",
+                    "Deslocamento": "4.3436"
+                },
+                "eixo6": {
+                    "Carga_Descarga": "358.88",
+                    "Deslocamento": "4.9626"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "416.44",
+                    "Deslocamento": "5.4068"
+                },
+                "eixo9": {
+                    "Carga_Descarga": "454.13",
+                    "Deslocamento": "6.2063"
+                }
+            },
+            "neogranel": {
+                "eixo2": {
+                    "Carga_Descarga": "236.05",
+                    "Deslocamento": "2.2865"
+                },
+                "eixo3": {
+                    "Carga_Descarga": "279.72",
+                    "Deslocamento": "3.3189"
+                },
+                "eixo4": {
+                    "Carga_Descarga": "293.12",
+                    "Deslocamento": "3.8023"
+                },
+                "eixo5": {
+                    "Carga_Descarga": "320.75",
+                    "Deslocamento": "4.3436"
+                },
+                "eixo6": {
+                    "Carga_Descarga": "358.88",
+                    "Deslocamento": "4.9626"
+                },
+                "eixo7": {
+                    "Carga_Descarga": "416.44",
+                    "Deslocamento": "5.4068"
+                },
+                "eixo9": {
+                    "Carga_Descarga": "454.13",
+                    "Deslocamento": "6.2063"
                 }
             }
         }

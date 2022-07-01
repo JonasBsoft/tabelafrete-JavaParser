@@ -24,13 +24,14 @@ public class Main2 {
 
     public static void main(String[] args) {
         init();
-        //System.out.println(valores.size());
-        //testeValores();
-        gerarJSON();
     }
 
     private static void init() {
+        conectar(); // conecta ao sit
+        getValores();
+        classificaCampo();
         popularConteudo();
+        gerarJSON();
     }
 
     public static void conectar() {
@@ -41,35 +42,24 @@ public class Main2 {
     }
 
     public static void getValores() {
-
         List<String> elementosTabelas = new ArrayList<>();
         try {
-
             for (Element e : doc.select(".dou-paragraph")) {
-
                 String text = e.text();
-
                 if (limparElementos(text)) {
                     elementosTabelas.add(text);
                 }
             }
-
             elementos = elementosTabelas;
         } catch (Exception e) {
-
         }
     }
 
     public static void popularConteudo() {
-        conectar(); // conecta ao sit
-        getValores();
-        classificaCampo();
         List<Conteudo> conteudos = new ArrayList<>();
         int flag = 0;
         int flag2 = flag + 7;
-        int ver = 0;
         for (String titulo : ListasUtil.titulos) {
-            ver++;
             Conteudo conteudo = new Conteudo();
             conteudo.setTitulo(titulo);
             for (String tipos : ListasUtil.popularTipos) {
@@ -78,29 +68,24 @@ public class Main2 {
                 for (String eixos : ListasUtil.popularEixos) {
                     Eixo eixo = new Eixo();
                     eixo.setNomeEixo(eixos);
-                    System.out.println(flag+ ", "+flag2);
+                    System.out.println(flag + ", " + flag2);
                     eixo.setDeslocamento(valores.get(flag));
                     eixo.setCarga(valores.get(flag2));
                     tipo.getEixos().add(eixo);
                     flag++;
                     flag2 = flag + 7;
                 }
+                flag = flag + 7;
+                flag2 = flag + 7;
                 conteudo.getTipos().add(tipo);
             }
             conteudos.add(conteudo);
-            if(ver == 1){
-                flag = flag + 83;
-            } else {
-                flag = flag + 84;
-            }
-            
             System.out.println("Flag: " + flag);
         }
         Main2.conteudos = conteudos;
     }
 
     public static boolean limparElementos(String elemento) {
-
         if (elemento.length() == 1) {
             return false;
         }
@@ -110,16 +95,12 @@ public class Main2 {
                 return false;
             }
         }
-
         return true;
     }
 
     public static void classificaCampo() {
-
         int i = 1;
-
         for (String elemento : elementos) {
-
             if (elemento.length() == 0) {
                 if (elementos.get(i).length() == 0) {
 
@@ -131,11 +112,6 @@ public class Main2 {
                 } else {
                     elemento = elementos.get(i);
                 }
-
-            }
-
-            if (elemento.contains("(CCD")) {
-                coeficienteisDeslocamento = !coeficienteisDeslocamento;
             }
 
             for (String regex : ListasUtil.regexs) {
@@ -144,31 +120,6 @@ public class Main2 {
                     valores.add(elemento);
                 }
             }
-
-            i++;
-        }
-
-    }
-
-    public static void teste() {
-        for (Conteudo conteudo : conteudos) {
-            System.out.println("Titulo: " + conteudo.getTitulo());
-            for (Tipo tipo : conteudo.getTipos()) {
-                System.out.println("  Tipo: " + tipo.getNome());
-                for (Eixo eixo : tipo.getEixos()) {
-                    System.out.println("    " + eixo.getNomeEixo());
-                    System.out.println("       Deslocamento: " + eixo.getDeslocamento());
-                    System.out.println("       Carga: " + eixo.getCarga());
-                }
-            }
-            break;
-        }
-    }
-
-    public static void testeValores(){
-        int i = 1;
-        for (String s : valores) {
-            System.out.println("["+i+"] " + s);
             i++;
         }
     }
@@ -176,31 +127,21 @@ public class Main2 {
     public static void gerarJSON() {
         JSONArray arquivoPronto = new JSONArray();
         JSONObject titulosJSON = new JSONObject();
-
         for (Conteudo titulo : conteudos) {// lista de Titulos
-
             JSONObject tiposJSON = new JSONObject();
-
             for (Tipo tipo : titulo.getTipos()) {
-
                 JSONObject eixoObj = new JSONObject();
                 for (Eixo eixo : tipo.getEixos()) {
-
                     JSONObject eixoValorJSON = new JSONObject();
-
                     eixoValorJSON.put("Carga_Descarga", eixo.getCarga());
                     eixoValorJSON.put("Deslocamento", eixo.getDeslocamento());
-
-                    eixoObj.put(titulo.getTitulo() + tipo.getNome() + eixo.getNomeEixo(), eixoValorJSON);
-
+                    eixoObj.put(eixo.getNomeEixo(), eixoValorJSON);
                 }
-                tiposJSON.put(titulo.getTitulo() + tipo.getNome(), eixoObj);
+                tiposJSON.put(tipo.getNome(), eixoObj);
             }
-
             titulosJSON.put(titulo.getTitulo(), tiposJSON);
         }
         arquivoPronto.add(titulosJSON);
-        // arquivoPronto.add(titulosJSON);
 
         try (FileWriter file = new FileWriter("tabelafrete.json")) {
             file.write(arquivoPronto.toJSONString());
