@@ -50,7 +50,7 @@ public class Main {
 	private static void init() {
 		conectar(); // conecta ao sit
 		getValores(); // adquire os valores do site
-
+		// gerarJSON(); // gera o JSON
 		escreverArquivoJSON(); // escreve o arquivo em si
 		for (String key : chaves) {
 
@@ -61,8 +61,9 @@ public class Main {
 	private static boolean escreverArquivoJSON() {
 		JSONArray arquivoPronto = new JSONArray();
 		JSONObject titulosJSON = new JSONObject();
+		List<Titulo> titulosList = gerarJSON();
 
-		for (Titulo titulo : gerarJSON()) {// lista de Titulos
+		for (Titulo titulo : titulosList) {// lista de Titulos
 
 			JSONObject tiposJSON = new JSONObject();
 
@@ -199,28 +200,31 @@ public class Main {
 
 				System.out.println("Titulo: " + tituloStr);
 				System.out.println("Tipo: " + nomeTipo);
+				System.out.println("Linha: " + linha);
 				Eixos listaDeEixos = new Eixos();
-				for (String eixoAtual : listaEixos) {
+				if (linha != null) {
 
-					EixoValor valor = new EixoValor();
+					for (String eixoAtual : listaEixos) {
 
-					listaDeEixos.setNome("eixos" + eixoAtual);
-					valor.setNumEixo(eixoAtual);
-					System.out.println("Eixo add: " + eixoAtual);
-					valor.setDeslocamento(linha.getEixos_deslocamento().get(eixoAtual));
-					valor.setCargaDescarga(linha.getEixos_carga_descarga().get(eixoAtual));
+						EixoValor valor = new EixoValor();
 
-					// contar(linha.getEixos_deslocamento().get(eixoAtual));
-					// contar(linha.getEixos_carga_descarga().get(eixoAtual));
+						listaDeEixos.setNome("eixos" + eixoAtual);
+						valor.setNumEixo(eixoAtual);
+						System.out.println("Eixo add: " + eixoAtual);
+						valor.setDeslocamento(linha.getEixos_deslocamento().get(eixoAtual));
+						valor.setCargaDescarga(linha.getEixos_carga_descarga().get(eixoAtual));
 
-					listaDeEixos.add(valor);
+						// contar(linha.getEixos_deslocamento().get(eixoAtual));
+						// contar(linha.getEixos_carga_descarga().get(eixoAtual));
 
+						listaDeEixos.add(valor);
+
+					}
+
+					tipo.setNome(nomeTipo);
+					tipo.addEixo(listaDeEixos);
+					titulo.addTipo(tipo);
 				}
-
-				tipo.setNome(nomeTipo);
-				tipo.addEixo(listaDeEixos);
-				titulo.addTipo(tipo);
-
 			}
 			titulo.setNome(tituloStr);
 			tabela.add(titulo);
@@ -298,7 +302,10 @@ public class Main {
 				String text = e.text();
 
 				if (limparElementos(text)) {
-					elementosTabelas.add(text);
+					if (text != null) {
+
+						elementosTabelas.add(text);
+					}
 				}
 			}
 
@@ -323,8 +330,8 @@ public class Main {
 		return true;
 	}
 
-	public static void classificaCampo() {
-
+	public static boolean classificaCampo() {
+		// TODO verificar iso aqui i = 1
 		int i = 1;
 
 		for (String elemento : elementos) {
@@ -387,7 +394,7 @@ public class Main {
 
 			i++;
 		}
-
+		return true;
 	}
 
 	private static void adicionarValorEmLinha(String elemento) {
@@ -406,7 +413,7 @@ public class Main {
 	private static void adicionarLinhaEmTabela(Linha linhasAtual, String tipo, String titulo) {
 
 		// linhasAtuais.add(linhaAtual);
-
+		System.out.println(titulo + tipo + ": adicionado " + linhaAtual.getEixos_carga_descarga());
 		linhasMap.put(titulo + tipo, linhaAtual);
 
 	}
