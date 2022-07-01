@@ -2,7 +2,6 @@ package com.bsoft.tabelaFrete;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.List;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -16,7 +15,8 @@ import com.bsoft.tabelaFrete.models.Tipo;
 
 
 public class GerarJson {
-    
+
+	@SuppressWarnings("all")
     public static void gerarArquivoJSON() {
 		JSONArray arquivoPronto = new JSONArray();
 		JSONObject titulosJSON = new JSONObject();
