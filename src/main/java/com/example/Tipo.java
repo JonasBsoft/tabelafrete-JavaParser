@@ -5,22 +5,21 @@ import java.util.List;
 
 public class Tipo {
     private String nome;
-    private List<Eixos> eixos = new ArrayList();
+    private List<Eixo> eixos;
 
-    public List<Eixos> getEixos() {
-        return this.eixos;
+    public Tipo() {
+        this.eixos = new ArrayList<>();
     }
 
-    public void addEixo(Eixos eixo) {
-        this.eixos.add(eixo);
+    public List<Eixo> getEixos() {
+        return eixos;
     }
 
     public String getNome() {
-        return this.nome;
+        return nome;
     }
 
     public void setNome(String nome) {
         this.nome = nome;
     }
-
 }
