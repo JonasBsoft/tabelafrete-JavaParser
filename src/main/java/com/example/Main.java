@@ -67,24 +67,24 @@ public class Main {
 			JSONObject tiposJSON = new JSONObject();
 
 			JSONObject eixosJSON = new JSONObject();
-			System.out.println("\tTitulo: " + titulo.getNome());
+			// System.out.println("\tTitulo: " + titulo.getNome());
 
 			for (Tipo tipo : titulo.getTipos()) {
-				System.out.println("\t\tTipo: " + tipo.getNome());
+				// System.out.println("\t\tTipo: " + tipo.getNome());
 
 				JSONObject eixoObj = new JSONObject();
 				for (Eixos eixos : tipo.getEixos()) {
 
 					for (EixoValor eixovalor : eixos.getEixos()) {
-						System.out.println("\t\t\teixos" + eixovalor.getNumEixo() + ":");
+						// System.out.println("\t\t\teixos" + eixovalor.getNumEixo() + ":");
 						int eixo = Integer.parseInt(eixovalor.getNumEixo());
 						if (eixovalor.getCargaDescarga() == null) {
-							System.out.println(eixovalor.getNumEixo() + " ERRO");
+							// System.out.println(eixovalor.getNumEixo() + " ERRO");
 						}
 
-						// System.out.println("\t\t\t\tCarga_Descarga: " +
+						// //System.out.println("\t\t\t\tCarga_Descarga: " +
 						// eixovalor.getCargaDescarga());
-						// System.out.println("\t\t\t\tDeslocamento: " + eixovalor.getDeslocamento());
+						// //System.out.println("\t\t\t\tDeslocamento: " + eixovalor.getDeslocamento());
 						EixoValor valor = new EixoValor();
 						JSONObject eixoValorJSON = new JSONObject();
 
@@ -110,7 +110,7 @@ public class Main {
 			System.out.println("Arquivo Gerado");
 			return true;
 		} catch (IOException e) {
-			System.out.println("Erro ao gerar arquivo");
+			// System.out.println("Erro ao gerar arquivo");
 			e.printStackTrace();
 			return false;
 		}
@@ -126,13 +126,13 @@ public class Main {
 		for (Titulo titulo : documento) {
 			JSONObject jsontitulo = new JSONObject();
 			for (Tipo tipo : titulo.getTipos()) {
-				System.out.println("{ Titulo:" + titulo.getNome() + "}:");
+				// System.out.println("{ Titulo:" + titulo.getNome() + "}:");
 				JSONObject jsontipos = new JSONObject();
 
 				JSONObject jsoneixo = new JSONObject();
 				for (Eixos eixos : tipo.getEixos()) {
 
-					System.out.println("[ Tipo:" + tipo.getNome() + "]");
+					// System.out.println("[ Tipo:" + tipo.getNome() + "]");
 					for (EixoValor eixoValor : eixos.getEixos()) { // objeto eixos2 ao exiso9 com oq
 
 						JSONObject valorescargaDeslocamento = new JSONObject();
@@ -143,8 +143,8 @@ public class Main {
 
 						valorescargaDeslocamento.put("custo_km", eixoValor.getDeslocamento());
 
-						System.out.println("(carga_descarga: " + eixoValor.getCargaDescarga());
-						System.out.println("custo_km: " + eixoValor.getDeslocamento() + ")");
+						// System.out.println("(carga_descarga: " + eixoValor.getCargaDescarga());
+						// System.out.println("custo_km: " + eixoValor.getDeslocamento() + ")");
 						jsoneixo.put("eixos" + eixoValor.getNumEixo(), valorescargaDeslocamento);
 					}
 					// contar(eixoValor.getDeslocamento());
@@ -164,10 +164,10 @@ public class Main {
 		try (FileWriter file = new FileWriter("tabelafrete.json")) {
 			file.write(jsonarquivo.toJSONString());
 			file.flush();
-			System.out.println("Arquivo Gerado");
+			// System.out.println("Arquivo Gerado");
 			return true;
 		} catch (IOException e) {
-			System.out.println("Erro ao gerar arquivo");
+			// System.out.println("Erro ao gerar arquivo");
 			e.printStackTrace();
 			return false;
 		}
@@ -186,7 +186,6 @@ public class Main {
 
 	private static List<Titulo> gerarJSON() {
 		classificaCampo();
-		eixo = 1;
 
 		List<Titulo> tabela = new ArrayList<>();
 		for (String tituloStr : titulos) {
@@ -198,6 +197,8 @@ public class Main {
 
 				linha = linhasMap.get(tituloStr + nomeTipo);
 
+				System.out.println("Titulo: " + tituloStr);
+				System.out.println("Tipo: " + nomeTipo);
 				Eixos listaDeEixos = new Eixos();
 				for (String eixoAtual : listaEixos) {
 
@@ -205,16 +206,13 @@ public class Main {
 
 					listaDeEixos.setNome("eixos" + eixoAtual);
 					valor.setNumEixo(eixoAtual);
-
-					valor.setCargaDescarga(linha.getEixos_deslocamento().get(eixoAtual));
-					valor.setDeslocamento(linha.getEixos_carga_descarga().get(eixoAtual));
+					System.out.println("Eixo add: " + eixoAtual);
+					valor.setDeslocamento(linha.getEixos_deslocamento().get(eixoAtual));
+					valor.setCargaDescarga(linha.getEixos_carga_descarga().get(eixoAtual));
 
 					// contar(linha.getEixos_deslocamento().get(eixoAtual));
 					// contar(linha.getEixos_carga_descarga().get(eixoAtual));
 
-					if (valor == null) {
-						System.out.println("Erro ao adicionar na lista" + eixoAtual);
-					}
 					listaDeEixos.add(valor);
 
 				}
@@ -358,7 +356,7 @@ public class Main {
 
 			if (elemento.contains("TABELA")) {
 				// é o titulo de uma tabela
-				System.out.println("\n ------------------- \n\n");
+				// System.out.println("\n ------------------- \n\n");
 				indiceTitulo = indiceTitulo + 1;
 
 			}
