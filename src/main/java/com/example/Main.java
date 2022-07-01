@@ -61,38 +61,34 @@ public class Main {
 	private static boolean escreverArquivoJSON() {
 		JSONArray arquivoPronto = new JSONArray();
 		JSONObject titulosJSON = new JSONObject();
-
-		for (Titulo titulo : gerarJSON()) {// lista de Titulos
-
+		
+		for (Titulo titulo : gerarJSON()) {// lista de Titulos   
+			
+			//System.out.println("\tTitulo: " + titulo.getNome());
 			JSONObject tiposJSON = new JSONObject();
-
-			JSONObject eixosJSON = new JSONObject();
-			System.out.println("\tTitulo: " + titulo.getNome());
-
+			
 			for (Tipo tipo : titulo.getTipos()) {
-				System.out.println("\t\tTipo: " + tipo.getNome());
+				//System.out.println("\t\tTipo: " + tipo.getNome());
 
 				JSONObject eixoObj = new JSONObject();
 				for (Eixos eixos : tipo.getEixos()) {
-
+					
 					for (EixoValor eixovalor : eixos.getEixos()) {
-						System.out.println("\t\t\teixos" + eixovalor.getNumEixo() + ":");
+						//System.out.println("\t\t\teixos" + eixovalor.getNumEixo() + ":");
 						int eixo = Integer.parseInt(eixovalor.getNumEixo());
-						if (eixovalor.getCargaDescarga() == null) {
-							System.out.println(eixovalor.getNumEixo() + " ERRO");
-						}
 
+						System.out.println(eixo);
 						// System.out.println("\t\t\t\tCarga_Descarga: " +
-						// eixovalor.getCargaDescarga());
+						//eixovalor.getCargaDescarga());
 						// System.out.println("\t\t\t\tDeslocamento: " + eixovalor.getDeslocamento());
-						EixoValor valor = new EixoValor();
 						JSONObject eixoValorJSON = new JSONObject();
 
-						eixoValorJSON.put("Carga_Descarga", eixovalor.getCargaDescarga());
-						eixoValorJSON.put("Deslocamento", eixovalor.getDeslocamento());
+						eixoValorJSON.put("Carga_Descarga", eixovalor.getDeslocamento());
+						eixoValorJSON.put("Deslocamento", eixovalor.getCargaDescarga());
 
 						eixoObj.put("eixo" + eixo, eixoValorJSON);
-
+						// System.out.println("Valor CargaDescarga: " + eixovalor.getDeslocamento());
+						// System.out.println("Valor Deslocamento: " + eixovalor.getCargaDescarga());
 					}
 
 				}
@@ -117,72 +113,71 @@ public class Main {
 
 	}
 
-	private static boolean OLDescreverArquivoJSON() {
-		List<Titulo> documento = gerarJSON();
+	// private static boolean OLDescreverArquivoJSON() {
+	// 	List<Titulo> documento = gerarJSON();
 
-		JSONArray jsontiposArray = new JSONArray();
-		JSONArray jsonarquivo = new JSONArray();
+	// 	JSONArray jsonarquivo = new JSONArray();
 
-		for (Titulo titulo : documento) {
-			JSONObject jsontitulo = new JSONObject();
-			for (Tipo tipo : titulo.getTipos()) {
-				System.out.println("{ Titulo:" + titulo.getNome() + "}:");
-				JSONObject jsontipos = new JSONObject();
+	// 	for (Titulo titulo : documento) {
+	// 		JSONObject jsontitulo = new JSONObject();
+	// 		for (Tipo tipo : titulo.getTipos()) {
+	// 			System.out.println("{ Titulo:" + titulo.getNome() + "}:");
+	// 			JSONObject jsontipos = new JSONObject();
 
-				JSONObject jsoneixo = new JSONObject();
-				for (Eixos eixos : tipo.getEixos()) {
+	// 			JSONObject jsoneixo = new JSONObject();
+	// 			for (Eixos eixos : tipo.getEixos()) {
 
-					System.out.println("[ Tipo:" + tipo.getNome() + "]");
-					for (EixoValor eixoValor : eixos.getEixos()) { // objeto eixos2 ao exiso9 com oq
+	// 				System.out.println("[ Tipo:" + tipo.getNome() + "]");
+	// 				for (EixoValor eixoValor : eixos.getEixos()) { // objeto eixos2 ao exiso9 com oq
 
-						JSONObject valorescargaDeslocamento = new JSONObject();
+	// 					JSONObject valorescargaDeslocamento = new JSONObject();
 
-						valorescargaDeslocamento.put(
-								"carga_descarga",
-								eixoValor.getCargaDescarga());
+	// 					valorescargaDeslocamento.put(
+	// 							"carga_descarga",
+	// 							eixoValor.getCargaDescarga());
 
-						valorescargaDeslocamento.put("custo_km", eixoValor.getDeslocamento());
+	// 					valorescargaDeslocamento.put("custo_km", eixoValor.getDeslocamento());
 
-						System.out.println("(carga_descarga: " + eixoValor.getCargaDescarga());
-						System.out.println("custo_km: " + eixoValor.getDeslocamento() + ")");
-						jsoneixo.put("eixos" + eixoValor.getNumEixo(), valorescargaDeslocamento);
-					}
-					// contar(eixoValor.getDeslocamento());
-					// contar(eixoValor.getCargaDescarga());
-					// // eixosN : "carga_descarga" : 2.343, "custo_km" : 12.5
+	// 					System.out.println("(carga_descarga: " + eixoValor.getCargaDescarga());
+	// 					System.out.println("custo_km: " + eixoValor.getDeslocamento() + ")");
+	// 					jsoneixo.put("eixos" + eixoValor.getNumEixo(), valorescargaDeslocamento);
+	// 				}
+	// 				// contar(eixoValor.getDeslocamento());
+	// 				// contar(eixoValor.getCargaDescarga());
+	// 				// // eixosN : "carga_descarga" : 2.343, "custo_km" : 12.5
 
-					jsontipos.put(tipo.getNome(), jsoneixo);
+	// 				jsontipos.put(tipo.getNome(), jsoneixo);
 
-				}
+	// 			}
 
-				jsontitulo.put(titulo.getNome(), jsontipos);
+	// 			jsontitulo.put(titulo.getNome(), jsontipos);
 
-			}
-			jsonarquivo.add(jsontitulo);
-		}
+	// 		}
+	// 		jsonarquivo.add(jsontitulo);
+	// 	}
 
-		try (FileWriter file = new FileWriter("tabelafrete.json")) {
-			file.write(jsonarquivo.toJSONString());
-			file.flush();
-			System.out.println("Arquivo Gerado");
-			return true;
-		} catch (IOException e) {
-			System.out.println("Erro ao gerar arquivo");
-			e.printStackTrace();
-			return false;
-		}
+	// 	try (FileWriter file = new FileWriter("tabelafrete.json")) {
+	// 		file.write(jsonarquivo.toJSONString());
+	// 		file.flush();
+	// 		System.out.println("Arquivo Gerado");
+	// 		return true;
+	// 	} catch (IOException e) {
+	// 		System.out.println("Erro ao gerar arquivo");
+	// 		e.printStackTrace();
+	// 		return false;
+	// 	}
 
-	}
+	// }
 
-	private static void contar(String var) {
+	// private static void contar(String var) {
 
-		if (valores.containsKey(var)) {
-			valores.put(var, valores.get(var) + 1);
-		} else {
-			chaves.add(var);
-			valores.put(var, 1);
-		}
-	}
+	// 	if (valores.containsKey(var)) {
+	// 		valores.put(var, valores.get(var) + 1);
+	// 	} else {
+	// 		chaves.add(var);
+	// 		valores.put(var, 1);
+	// 	}
+	// }
 
 	private static List<Titulo> gerarJSON() {
 		classificaCampo();
@@ -206,8 +201,8 @@ public class Main {
 					listaDeEixos.setNome("eixos" + eixoAtual);
 					valor.setNumEixo(eixoAtual);
 
-					valor.setCargaDescarga(linha.getEixos_deslocamento().get(eixoAtual));
-					valor.setDeslocamento(linha.getEixos_carga_descarga().get(eixoAtual));
+					valor.setCargaDescarga(linha.getEixos_carga_descarga().get(eixoAtual));
+					valor.setDeslocamento(linha.getEixos_deslocamento().get(eixoAtual));
 
 					// contar(linha.getEixos_deslocamento().get(eixoAtual));
 					// contar(linha.getEixos_carga_descarga().get(eixoAtual));
