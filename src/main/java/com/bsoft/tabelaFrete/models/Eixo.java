@@ -1,4 +1,4 @@
-package com.example;
+package com.bsoft.tabelaFrete.models;
 
 public class Eixo {
     private String nomeEixo;

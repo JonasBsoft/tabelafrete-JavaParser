@@ -1,4 +1,4 @@
-package com.example.utils;
+package com.bsoft.tabelaFrete.utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +20,7 @@ public class ListasUtil {
         }
     };
 
-    public static List<String> regexs = new ArrayList<String>() {
+    public static List<String> regExFiltrarValores = new ArrayList<String>() {
         {
             add("\\d.\\d\\d\\d\\d");
             add("\\d\\d.\\d\\d\\d\\d");
