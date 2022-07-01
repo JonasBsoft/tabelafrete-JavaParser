@@ -2,14 +2,14 @@ package com.example;
 
 public class Eixo {
     private String nomeEixo;
-    private String deslocamento;
-    private String carga;
+    private double deslocamento;
+    private double carga;
 
-    public void setCarga(String carga) {
+    public void setCarga(double carga) {
         this.carga = carga;
     }
 
-    public void setDeslocamento(String deslocamento) {
+    public void setDeslocamento(double deslocamento) {
         this.deslocamento = deslocamento;
     }
 
@@ -17,11 +17,11 @@ public class Eixo {
         this.nomeEixo = nomeEixo;
     }
 
-    public String getCarga() {
+    public double getCarga() {
         return carga;
     }
 
-    public String getDeslocamento() {
+    public double getDeslocamento() {
         return deslocamento;
     }
 

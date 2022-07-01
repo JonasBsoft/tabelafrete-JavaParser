@@ -78,10 +78,10 @@ public class ListasUtil {
 
     public static List<String> titulos = new ArrayList<String>() {
         {
-            add("lotação");
-            add("AUTOMOTOR DE CARGAS");
-            add("LOTAÇÃO DE ALTO DESEMPENHO");
-            add("AUTOMOTOR DE CARGAS DE ALTO DESEMPENHO");
+            add("lotacao");
+            add("somenteAutomotor");
+            add("lotacaoAltoDesempenho");
+            add("somenteAutomotorAltoDesempenho");
         }
     };
 }

@@ -60,6 +60,7 @@ public class Main2 {
         int flag = 0;
         int flag2 = flag + 7;
         for (String titulo : ListasUtil.titulos) {
+
             Conteudo conteudo = new Conteudo();
             conteudo.setTitulo(titulo);
             for (String tipos : ListasUtil.popularTipos) {
@@ -68,9 +69,9 @@ public class Main2 {
                 for (String eixos : ListasUtil.popularEixos) {
                     Eixo eixo = new Eixo();
                     eixo.setNomeEixo(eixos);
-                    System.out.println(flag + ", " + flag2);
-                    eixo.setDeslocamento(valores.get(flag));
-                    eixo.setCarga(valores.get(flag2));
+                    // System.out.println(flag + ", " + flag2);
+                    eixo.setDeslocamento(Double.parseDouble(valores.get(flag)));
+                    eixo.setCarga(Double.parseDouble(valores.get(flag2)));
                     tipo.getEixos().add(eixo);
                     flag++;
                     flag2 = flag + 7;
