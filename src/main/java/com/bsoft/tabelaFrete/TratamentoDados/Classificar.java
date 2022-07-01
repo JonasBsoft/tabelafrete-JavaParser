@@ -2,15 +2,11 @@ package com.bsoft.tabelaFrete.TratamentoDados;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import com.bsoft.tabelaFrete.utils.ListasUtil;
-
 public class Classificar {
 
     static List<String> valores = new ArrayList<>();
     public static void classificarCampos() {
-
-        
 
         List<String> elementosValores = PegarValores.elementos;
         

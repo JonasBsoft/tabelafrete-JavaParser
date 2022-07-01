@@ -2,13 +2,10 @@ package com.bsoft.tabelaFrete.TratamentoDados;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import com.bsoft.tabelaFrete.models.Conteudo;
 import com.bsoft.tabelaFrete.models.Eixo;
 import com.bsoft.tabelaFrete.models.Tipo;
 import com.bsoft.tabelaFrete.utils.ListasUtil;
-
-
 public class Aramazena {
 
     public static List<Conteudo> informacoes;

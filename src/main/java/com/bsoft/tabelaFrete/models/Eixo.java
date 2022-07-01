@@ -1,5 +1,4 @@
 package com.bsoft.tabelaFrete.models;
-
 public class Eixo {
     private String nomeEixo;
     private double deslocamento;

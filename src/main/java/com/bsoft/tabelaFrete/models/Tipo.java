@@ -2,7 +2,6 @@ package com.bsoft.tabelaFrete.models;
 
 import java.util.ArrayList;
 import java.util.List;
-
 public class Tipo {
     private String nome;
     private List<Eixo> eixos;

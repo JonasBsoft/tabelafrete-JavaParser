@@ -2,14 +2,10 @@ package com.bsoft.tabelaFrete.TratamentoDados;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
-
 import com.bsoft.tabelaFrete.utils.Conexao;
 import com.bsoft.tabelaFrete.utils.ListasUtil;
-
-
 public class PegarValores {
     static List<String> elementos = new ArrayList<>();
     static Document doc = Conexao.conectar();
