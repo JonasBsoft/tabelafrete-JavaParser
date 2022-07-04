@@ -1,6 +1,7 @@
 package com.bsoft.tabelaFrete.models;
+
 public class Eixo {
-    private String nomeEixo;
+    private String nome;
     private double deslocamento;
     private double carga;
 
@@ -12,8 +13,8 @@ public class Eixo {
         this.deslocamento = deslocamento;
     }
 
-    public void setNomeEixo(String nomeEixo) {
-        this.nomeEixo = nomeEixo;
+    public void setNome(String nomeEixo) {
+        this.nome = nomeEixo;
     }
 
     public double getCarga() {
@@ -24,7 +25,7 @@ public class Eixo {
         return deslocamento;
     }
 
-    public String getNomeEixo() {
-        return nomeEixo;
+    public String getNome() {
+        return nome;
     }
 }

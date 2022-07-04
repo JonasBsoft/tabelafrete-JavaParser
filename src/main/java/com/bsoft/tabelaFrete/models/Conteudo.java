@@ -2,6 +2,7 @@ package com.bsoft.tabelaFrete.models;
 
 import java.util.ArrayList;
 import java.util.List;
+
 public class Conteudo {
 
     private String titulo;
@@ -17,6 +18,11 @@ public class Conteudo {
 
     public List<Tipo> getTipos() {
         return tipos;
+    }
+
+    public void add(Tipo tipo) {
+        tipos.add(tipo);
+
     }
 
     public String getTitulo() {

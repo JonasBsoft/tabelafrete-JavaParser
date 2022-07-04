@@ -3,13 +3,18 @@ package com.bsoft.tabelaFrete.TratamentoDados;
 import java.util.ArrayList;
 import java.util.List;
 import com.bsoft.tabelaFrete.utils.ListasUtil;
+
 public class Classificar {
 
-    static List<String> valores = new ArrayList<>();
-    public static void classificarCampos() {
+	static List<String> valores = new ArrayList<>();
 
-        List<String> elementosValores = PegarValores.elementos;
-        
+	public static void classificarCampos() {
+		/**
+		 * separa os valores adquirido em um array de strings
+		 */
+
+		List<String> elementosValores = PegarValores.elementos;
+
 		int i = 1;
 		for (String elemento : elementosValores) {
 			if (elemento.length() == 0) {
@@ -17,11 +22,14 @@ public class Classificar {
 
 					if (elementosValores.get(i + 1).length() == 0) {
 						elemento = elementosValores.get(i + 2);
+
 					} else {
 						elemento = elementosValores.get(i + 1);
+
 					}
 				} else {
 					elemento = elementosValores.get(i);
+
 				}
 			}
 
@@ -29,9 +37,10 @@ public class Classificar {
 				if (elemento.matches(regex)) {
 					elemento = elemento.replace(",", ".");
 					valores.add(elemento);
+
 				}
 			}
 			i++;
 		}
-    }
+	}
 }
