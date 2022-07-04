@@ -7,12 +7,17 @@ import org.jsoup.nodes.Element;
 import com.bsoft.tabelaFrete.utils.Conexao;
 import com.bsoft.tabelaFrete.utils.ListasUtil;
 
+/**
+ * Classe responsavel por baixar os dados do site
+ **/
 public class PegarValores {
 	static List<String> elementos = new ArrayList<>();
 	static Document doc = Conexao.conectar();
 
+	/**
+	 * baixa os dados da tabela de precos, de forma desorganizada
+	 **/
 	public static void adquirirValores() {
-		// * baixa os dados da tabela de precos, de forma desorganizada*/
 		List<String> elementosTabelas = new ArrayList<>();
 
 		try {
@@ -31,6 +36,9 @@ public class PegarValores {
 		}
 	}
 
+	/**
+	 * limpa os dados que nao serão utilizados
+	 **/
 	public static boolean limparElementos(String elemento) {
 		if (elemento.length() == 1) {
 			return false;

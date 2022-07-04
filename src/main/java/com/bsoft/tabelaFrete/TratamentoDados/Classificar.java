@@ -4,14 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 import com.bsoft.tabelaFrete.utils.ListasUtil;
 
+/**
+ * Classe responsavel por classificar os dados da tabela de preços
+ */
 public class Classificar {
 
 	static List<String> valores = new ArrayList<>();
 
+	/**
+	 * separa os valores adquirido em um array de strings
+	 */
 	public static void classificarCampos() {
-		/**
-		 * separa os valores adquirido em um array de strings
-		 */
 
 		List<String> elementosValores = PegarValores.elementos;
 
