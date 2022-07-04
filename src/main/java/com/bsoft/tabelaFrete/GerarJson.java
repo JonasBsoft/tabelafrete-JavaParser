@@ -9,8 +9,15 @@ import com.bsoft.tabelaFrete.models.Conteudo;
 import com.bsoft.tabelaFrete.models.Eixo;
 import com.bsoft.tabelaFrete.models.Tipo;
 
+/**
+ * Classe responsável em gerar o JSON com os dados fornecidos
+ */
 public class GerarJson {
 
+	/**
+	 * Gera o .JSON através de listas de conteúdos para serem
+	 * preenchidos de forma correta.
+	 */
 	@SuppressWarnings("unchecked")
 	public static void gerarArquivoJSON() {
 		JSONArray arquivoPronto = new JSONArray();
