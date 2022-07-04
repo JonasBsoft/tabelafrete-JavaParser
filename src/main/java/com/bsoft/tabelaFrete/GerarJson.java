@@ -4,7 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import com.bsoft.tabelaFrete.TratamentoDados.Aramazena;
+import com.bsoft.tabelaFrete.TratamentoDados.Armazenar;
 import com.bsoft.tabelaFrete.models.Conteudo;
 import com.bsoft.tabelaFrete.models.Eixo;
 import com.bsoft.tabelaFrete.models.Tipo;
@@ -14,7 +14,7 @@ public class GerarJson {
     public static void gerarArquivoJSON() {
 		JSONArray arquivoPronto = new JSONArray();
 		JSONObject titulosJSON = new JSONObject();
-		for (Conteudo titulo : Aramazena.informacoes) {// lista de Titulos
+		for (Conteudo titulo : Armazenar.informacoes) {// lista de Titulos
 			JSONObject tiposJSON = new JSONObject();
 			for (Tipo tipo : titulo.getTipos()) {
 				JSONObject eixoObj = new JSONObject();

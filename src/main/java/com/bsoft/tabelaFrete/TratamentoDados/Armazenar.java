@@ -6,7 +6,7 @@ import com.bsoft.tabelaFrete.models.Conteudo;
 import com.bsoft.tabelaFrete.models.Eixo;
 import com.bsoft.tabelaFrete.models.Tipo;
 import com.bsoft.tabelaFrete.utils.ListasUtil;
-public class Aramazena {
+public class Armazenar {
 
     public static List<Conteudo> informacoes;
 

@@ -1,6 +1,6 @@
 package com.bsoft.tabelaFrete;
 
-import com.bsoft.tabelaFrete.TratamentoDados.Aramazena;
+import com.bsoft.tabelaFrete.TratamentoDados.Armazenar;
 import com.bsoft.tabelaFrete.TratamentoDados.Classificar;
 import com.bsoft.tabelaFrete.TratamentoDados.PegarValores;
 import com.bsoft.tabelaFrete.utils.Conexao;
@@ -9,7 +9,7 @@ public class Main{
         Conexao.conectar();
 		PegarValores.adquirirValores();
 		Classificar.classificarCampos();
-		Aramazena.armazenarConteudo();
+		Armazenar.armazenarConteudo();
 		GerarJson.gerarArquivoJSON();
     }
 }
