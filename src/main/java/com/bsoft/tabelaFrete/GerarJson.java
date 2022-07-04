@@ -10,7 +10,7 @@ import com.bsoft.tabelaFrete.models.Eixo;
 import com.bsoft.tabelaFrete.models.Tipo;
 public class GerarJson {
 
-	@SuppressWarnings("all")
+	@SuppressWarnings("unchecked")
     public static void gerarArquivoJSON() {
 		JSONArray arquivoPronto = new JSONArray();
 		JSONObject titulosJSON = new JSONObject();
