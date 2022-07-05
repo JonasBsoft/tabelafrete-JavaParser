@@ -43,7 +43,10 @@ public class GerarJson {
 		arquivoPronto.add(titulosJSON);
 
 		try (FileWriter file = new FileWriter("tabelafrete.json")) {
-			file.write(arquivoPronto.toJSONString());
+			String arquivo = arquivoPronto.toJSONString().replace("[", "");
+			arquivo = arquivo.replace("]", "");
+
+			file.write(arquivo);
 			file.flush();
 			System.out.println("Arquivo Gerado");
 
